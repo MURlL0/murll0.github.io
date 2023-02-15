@@ -42,11 +42,12 @@ h2{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin: 20px 40px;
+  margin: 20px 70px;
+
 }
 
 .social-icons img{
-  width: 33px;
+  width: 35px;
 }
 
 .social-icons a :hover{
