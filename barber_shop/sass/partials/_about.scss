@@ -1,0 +1,132 @@
+.about {
+    background-color: $color-primary;
+    display: grid;
+    grid-template-columns: minmax(300px, 600px) minmax(600px, 1fr);
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0 40px;
+
+    .box1 {
+        width: 100%;
+        max-width: 45rem;
+        margin: 20px auto;
+        background-image: url(../img/brush-big.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+
+        .overplay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.775);
+            margin: 0 auto;
+            padding: 3rem 0;
+
+            .title {
+                margin: 0 0 1rem;
+
+                img {
+                    margin: 0 auto;
+                    width: 6rem;
+                    height: 6rem;
+                }
+
+                h2 {
+                    color: $color-primary;
+                    font-size: 3.5rem;
+                }
+            }
+            .text + div {
+                margin-top: 3rem;
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &::after {
+                    display: block;
+                    font-size: 2.5rem;
+                    content: '•';
+                    color: white;
+                    margin-top: 4rem;
+                }
+                &:last-of-type::after {
+                    content: '|';
+                    color: $color-primary;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    color: grey;
+                    font-weight: 100;
+                }
+
+                span {
+                    display: block;
+                    font-size: 2rem;
+                    color: white;
+                }
+            }
+            img {
+                width: 2rem;
+                margin: 5rem 0 1rem;
+            }
+            span {
+                font-size: 1.6rem;
+                color: white;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .box2 {
+        display: grid;
+        margin: 0 auto;
+        color: white;
+
+        .container {
+            display: grid;
+            grid-template-columns: minmax(300px, 1fr) minmax(100px, 400px);
+
+            span {
+                font-size: 2rem;
+                margin: 20px 0;
+            }
+
+            h1 {
+                font-size: 6rem;
+                font-weight: 100;
+                margin-bottom: 100px;
+                z-index: 2;
+                position: relative;
+
+                &::after {
+                    margin: 2rem 0;
+                    display: block;
+                    width: 20rem;
+                    content: ' ';
+                    border: 3px solid #745f468f;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                margin-top: 2rem;
+            }
+        }
+        .img {
+            width: 100%;
+
+            img {
+                display: block;
+                margin: 5rem auto;
+                max-width: 300px;
+            }
+        }
+    }
+}
