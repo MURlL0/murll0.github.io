@@ -303,7 +303,7 @@ body {
   z-index: 2;
   position: relative;
 }
-.agendamento img {
+.agendamento .cadeira {
   position: absolute;
   z-index: -1;
   bottom: 0;
