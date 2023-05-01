@@ -1,7 +1,10 @@
 .location {
+    height: 100vh;
     background-image: url(../img/bg-location.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
 
     .container {
         margin: 0 auto;

@@ -1,4 +1,5 @@
 .about {
+    height: 100vh;
     background-color: $color-primary;
     display: grid;
     grid-template-columns: minmax(300px, 600px) minmax(600px, 1fr);
@@ -53,7 +54,7 @@
                     font-size: 2.5rem;
                     content: '•';
                     color: white;
-                    margin-top: 4rem;
+                    margin-top: 2rem;
                 }
                 &:last-of-type::after {
                     content: '|';
@@ -128,5 +129,11 @@
                 max-width: 300px;
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        height: auto;
     }
 }

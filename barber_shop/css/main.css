@@ -120,6 +120,7 @@ body {
   }
 }
 .about {
+  height: 100vh;
   background-color: #917758;
   display: grid;
   grid-template-columns: minmax(300px, 600px) minmax(600px, 1fr);
@@ -172,7 +173,7 @@ body {
   font-size: 2.5rem;
   content: "•";
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .about .box1 .overplay .text:last-of-type::after {
   content: "|";
@@ -237,8 +238,13 @@ body {
   max-width: 300px;
 }
 
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+  }
+}
 .services {
-  height: auto;
+  height: 100vh;
   margin: 0 auto;
   padding: 0 0 60px;
   background-color: #f5eee6;
@@ -246,7 +252,7 @@ body {
 .services .title {
   display: grid;
   margin: 0 auto;
-  padding: 50px;
+  padding: 80px;
   align-items: center;
   justify-items: center;
 }
@@ -259,7 +265,7 @@ body {
 .services .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  margin: 0 auto;
+  margin: 80px auto;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -290,6 +296,17 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .services {
+    height: auto;
+  }
+  .services .title {
+    padding: 50px;
+  }
+  .services .container {
+    margin: auto;
+  }
+}
 .agendamento {
   height: 100vh;
   background-color: #917758;
@@ -439,6 +456,7 @@ body {
   }
 }
 .gallery {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -448,7 +466,7 @@ body {
 .gallery .title {
   text-align: center;
   color: #917758;
-  padding: 60px 0 0;
+  padding: 50px;
 }
 .gallery .title h1 {
   font-size: 4rem;
@@ -469,6 +487,7 @@ body {
 .gallery .container-fotos img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 @media (min-width: 1700px) {
@@ -482,10 +501,18 @@ body {
     grid-template-rows: repeat(auto-fit, 300px) 300px;
   }
 }
+@media (max-width: 1340px) {
+  .gallery {
+    height: auto;
+  }
+}
 .location {
+  height: 100vh;
   background-image: url(../img/bg-location.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
 }
 .location .container {
   margin: 0 auto;
