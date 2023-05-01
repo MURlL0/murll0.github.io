@@ -323,6 +323,7 @@ body {
   bottom: 0;
   right: 0;
   max-width: 250px;
+  display: block;
 }
 .agendamento .title {
   text-align: center;
@@ -489,15 +490,20 @@ body {
   background-image: url(../img/bg-location.jpg);
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
 }
 .location .container {
+  background-color: red;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+  height: 100%;
+  max-height: 400px;
+}
+.location .container iframe {
+  height: 100%;
 }
 .location .container .header-container {
   background-color: #181818;

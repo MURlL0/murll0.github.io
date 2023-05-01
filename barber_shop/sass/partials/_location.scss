@@ -2,16 +2,28 @@
     background-image: url(../img/bg-location.jpg);
     background-size: cover;
     background-position: center;
-     display: flex;
-     justify-content: center;
-     align-items: center;
      padding: 20px;
+     height: 100vh;
+     display: block;
+     margin: 0 auto;   
+     padding: 50px; 
+     
      
     
     .container {
+      background-color: red;
       width: 100%;
-      max-width: 1400px;
-      margin: 0 auto;
+      height: 100%;
+      max-height: 400px;
+
+      iframe{
+        height: 100%;
+        
+      }
+
+      
+
+      
 
         .header-container {
             background-color: #181818;

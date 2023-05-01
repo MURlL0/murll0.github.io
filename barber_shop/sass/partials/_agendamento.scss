@@ -3,6 +3,7 @@
     background-color: $color-primary;
     margin: 0 auto;
     display: grid;
+    
     align-content: center;
     justify-content: center;
     z-index: 2;
@@ -16,6 +17,7 @@
         bottom: 0;
         right: 0;
         max-width: 250px;
+        display: block;
     }
 
     .title {
