@@ -1,13 +1,19 @@
 .services {
-    height: auto;
     margin: 0 auto;
-    padding: 0 0 60px;
+    padding: 100px;
     background-color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+    
 
     .title {
         display: grid;
-        margin: 0 auto;
-        padding: 50px;
+        margin: 0px auto;
+        
         align-items: center;
         justify-items: center;
 
@@ -20,9 +26,10 @@
     }
 
     .container {
+      width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-        margin: 0 auto;
+        margin: 0px auto;
         align-items: center;
         justify-content: center;
         gap: 50px;
@@ -56,5 +63,14 @@
                 margin: 0 auto;
             }
         }
+    }
+}
+@media (max-width: 1200px) {
+    .services {
+        
+        .title {
+            padding: 50px;
+        }
+        
     }
 }

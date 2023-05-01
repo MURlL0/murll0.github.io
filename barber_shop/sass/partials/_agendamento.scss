@@ -1,15 +1,13 @@
 .agendamento {
-    height: 100vh;
     background-color: $color-primary;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    align-content: center;
     justify-content: center;
     gap: 100px;
-    padding: 30px;
     z-index: 2;
     position: relative;
+    padding: 10px;
 
     .cadeira {
         position: absolute;
@@ -22,6 +20,7 @@
     .title {
         text-align: center;
         z-index: 2;
+        padding: 50px 0 0;
 
         h1 {
             font-size: 4rem;
@@ -32,10 +31,10 @@
     }
 
     .container-login {
-        margin: 0 auto;
+        padding: 20px;
+        padding: 0 0 100px;
         width: 100%;
         max-width: 1000px;
-        
 
         form {
             display: grid;
@@ -62,7 +61,6 @@
                     outline: none;
                     border: none;
                     font-size: 1.4rem;
-
 
                     &::placeholder {
                         font-size: 1.4rem;
