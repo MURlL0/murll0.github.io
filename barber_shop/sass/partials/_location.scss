@@ -2,15 +2,16 @@
     background-image: url(../img/bg-location.jpg);
     background-size: cover;
     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     
     
-    
-    
-    
-    
-
     .container {
-        margin: 0 auto;
-        padding: 40px 30px 0;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
 
         .header-container {
             background-color: #181818;
@@ -22,7 +23,7 @@
                 grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
+                gap: 40px;
                 padding: 0;
 
                 li {

@@ -306,13 +306,14 @@ body {
   }
 }
 .agendamento {
+  height: 100vh;
   background-color: #917758;
   margin: 0 auto;
   display: grid;
   align-content: center;
   justify-content: center;
-  gap: 100px;
   z-index: 2;
+  gap: 50px;
   position: relative;
   padding: 10px;
 }
@@ -326,7 +327,6 @@ body {
 .agendamento .title {
   text-align: center;
   z-index: 2;
-  padding: 50px 0 0;
 }
 .agendamento .title h1 {
   font-size: 4rem;
@@ -335,8 +335,6 @@ body {
   font-weight: 100;
 }
 .agendamento .container-login {
-  padding: 20px;
-  padding: 0 0 100px;
   width: 100%;
   max-width: 1000px;
 }
@@ -491,10 +489,15 @@ body {
   background-image: url(../img/bg-location.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 .location .container {
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 30px 0;
 }
 .location .container .header-container {
   background-color: #181818;
@@ -506,7 +509,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
   padding: 0;
 }
 .location .container .header-container .menu li {
