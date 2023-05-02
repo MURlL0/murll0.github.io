@@ -13,15 +13,17 @@
     .title {
         display: grid;
         margin: 0px auto;
-        
         align-items: center;
         justify-items: center;
+        
 
         h1 {
+          
             font-size: 4rem;
             color: $color-primary;
             margin: 10px;
             font-weight: 100;
+            text-align: center;
         }
     }
 
@@ -69,7 +71,7 @@
     .services {
         
         .title {
-            padding: 50px;
+            padding: 50px 0;
         }
         
     }

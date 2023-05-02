@@ -264,6 +264,7 @@ body {
   color: #917758;
   margin: 10px;
   font-weight: 100;
+  text-align: center;
 }
 .services .container {
   width: 100%;
@@ -302,7 +303,7 @@ body {
 
 @media (max-width: 1200px) {
   .services .title {
-    padding: 50px;
+    padding: 50px 0;
   }
 }
 .agendamento {
