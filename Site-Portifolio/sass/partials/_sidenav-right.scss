@@ -1,0 +1,40 @@
+.sidenav-right {
+    grid-area: sidenav-right;
+
+    .nav {
+        position: fixed;
+        top: 30%;
+        border: 1px solid $menu;
+        border-radius: 40px;
+        padding: 15px 10px;
+
+        .menu {
+            padding: 0;
+            li {
+                list-style: none;
+
+                a {
+                    color: $menu;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+            li + li {
+                margin-top: 20px;
+            }
+
+            ion-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sidenav-right {
+        display: none;
+    }
+}

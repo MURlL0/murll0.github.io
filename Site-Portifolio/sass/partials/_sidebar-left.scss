@@ -1,0 +1,190 @@
+.sidebar-left {
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    grid-area: sidebar-left;
+    border: 1px solid $sibar-icon;
+    border-radius: 30px;
+    padding: 30px 30px;
+    cursor: default;
+    margin-left: 57px;
+    top: 10%;
+
+    .title {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            font-size: 4rem;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        span {
+            width: 60px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            right: 0;
+            text-align: center;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .img {
+        display: grid;
+        margin: 0 auto;
+        max-width: 100%;
+
+        img {
+            max-width: 250px;
+            width: 100%;
+            margin: 30px auto;
+            border-radius: 20px;
+            filter: grayscale(100%);
+            transition: 800ms;
+
+            &:hover {
+                filter: grayscale(0%);
+                transition: 700ms;
+            }
+        }
+    }
+
+    .contact {
+        text-align: center;
+        margin-top: 10px;
+
+        p,
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    .container-icons {
+        width: 100%;
+
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(4, 54px);
+            margin: 50px auto;
+            gap: 15px;
+            justify-content: center;
+            padding: 0;
+
+            a {
+                color: $sibar-icon;
+                text-decoration: none;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            ion-icon {
+                padding: 15px;
+                border: 2px solid $sibar-icon;
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                max-width: 20px;
+                max-height: 20px;
+                transition: 300ms ease-out;
+
+                &:hover {
+                    color: $color-primary;
+                    border: 1px solid $color-primary;
+                    transform: scale(1.2);
+                    transition: 300ms ease-in;
+                }
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto 0;
+            background-color: $color-primary;
+            border-radius: 40px;
+            max-width: 100%;
+            height: 50px;
+            border: 3px solid $color-primary;
+            transition: 800ms;
+
+            a {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                text-decoration: none;
+            }
+
+            p {
+                color: $background;
+                margin: 0 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            ion-icon {
+                color: $background;
+                width: 20px;
+                height: 20px;
+            }
+
+            &:hover {
+                border-radius: 40px;
+                background-color: transparent;
+                transform: scale(1.07);
+                transition: 300ms ease-in;
+
+                &:hover p {
+                    color: $color-primary;
+                }
+                &:hover ion-icon {
+                    color: $color-primary;
+                }
+
+                transition: 500ms;
+            }
+        }
+    }
+}
+
+@media (max-width: 1555px) {
+    .sidebar-left {
+        max-width: 350px;
+        margin: 30px;
+        top: 2%;
+
+        .container-icons .icons {
+            margin: 20px auto;
+        }
+
+        .img img {
+            margin: 20px auto;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .sidebar-left {
+        position: relative;
+        display: grid;
+        margin: 30px auto;
+    }
+}

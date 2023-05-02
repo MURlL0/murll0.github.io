@@ -1,0 +1,180 @@
+.services {
+    height: 100vh;
+    grid-area: services;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    .container {
+        width: 100%;
+        display: grid;
+        margin: 0 auto;
+        padding: 0 100px;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+            padding: 30px 0;
+            margin-top: 100px;
+
+            h1 {
+                font-size: 4rem;
+
+                span {
+                    color: $color-primary;
+                }
+            }
+        }
+        .container-img {
+            max-width: 1100px;
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+            gap: 30px;
+
+            div {
+                width: 145px;
+                height: 145px;
+                border: 2px solid $sibar-icon;
+                padding: 45px;
+                border-radius: 50%;
+                margin: 0 auto;
+
+                &:hover:nth-child(1),
+                &:hover:nth-child(2),
+                &:hover:nth-child(3),
+                &:hover:nth-child(4) {
+                    filter: grayscale(0);
+                    transition: 500ms ease-in;
+                    border: 2px solid;
+                    font-weight: 600;
+                    transform: scale(1.07);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                &:first-child {
+                    color: #fc490b;
+                    filter: grayscale(100%);
+                    transition: 700ms ease-in;
+                }
+                &:nth-child(2) {
+                    color: #2196f3;
+                    filter: grayscale(100%);
+                    transition: 700ms ease-in;
+                }
+                &:nth-child(3) {
+                    color: #cc6699;
+                    filter: grayscale(100%);
+                    transition: 700ms ease-in;
+                }
+                &:nth-child(4) {
+                    color: #f4511e;
+                    filter: grayscale(100%);
+                    transition: 700ms ease-in;
+                }
+            }
+        }
+        .title2 {
+            padding: 30px 0;
+
+            h1 {
+                font-size: 4rem;
+
+                span {
+                    color: $color-primary;
+                }
+            }
+        }
+        .container-estudando {
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+            gap: 30px;
+            margin: 0 auto;
+
+            div {
+                width: 145px;
+                height: 145px;
+                border: 2px solid $sibar-icon;
+                padding: 45px;
+                border-radius: 50%;
+                margin: 0 auto;
+
+                &:hover:nth-child(1),
+                &:hover:nth-child(2) {
+                    filter: grayscale(0);
+                    transition: 500ms ease-in;
+                    border: 2px solid;
+                    font-weight: 600;
+                    transform: scale(1.07);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                p {
+                    font-size: 1.3rem;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                &:first-child {
+                    color: #f7df1e;
+                    filter: grayscale(100%);
+                    transition: 700ms ease-in;
+                }
+                &:nth-child(2) {
+                    color: #80deea;
+                    filter: grayscale(100%);
+                    transition: 700ms ease-in;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1555px) {
+    .services {
+        .container {
+            gap: 5px;
+
+            .title {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 0;
+        width: 100vw;
+
+        .container {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .container-img {
+                align-items: center;
+                gap: 5px;
+                row-gap: 20px;
+                justify-content: center;
+            }
+            .container-estudando {
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+}
