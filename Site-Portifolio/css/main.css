@@ -18,7 +18,7 @@ body {
 .structured {
   display: grid;
   grid-template-columns: minmax(300px, 400px) 3fr minmax(100px, 200px);
-  grid-template-areas: "sidebar-left content sidenav-right" "sidebar-left about sidenav-right" "sidebar-left services sidenav-right";
+  grid-template-areas: "sidebar-left content sidenav-right" "sidebar-left about sidenav-right" "sidebar-left services sidenav-right" "sidebar-left skill sidenav-right";
 }
 
 @media (max-width: 1555px) {
@@ -32,7 +32,7 @@ body {
   }
   html .structured {
     grid-template-columns: minmax(300px, 768px);
-    grid-template-areas: "sidebar-left" "sidenav-right" "content " "about" "services";
+    grid-template-areas: "sidebar-left" "sidenav-right" "content " "about" "services" "skill";
   }
 }
 .sidebar-left {
@@ -369,9 +369,17 @@ body {
   height: 100vh;
   grid-area: services;
   margin: 0 auto;
+  display: grid;
+  align-content: center;
+}
+
+.skill {
+  height: 100vh;
+  grid-area: skill;
+  margin: 0 auto;
   padding: 0 50px;
 }
-.services .container {
+.skill .container {
   width: 100%;
   display: grid;
   margin: 0 auto;
@@ -379,24 +387,24 @@ body {
   align-items: center;
   gap: 20px;
 }
-.services .container .title {
+.skill .container .title {
   padding: 30px 0;
   margin-top: 100px;
 }
-.services .container .title h1 {
+.skill .container .title h1 {
   font-size: 4rem;
 }
-.services .container .title h1 span {
+.skill .container .title h1 span {
   color: #28e98c;
 }
-.services .container .container-img {
+.skill .container .container-img {
   max-width: 1100px;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 30px;
 }
-.services .container .container-img div {
+.skill .container .container-img div {
   width: 145px;
   height: 145px;
   border: 2px solid #565656;
@@ -404,59 +412,62 @@ body {
   border-radius: 50%;
   margin: 0 auto;
 }
-.services .container .container-img div:hover:nth-child(1), .services .container .container-img div:hover:nth-child(2), .services .container .container-img div:hover:nth-child(3), .services .container .container-img div:hover:nth-child(4) {
+.skill .container .container-img div:hover:nth-child(1), .skill .container .container-img div:hover:nth-child(2), .skill .container .container-img div:hover:nth-child(3), .skill .container .container-img div:hover:nth-child(4) {
   filter: grayscale(0);
   transition: 500ms ease-in;
   border: 2px solid;
-  font-weight: 600;
-  transform: scale(1.07);
 }
-.services .container .container-img div img {
+.skill .container .container-img div:hover:nth-child(1):hover img, .skill .container .container-img div:hover:nth-child(2):hover img, .skill .container .container-img div:hover:nth-child(3):hover img, .skill .container .container-img div:hover:nth-child(4):hover img {
+  transform: scale(1.4);
+  transition: 800ms ease-in;
+}
+.skill .container .container-img div img {
   width: 100%;
   height: 100%;
+  transition: 800ms ease-out;
 }
-.services .container .container-img div p {
+.skill .container .container-img div p {
   font-size: 1.3rem;
   text-align: center;
   padding: 20px 0;
 }
-.services .container .container-img div:first-child {
+.skill .container .container-img div:first-child {
   color: #fc490b;
   filter: grayscale(100%);
   transition: 700ms ease-in;
 }
-.services .container .container-img div:nth-child(2) {
+.skill .container .container-img div:nth-child(2) {
   color: #2196f3;
   filter: grayscale(100%);
   transition: 700ms ease-in;
 }
-.services .container .container-img div:nth-child(3) {
+.skill .container .container-img div:nth-child(3) {
   color: #cc6699;
   filter: grayscale(100%);
   transition: 700ms ease-in;
 }
-.services .container .container-img div:nth-child(4) {
+.skill .container .container-img div:nth-child(4) {
   color: #f4511e;
   filter: grayscale(100%);
   transition: 700ms ease-in;
 }
-.services .container .title2 {
+.skill .container .title2 {
   padding: 30px 0;
 }
-.services .container .title2 h1 {
+.skill .container .title2 h1 {
   font-size: 4rem;
 }
-.services .container .title2 h1 span {
+.skill .container .title2 h1 span {
   color: #28e98c;
 }
-.services .container .container-estudando {
+.skill .container .container-estudando {
   max-width: 1100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 30px;
   margin: 0 auto;
 }
-.services .container .container-estudando div {
+.skill .container .container-estudando div {
   width: 145px;
   height: 145px;
   border: 2px solid #565656;
@@ -464,60 +475,63 @@ body {
   border-radius: 50%;
   margin: 0 auto;
 }
-.services .container .container-estudando div:hover:nth-child(1), .services .container .container-estudando div:hover:nth-child(2) {
+.skill .container .container-estudando div:hover:nth-child(1), .skill .container .container-estudando div:hover:nth-child(2) {
   filter: grayscale(0);
   transition: 500ms ease-in;
   border: 2px solid;
-  font-weight: 600;
-  transform: scale(1.07);
 }
-.services .container .container-estudando div img {
+.skill .container .container-estudando div:hover:nth-child(1):hover img, .skill .container .container-estudando div:hover:nth-child(2):hover img {
+  transform: scale(1.4);
+  transition: 800ms ease-in;
+}
+.skill .container .container-estudando div img {
   width: 100%;
   height: 100%;
+  transition: 800ms ease-out;
 }
-.services .container .container-estudando div p {
+.skill .container .container-estudando div p {
   font-size: 1.3rem;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
 }
-.services .container .container-estudando div:first-child {
+.skill .container .container-estudando div:first-child {
   color: #f7df1e;
   filter: grayscale(100%);
   transition: 700ms ease-in;
 }
-.services .container .container-estudando div:nth-child(2) {
+.skill .container .container-estudando div:nth-child(2) {
   color: #80deea;
   filter: grayscale(100%);
   transition: 700ms ease-in;
 }
 
 @media (max-width: 1555px) {
-  .services .container {
+  .skill .container {
     gap: 5px;
   }
-  .services .container .title {
+  .skill .container .title {
     margin-top: 0;
   }
 }
 @media (max-width: 768px) {
-  .services {
+  .skill {
     padding: 0;
     width: 100vw;
   }
-  .services .container {
+  .skill .container {
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .services .container .container-img {
+  .skill .container .container-img {
     align-items: center;
     gap: 5px;
     row-gap: 20px;
     justify-content: center;
   }
-  .services .container .container-estudando {
+  .skill .container .container-estudando {
     align-items: center;
     gap: 5px;
   }

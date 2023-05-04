@@ -5,7 +5,8 @@
     grid-template-areas:
         'sidebar-left content sidenav-right'
         'sidebar-left about sidenav-right'
-        'sidebar-left services sidenav-right';
+        'sidebar-left services sidenav-right'
+        'sidebar-left skill sidenav-right';
 }
 
 @media (max-width: 1555px) {
@@ -25,7 +26,8 @@
                 'sidenav-right'
                 'content '
                 'about'
-                'services';
+                'services'
+                'skill';
         }
     }
 }
