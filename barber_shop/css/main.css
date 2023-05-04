@@ -592,7 +592,7 @@ body {
           backdrop-filter: blur(15px);
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.4);
-  transition: 500ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .home .dropdown a {
   color: white;
