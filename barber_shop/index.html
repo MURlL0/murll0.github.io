@@ -15,6 +15,38 @@
 <body>
   <section class="home" id="home">
     <img class="logo" src="img/logo.png" alt="logo">
+
+    <div class="hamburger">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" class="toggle" onclick="openMenu()">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </label>
+    </div>
+
+    <nav class="dropdown">
+      <ul class="menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">Sobre</a>
+        </li>
+        <li>
+          <a href="#services">Serviços</a>
+        </li>
+        <li>
+          <a href="#agendamento">Agendamento</a>
+        </li>
+        <li>
+          <a href="#gallery">Galeria</a>
+        </li>
+        <li>
+          <a href="#location">Localização</a>
+        </li>
+      </ul>
+    </nav>
     <nav class="navbar">
       <ul class="menu">
         <li>
@@ -54,7 +86,7 @@
       <img src="img/much-img.png" alt="bigodinho">
     </div>
 
-    <a href="#home"><ion-icon name="chevron-up-circle-outline"></ion-icon></a>
+    <a href="#home"><ion-icon name="chevron-up-circle-outline" class="back"></ion-icon></a>
 
 
 
