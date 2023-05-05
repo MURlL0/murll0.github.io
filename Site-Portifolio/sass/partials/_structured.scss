@@ -15,12 +15,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     html {
         font-size: 50%;
 
         .structured {
-            grid-template-columns: minmax(300px, 768px);
+            grid-template-columns: minmax(300px, 1000px);
             grid-template-areas:
                 'sidebar-left'
                 'sidenav-right'

@@ -26,12 +26,12 @@ body {
     font-size: 58%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   html {
     font-size: 50%;
   }
   html .structured {
-    grid-template-columns: minmax(300px, 768px);
+    grid-template-columns: minmax(300px, 1000px);
     grid-template-areas: "sidebar-left" "sidenav-right" "content " "about" "services" "skill";
   }
 }
@@ -193,7 +193,7 @@ body {
     margin: 20px auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .sidebar-left {
     position: relative;
     display: grid;
@@ -248,7 +248,7 @@ body {
     margin-top: 150px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .home {
     height: auto;
     justify-content: center;
@@ -296,7 +296,7 @@ body {
   height: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .sidenav-right {
     display: none;
   }
@@ -348,7 +348,7 @@ body {
     max-width: 70%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .about {
     height: auto;
     padding: 0 25px;
@@ -514,7 +514,7 @@ body {
     margin-top: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .skill {
     padding: 0;
     width: 100vw;
