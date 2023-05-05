@@ -30,6 +30,7 @@
             margin: 0 auto;
             grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
             gap: 30px;
+            justify-content: center;
 
             div {
                 width: 145px;

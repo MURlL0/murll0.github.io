@@ -133,7 +133,7 @@ body {
 .sidebar-left .container-icons .icons ion-icon:hover {
   color: #28e98c;
   border: 1px solid #28e98c;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 300ms ease-in;
 }
 .sidebar-left .container-icons .button {
@@ -403,6 +403,7 @@ body {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 30px;
+  justify-content: center;
 }
 .skill .container .container-img div {
   width: 145px;
