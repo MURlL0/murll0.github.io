@@ -35,7 +35,7 @@
 
         &:hover {
             transform: scale(1.1);
-            transition: transform 1000ms;
+            transition: transform 1000ms; 
             color: white;
             font-size: 1.8rem;
         }
@@ -67,7 +67,7 @@
         span {
             text-align: center;
             color: white;
-            width: 100%;
+            width: 80%;
             margin: 70px auto;
         }
     }
