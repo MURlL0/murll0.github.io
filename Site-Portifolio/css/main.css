@@ -232,10 +232,9 @@ body {
   line-height: 25px;
 }
 .home p:last-child:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
   transition: transform 0.8s ease-in-out;
   color: white;
-  font-size: 2rem;
 }
 
 @media (max-width: 2000px) {
@@ -250,7 +249,9 @@ body {
 }
 @media (max-width: 1000px) {
   .home {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     margin: 0 auto;
     align-items: center;
@@ -351,7 +352,7 @@ body {
 }
 @media (max-width: 1000px) {
   .about {
-    height: auto;
+    height: 100vh;
     padding: 0 25px;
     margin: 0 auto;
   }
