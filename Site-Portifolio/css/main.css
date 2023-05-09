@@ -17,7 +17,7 @@ body {
 
 .structured {
   display: grid;
-  grid-template-columns: minmax(300px, 400px) 3fr minmax(100px, 200px);
+  grid-template-columns: minmax(300px, 400px) 1fr minmax(100px, 200px);
   grid-template-areas: "sidebar-left content sidenav-right" "sidebar-left about sidenav-right" "sidebar-left services sidenav-right" "sidebar-left skill sidenav-right";
 }
 
