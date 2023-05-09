@@ -375,7 +375,7 @@ body {
 .services {
   height: 100vh;
   grid-area: services;
-  margin: 0 auto;
+  padding: 0 100px;
   display: grid;
   align-content: center;
 }
