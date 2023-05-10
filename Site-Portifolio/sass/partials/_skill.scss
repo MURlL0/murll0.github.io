@@ -194,3 +194,19 @@
         }
     }
 }
+@media (max-width: 1000px) {
+    .skill {
+        height: auto;
+        padding: 40px 0;
+    }
+}
+@media (max-width: 768px) {
+    .skill {
+        height: 100vh;
+    }
+}
+@media (max-height: 600px) {
+    .skill {
+        height: auto;
+    }
+}

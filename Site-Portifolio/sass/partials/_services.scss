@@ -5,3 +5,18 @@
     display: grid;
     align-content: center;
 }
+@media (max-height: 600px) {
+    .services {
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .services {
+        height: 100vh;
+    }
+}
+@media (max-width: 1000px) {
+    .services {
+        height: auto;
+    }
+}

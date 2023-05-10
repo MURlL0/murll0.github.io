@@ -20,7 +20,7 @@
         font-size: 50%;
 
         .structured {
-            grid-template-columns: minmax(300px, 1000px);
+            grid-template-columns: 1fr;
             grid-template-areas:
                 'sidebar-left'
                 'sidenav-right'

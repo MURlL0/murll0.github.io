@@ -5,14 +5,14 @@
     grid-area: sidebar-left;
     border: 1px solid $sibar-icon;
     border-radius: 30px;
-    padding: 30px 30px;
+    padding: 30px 50px;
     cursor: default;
     margin-left: 57px;
     top: 10%;
 
     .title {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         h1 {
@@ -37,12 +37,10 @@
     }
 
     .img {
-        display: grid;
         margin: 0 auto;
-        max-width: 100%;
+        width: 100%;
 
         img {
-            max-width: 250px;
             width: 100%;
             margin: 30px auto;
             border-radius: 20px;
@@ -77,13 +75,19 @@
 
     .container-icons {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .icons {
             display: grid;
-            grid-template-columns: repeat(4, 54px);
-            margin: 50px auto;
-            gap: 15px;
+            text-align: center;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 30px auto;
+            align-items: center;
             justify-content: center;
+            width: 100%;
             padding: 0;
 
             a {
@@ -99,10 +103,8 @@
                 padding: 15px;
                 border: 2px solid $sibar-icon;
                 border-radius: 50%;
-                width: 100%;
-                height: 100%;
-                max-width: 20px;
-                max-height: 20px;
+                width: 20px;
+                height: 20px;
                 transition: 300ms ease-out;
 
                 &:hover {
@@ -118,10 +120,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 40px auto 0;
+            margin: 0 auto;
             background-color: $color-primary;
             border-radius: 40px;
-            max-width: 100%;
+            width: 100%;
             height: 50px;
             border: 3px solid $color-primary;
             transition: 800ms;
@@ -159,8 +161,6 @@
                 &:hover ion-icon {
                     color: $color-primary;
                 }
-
-                transition: 500ms;
             }
         }
     }
