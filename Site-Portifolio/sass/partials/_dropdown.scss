@@ -133,6 +133,16 @@
 @media (max-width: 1000px) {
     .dropdown {
         visibility: visible;
+        .menu {
+            li {
+                a {
+                    color: rgba(255, 255, 255, 0.644) !important;
+                    ion-icon {
+                        color: $color-primary !important;
+                    }
+                }
+            }
+        }
     }
     .hamburger {
         display: block;
@@ -152,15 +162,5 @@
     .dropdown {
         max-width: 180px;
         justify-content: start;
-        .menu {
-            li {
-                a {
-                    color: rgba(255, 255, 255, 0.644) !important;
-                    ion-icon {
-                        color: $color-primary !important;
-                    }
-                }
-            }
-        }
     }
 }

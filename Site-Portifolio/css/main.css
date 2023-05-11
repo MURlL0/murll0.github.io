@@ -737,6 +737,12 @@ body {
   .dropdown {
     visibility: visible;
   }
+  .dropdown .menu li a {
+    color: rgba(255, 255, 255, 0.644) !important;
+  }
+  .dropdown .menu li a ion-icon {
+    color: #28e98c !important;
+  }
   .hamburger {
     display: block;
   }
@@ -755,11 +761,5 @@ body {
   .dropdown {
     max-width: 180px;
     justify-content: start;
-  }
-  .dropdown .menu li a {
-    color: rgba(255, 255, 255, 0.644) !important;
-  }
-  .dropdown .menu li a ion-icon {
-    color: #28e98c !important;
   }
 }/*# sourceMappingURL=main.css.map */
