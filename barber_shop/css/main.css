@@ -566,7 +566,12 @@ body {
   }
 }
 @media (max-height: 670px) {
-  .location {
+  .location,
+  .home,
+  .about,
+  .gallery,
+  .services,
+  .agendamento {
     height: auto;
   }
 }
