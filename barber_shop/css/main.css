@@ -565,6 +565,11 @@ body {
     grid-template-columns: repeat(2, minmax(100px, 200px));
   }
 }
+@media (max-height: 670px) {
+  .location {
+    height: auto;
+  }
+}
 .footer {
   width: 100%;
   height: auto;
