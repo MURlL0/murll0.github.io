@@ -46,6 +46,7 @@ body {
   cursor: default;
   margin-left: 57px;
   top: 10%;
+  font-family: "Roboto Slab", serif;
 }
 .sidebar-left .title {
   display: flex;
@@ -54,6 +55,7 @@ body {
 }
 .sidebar-left .title h1 {
   font-size: 4rem;
+  font-weight: 400;
 }
 .sidebar-left .title h1:hover {
   color: #28e98c;
@@ -61,7 +63,7 @@ body {
 .sidebar-left .title span {
   width: 60px;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   right: 0;
   text-align: center;
 }
@@ -86,6 +88,7 @@ body {
 .sidebar-left .contact {
   text-align: center;
   margin-top: 10px;
+  font-weight: 100;
 }
 .sidebar-left .contact p,
 .sidebar-left .contact a {
@@ -96,6 +99,7 @@ body {
 .sidebar-left .contact p:hover,
 .sidebar-left .contact a:hover {
   color: #28e98c;
+  font-weight: 400;
 }
 .sidebar-left .contact p {
   margin-top: 10px;
@@ -237,6 +241,15 @@ body {
   transition: transform 0.8s ease-in-out;
   color: white;
 }
+.home p:last-child:hover:hover strong {
+  color: #28e98c;
+  text-decoration: none;
+}
+.home p:last-child strong {
+  text-decoration: underline;
+  font-weight: 100;
+  color: rgb(161, 161, 161);
+}
 
 @media (max-width: 2000px) {
   .home p:first-child {
@@ -266,7 +279,6 @@ body {
   }
   .home p:last-child {
     margin: 100px auto;
-    color: white;
   }
 }
 @media (max-width: 768px) {
@@ -347,10 +359,18 @@ body {
   line-height: 25px;
 }
 .about span:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: transform 1000ms;
   color: white;
-  font-size: 1.8rem;
+}
+.about span:hover:hover strong {
+  color: #28e98c;
+  text-decoration: none;
+}
+.about span strong {
+  text-decoration: underline;
+  font-weight: 100;
+  color: rgb(161, 161, 161);
 }
 
 @media (max-width: 1555px) {
@@ -373,7 +393,6 @@ body {
   }
   .about span {
     text-align: center;
-    color: white;
     width: 80%;
     margin: 70px auto;
   }

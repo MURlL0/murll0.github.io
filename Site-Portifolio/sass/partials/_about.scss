@@ -34,10 +34,19 @@
         line-height: 25px;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.2);
             transition: transform 1000ms;
             color: white;
-            font-size: 1.8rem;
+
+            &:hover strong {
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+        strong {
+            text-decoration: underline;
+            font-weight: 100;
+            color: rgb(161, 161, 161);
         }
     }
 }
@@ -66,7 +75,7 @@
 
         span {
             text-align: center;
-            color: white;
+
             width: 80%;
             margin: 70px auto;
         }
