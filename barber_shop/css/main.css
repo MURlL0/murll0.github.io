@@ -132,7 +132,7 @@ body {
   }
 }
 .about {
-  height: auto;
+  height: 100vh;
   background-color: #917758;
   display: grid;
   grid-template-columns: minmax(300px, 600px) minmax(600px, 1fr);
@@ -565,7 +565,7 @@ body {
     grid-template-columns: repeat(2, minmax(100px, 200px));
   }
 }
-@media (max-height: 670px) {
+@media (max-height: 700px) {
   .location,
   .home,
   .about,
