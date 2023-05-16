@@ -19,6 +19,10 @@
         font-size: 3rem;
         margin: 50px auto;
         color: $color-primary;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .nav {
@@ -30,24 +34,19 @@
             gap: 40px;
 
             li {
+                &:hover {
+                    transform: scale(1.08);
+                }
                 a {
                     text-decoration: none;
-                    color: $sibar-icon;
+                    color: rgba(255, 255, 255, 0.693);
                     text-align: center;
                     font-size: 2.5rem;
                     padding: 5px;
-
-                    &:active {
-                        color: white;
-
-                        &:active ion-icon {
-                            color: $color-primary;
-                        }
-                    }
                 }
 
                 ion-icon {
-                    color: $sibar-icon;
+                    color: $color-primary;
                     width: 30px;
                     height: 30px;
                     margin-bottom: -5px;
@@ -76,6 +75,7 @@
         justify-content: center;
         gap: 10px;
         transition-duration: 0.5s;
+        cursor: pointer;
     }
 
     .bars {
@@ -117,8 +117,13 @@
     }
 
     #checkbox:checked + .toggle {
-        transition-duration: 0.5s;
+        transition-duration: 700ms;
         transform: rotate(180deg);
+
+        &:hover {
+            transform: rotate(270deg);
+            transition: transform 700ms;
+        }
     }
 }
 
@@ -130,24 +135,16 @@
     left: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1155px) {
     .dropdown {
         visibility: visible;
-        .menu {
-            li {
-                a {
-                    color: rgba(255, 255, 255, 0.644) !important;
-                    ion-icon {
-                        color: $color-primary !important;
-                    }
-                }
-            }
-        }
     }
+
     .hamburger {
         display: block;
     }
 }
+
 @media (max-width: 880px) {
     .dropdown {
         max-width: 250px;

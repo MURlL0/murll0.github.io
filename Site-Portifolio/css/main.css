@@ -17,7 +17,7 @@ body {
 
 .structured {
   display: grid;
-  grid-template-columns: minmax(300px, 400px) 1fr minmax(100px, 200px);
+  grid-template-columns: minmax(300px, 400px) 1fr minmax(50px, 200px);
   grid-template-areas: "sidebar-left content sidenav-right" "sidebar-left about sidenav-right" "sidebar-left services sidenav-right" "sidebar-left skill sidenav-right";
 }
 
@@ -321,7 +321,7 @@ body {
   height: 25px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1155px) {
   .sidenav-right {
     display: none;
   }
@@ -640,6 +640,9 @@ body {
   margin: 50px auto;
   color: #28e98c;
 }
+.dropdown span:hover {
+  text-decoration: underline;
+}
 .dropdown .nav .menu {
   list-style: none;
   display: flex;
@@ -647,21 +650,18 @@ body {
   flex-direction: column;
   gap: 40px;
 }
+.dropdown .nav .menu li:hover {
+  transform: scale(1.08);
+}
 .dropdown .nav .menu li a {
   text-decoration: none;
-  color: #565656;
+  color: rgba(255, 255, 255, 0.693);
   text-align: center;
   font-size: 2.5rem;
   padding: 5px;
 }
-.dropdown .nav .menu li a:active {
-  color: white;
-}
-.dropdown .nav .menu li a:active:active ion-icon {
-  color: #28e98c;
-}
 .dropdown .nav .menu li ion-icon {
-  color: #565656;
+  color: #28e98c;
   width: 30px;
   height: 30px;
   margin-bottom: -5px;
@@ -688,6 +688,7 @@ body {
   justify-content: center;
   gap: 10px;
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 .hamburger .bars {
   width: 100%;
@@ -721,8 +722,12 @@ body {
   transition-duration: 0.5s;
 }
 .hamburger #checkbox:checked + .toggle {
-  transition-duration: 0.5s;
+  transition-duration: 700ms;
   transform: rotate(180deg);
+}
+.hamburger #checkbox:checked + .toggle:hover {
+  transform: rotate(270deg);
+  transition: transform 700ms;
 }
 
 .dropdown {
@@ -733,15 +738,9 @@ body {
   left: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1155px) {
   .dropdown {
     visibility: visible;
-  }
-  .dropdown .menu li a {
-    color: rgba(255, 255, 255, 0.644) !important;
-  }
-  .dropdown .menu li a ion-icon {
-    color: #28e98c !important;
   }
   .hamburger {
     display: block;

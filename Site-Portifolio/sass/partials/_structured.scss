@@ -1,6 +1,6 @@
 .structured {
     display: grid;
-    grid-template-columns: minmax(300px, 400px) 1fr minmax(100px, 200px);
+    grid-template-columns: minmax(300px, 400px) 1fr minmax(50px, 200px);
 
     grid-template-areas:
         'sidebar-left content sidenav-right'
