@@ -22,21 +22,43 @@ body {
 }
 
 .script {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  top: 10rem;
-  height: 2rem;
   z-index: 1000;
 }
 .script noscript {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  font-size: 3.5rem;
-  color: #28e98c;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  border-radius: 2rem;
+}
+.script noscript p {
+  color: #28e98c;
+  font-size: 3rem;
+  transition: all 300ms ease-out;
+  position: relative;
+}
+.script noscript p:hover {
+  color: white;
+  transition: all 300ms ease-in;
+  transform: scale(1.1);
+}
+.script noscript p::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: #28e98c;
+  left: 0;
+  bottom: 0;
+  transition: all 300ms ease-in;
+}
+.script noscript p:hover::before {
+  width: 100%;
+  transition: all 300ms ease-out;
 }
 
 @media (max-width: 1555px) {

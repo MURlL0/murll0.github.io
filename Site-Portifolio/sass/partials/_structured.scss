@@ -10,20 +10,46 @@
 }
 
 .script {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    top: 10rem;
-    height: 2rem;
     z-index: 1000;
 
     noscript {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
         position: fixed;
-        font-size: 3.5rem;
-        color: $color-primary;
         backdrop-filter: blur(15px);
-        border-radius: 2rem;
+
+        p {
+            color: $color-primary;
+            font-size: 3rem;
+            transition: all 300ms ease-out;
+            position: relative;
+            
+
+            &:hover{
+              color: white;
+              transition: all 300ms ease-in;
+              transform: scale(1.1);
+            }
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 2px;
+                position: absolute;
+                background-color: $color-primary;
+                left: 0;
+                bottom: 0;
+                transition: all 300ms ease-in;
+            }
+            &:hover::before {
+                width: 100%;
+                transition: all 300ms ease-out;
+            }
+        }
     }
 }
 
