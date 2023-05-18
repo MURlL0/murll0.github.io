@@ -21,6 +21,24 @@ body {
   grid-template-areas: "sidebar-left content sidenav-right" "sidebar-left about sidenav-right" "sidebar-left services sidenav-right" "sidebar-left skill sidenav-right";
 }
 
+.script {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  height: 2rem;
+  z-index: 1000;
+}
+.script noscript {
+  position: fixed;
+  font-size: 3.5rem;
+  color: #28e98c;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 2rem;
+}
+
 @media (max-width: 1555px) {
   html {
     font-size: 58%;
