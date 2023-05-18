@@ -11,3 +11,7 @@ function openClose() {
         dropdown.classList.add('open');
     }
 }
+
+let toggle = document.querySelector('.toggle');
+
+toggle.onclick = openClose;
