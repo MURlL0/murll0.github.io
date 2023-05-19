@@ -41,17 +41,20 @@
     .img {
         margin: 0 auto;
         width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 30px auto;
 
         img {
-            width: 100%;
-            margin: 30px auto;
-            border-radius: 20px;
+            width: 100%;   
             filter: grayscale(100%);
             transition: 800ms;
+
 
             &:hover {
                 filter: grayscale(0%);
                 transition: 700ms;
+                transform: scale(1.07);
             }
         }
     }

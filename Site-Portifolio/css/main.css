@@ -113,17 +113,19 @@ body {
 .sidebar-left .img {
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 30px auto;
 }
 .sidebar-left .img img {
   width: 100%;
-  margin: 30px auto;
-  border-radius: 20px;
   filter: grayscale(100%);
   transition: 800ms;
 }
 .sidebar-left .img img:hover {
   filter: grayscale(0%);
   transition: 700ms;
+  transform: scale(1.07);
 }
 .sidebar-left .contact {
   text-align: center;
