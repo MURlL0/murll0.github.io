@@ -4,10 +4,10 @@
     height: 100vh;
 
     h1 {
-        width: 90%;
+        width: 100%;
         margin-top: 200px;
         font-size: 4rem;
-        text-align: end;
+        text-align: center;
 
         p:first-child {
             max-width: 100%;
@@ -25,7 +25,7 @@
 
     span {
         display: block;
-        width: 70%;
+        width: 80%;
         margin: 70px auto;
         font-size: 1.6rem;
         text-align: center;
@@ -35,18 +35,37 @@
 
         &:hover {
             transform: scale(1.2);
-            transition: transform 1000ms;
+            transition: transform 800ms;
             color: white;
 
             &:hover strong {
                 color: $color-primary;
-                text-decoration: none;
+                transition: all 800ms ease-in;
+            }
+            &:hover strong::before {
+                width: 0;
             }
         }
         strong {
-            text-decoration: underline;
+            position: relative;
             font-weight: 100;
             color: rgb(161, 161, 161);
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: rgb(161, 161, 161);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 400ms ease-in;
+            }
+            &:hover::before {
+                width: 0;
+                transition: all 400ms ease-in-out;
+                background-color: $color-primary;
+            }
         }
     }
 }

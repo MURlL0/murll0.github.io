@@ -278,17 +278,36 @@ body {
 }
 .home p:last-child:hover {
   transform: scale(1.3);
-  transition: transform 0.8s ease-in-out;
+  transition: transform 800ms ease-in-out;
   color: white;
 }
 .home p:last-child:hover:hover strong {
   color: #28e98c;
-  text-decoration: none;
+  width: 0;
+  transition: all 800ms ease-in-out;
+}
+.home p:last-child:hover:hover strong::before {
+  width: 0;
 }
 .home p:last-child strong {
-  text-decoration: underline;
   font-weight: 100;
   color: rgb(161, 161, 161);
+  position: relative;
+}
+.home p:last-child strong::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(161, 161, 161);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 400ms ease-in;
+}
+.home p:last-child strong:hover::before {
+  width: 0;
+  transition: all 400ms ease-in-out;
+  background-color: #28e98c;
 }
 
 @media (max-width: 2000px) {
@@ -372,10 +391,10 @@ body {
   height: 100vh;
 }
 .about h1 {
-  width: 90%;
+  width: 100%;
   margin-top: 200px;
   font-size: 4rem;
-  text-align: end;
+  text-align: center;
 }
 .about h1 p:first-child {
   max-width: 100%;
@@ -390,7 +409,7 @@ body {
 }
 .about span {
   display: block;
-  width: 70%;
+  width: 80%;
   margin: 70px auto;
   font-size: 1.6rem;
   text-align: center;
@@ -400,17 +419,35 @@ body {
 }
 .about span:hover {
   transform: scale(1.2);
-  transition: transform 1000ms;
+  transition: transform 800ms;
   color: white;
 }
 .about span:hover:hover strong {
   color: #28e98c;
-  text-decoration: none;
+  transition: all 800ms ease-in;
+}
+.about span:hover:hover strong::before {
+  width: 0;
 }
 .about span strong {
-  text-decoration: underline;
+  position: relative;
   font-weight: 100;
   color: rgb(161, 161, 161);
+}
+.about span strong::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(161, 161, 161);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 400ms ease-in;
+}
+.about span strong:hover::before {
+  width: 0;
+  transition: all 400ms ease-in-out;
+  background-color: #28e98c;
 }
 
 @media (max-width: 1555px) {

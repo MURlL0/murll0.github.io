@@ -33,17 +33,38 @@
 
         &:hover {
             transform: scale(1.3);
-            transition: transform 0.8s ease-in-out;
+            transition: transform 800ms ease-in-out;
             color: white;
+
             &:hover strong {
                 color: $color-primary;
-                text-decoration: none;
+                width: 0;
+                transition: all 800ms ease-in-out;
+            }
+            &:hover strong::before {
+                width: 0;
             }
         }
         strong {
-            text-decoration: underline;
             font-weight: 100;
             color: rgb(161, 161, 161);
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: rgb(161, 161, 161);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 400ms ease-in;
+            }
+            &:hover::before {
+                width: 0;
+                transition: all 400ms ease-in-out;
+                background-color: $color-primary;
+            }
         }
     }
 }
