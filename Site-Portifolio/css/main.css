@@ -236,9 +236,6 @@ body {
   .sidebar-left .container-icons .icons {
     margin: 20px auto;
   }
-  .sidebar-left .img img {
-    margin: 20px auto;
-  }
 }
 @media (max-width: 1000px) {
   .sidebar-left {
