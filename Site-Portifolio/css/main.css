@@ -715,9 +715,25 @@ body {
   font-size: 3rem;
   margin: 50px auto;
   color: #28e98c;
+  position: relative;
+  transition: all 500ms ease-in-out;
 }
 .dropdown span:hover {
-  text-decoration: underline;
+  transform: scale(1.08);
+  transition: all 500ms ease-in-out;
+}
+.dropdown span:hover::before {
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+.dropdown span::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  background-color: #28e98c;
+  transition: all 500ms ease-in-out;
 }
 .dropdown .nav .menu {
   list-style: none;
@@ -726,8 +742,12 @@ body {
   flex-direction: column;
   gap: 40px;
 }
+.dropdown .nav .menu li {
+  transition: all 500ms ease-in-out;
+}
 .dropdown .nav .menu li:hover {
   transform: scale(1.08);
+  transition: all 500ms ease-in-out;
 }
 .dropdown .nav .menu li a {
   text-decoration: none;
@@ -735,6 +755,21 @@ body {
   text-align: center;
   font-size: 2.5rem;
   padding: 5px;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.dropdown .nav .menu li a:hover::before {
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+.dropdown .nav .menu li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  background-color: #28e98c;
+  transition: all 500ms ease-in-out;
 }
 .dropdown .nav .menu li ion-icon {
   color: #28e98c;
