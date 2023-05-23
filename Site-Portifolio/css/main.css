@@ -253,24 +253,24 @@ body {
   padding: 0 100px;
   height: 100vh;
 }
-.home p:first-child {
+.home h1 {
   font-size: 6.3rem;
   width: 90%;
   margin-top: 200px;
   transition: 1000ms;
   text-align: end;
 }
-.home p:first-child span {
+.home h1 span {
   font-size: 6.5rem;
   color: #28e98c;
   transition: 1000ms;
   display: inline-block;
 }
-.home p:first-child span:hover {
+.home h1 span:hover {
   transform: scale(1.09);
   transition: transform 0.8s;
 }
-.home p:last-child {
+.home p {
   font-size: 1.8rem;
   margin: 50px auto;
   width: 50%;
@@ -279,25 +279,25 @@ body {
   text-align: center;
   line-height: 25px;
 }
-.home p:last-child:hover {
+.home p:hover {
   transform: scale(1.3);
   transition: transform 800ms ease-in-out;
   color: white;
 }
-.home p:last-child:hover:hover strong {
+.home p:hover:hover strong {
   color: #28e98c;
   width: 0;
   transition: all 800ms ease-in-out;
 }
-.home p:last-child:hover:hover strong::before {
+.home p:hover:hover strong::before {
   width: 0;
 }
-.home p:last-child strong {
+.home p strong {
   font-weight: 100;
   color: rgb(161, 161, 161);
   position: relative;
 }
-.home p:last-child strong::before {
+.home p strong::before {
   content: "";
   width: 100%;
   height: 1px;
@@ -307,7 +307,7 @@ body {
   left: 0;
   transition: all 400ms ease-in;
 }
-.home p:last-child strong:hover::before {
+.home p strong:hover::before {
   width: 0;
   transition: all 400ms ease-in-out;
   background-color: #28e98c;
@@ -393,20 +393,20 @@ body {
   padding: 0 100px;
   height: 100vh;
 }
-.about h1 {
+.about h2 {
   width: 100%;
   margin-top: 200px;
   font-size: 4rem;
   text-align: center;
 }
-.about h1 span {
+.about h2 span {
   max-width: 100%;
   font-size: 4.5rem;
   color: #28e98c;
   transition: 1000ms;
   display: block;
 }
-.about h1 span:hover {
+.about h2 span:hover {
   transform: scale(1.08);
   transition: transform 0.8s;
 }
@@ -528,11 +528,11 @@ body {
   padding: 30px 0;
   margin-top: 100px;
 }
-.skill .container .title h1 {
+.skill .container .title h2 {
   text-align: center;
   font-size: 4rem;
 }
-.skill .container .title h1 span {
+.skill .container .title h2 span {
   color: #28e98c;
 }
 .skill .container .container-img {
