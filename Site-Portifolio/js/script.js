@@ -15,3 +15,10 @@ function openClose() {
 let toggle = document.querySelector('.toggle');
 
 toggle.onclick = openClose;
+
+let swiper = new Swiper('.mySwiper', {
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+});

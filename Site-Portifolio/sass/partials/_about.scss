@@ -1,11 +1,14 @@
 .about {
     grid-area: about;
-    padding: 0 100px;
     height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h2 {
         width: 100%;
-        margin-top: 200px;
         font-size: 4rem;
         text-align: center;
 
@@ -15,6 +18,7 @@
             color: $color-primary;
             transition: 1000ms;
             display: block;
+            margin: 0 auto;
 
             &:hover {
                 transform: scale(1.08);
@@ -72,31 +76,24 @@
 
 @media (max-width: 1555px) {
     .about {
-        h1 {
-            margin-top: 150px;
-        }
-
         p {
             max-width: 70%;
         }
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 920px) {
     .about {
-        padding: 0 25px;
-        margin: 0 auto;
-        height: auto;
-        h1 {
+        height: 50vh;
+        h2 {
             width: 100%;
             text-align: center;
         }
 
         span {
             text-align: center;
-
             width: 80%;
-            margin: 70px auto;
+            margin: 7rem auto;
         }
     }
 }

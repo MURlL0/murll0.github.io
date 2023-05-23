@@ -1,7 +1,8 @@
 .structured {
+  width: 100%;
     display: grid;
-    grid-template-columns: minmax(300px, 400px) 1fr minmax(50px, 200px);
-
+    grid-template-columns: minmax(300px, 460px) 1fr minmax(50px, 200px);
+    
     grid-template-areas:
         'sidebar-left content sidenav-right'
         'sidebar-left about sidenav-right'
@@ -59,7 +60,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 920px) {
     html {
         font-size: 50%;
 

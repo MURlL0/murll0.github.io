@@ -16,8 +16,9 @@ body {
 }
 
 .structured {
+  width: 100%;
   display: grid;
-  grid-template-columns: minmax(300px, 400px) 1fr minmax(50px, 200px);
+  grid-template-columns: minmax(300px, 460px) 1fr minmax(50px, 200px);
   grid-template-areas: "sidebar-left content sidenav-right" "sidebar-left about sidenav-right" "sidebar-left services sidenav-right" "sidebar-left skill sidenav-right";
 }
 
@@ -66,7 +67,7 @@ body {
     font-size: 58%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 920px) {
   html {
     font-size: 50%;
   }
@@ -76,89 +77,103 @@ body {
   }
 }
 .sidebar-left {
-  width: 100%;
-  max-width: 40rem;
-  position: fixed;
   grid-area: sidebar-left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .sidebar-left {
+    margin: 50px auto;
+  }
+}
+.sidebar-left .container {
+  position: fixed;
+  max-width: 40rem;
   border: 1px solid #565656;
   border-radius: 3rem;
-  padding: 3rem 5rem;
+  padding: 30px 50px;
   cursor: default;
-  margin-left: 5.7rem;
-  top: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
   font-family: "Roboto Slab", serif;
 }
-.sidebar-left .title {
+@media (max-width: 1555px) {
+  .sidebar-left .container {
+    max-width: 350px;
+  }
+}
+.sidebar-left .container .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.sidebar-left .title h1 {
-  font-size: 4rem;
+.sidebar-left .container .title h1 {
+  font-size: 40px;
   font-weight: 400;
 }
-.sidebar-left .title h1:hover {
+.sidebar-left .container .title h1:hover {
   color: #28e98c;
 }
-.sidebar-left .title span {
+.sidebar-left .container .title span {
   width: 60px;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 400;
   right: 0;
   text-align: center;
 }
-.sidebar-left .title span:hover {
+.sidebar-left .container .title span:hover {
   color: #28e98c;
 }
-.sidebar-left .img {
+.sidebar-left .container .img {
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  margin: 3rem auto;
+  margin: 30px auto;
 }
-@media (min-width: 1000px) {
-  .sidebar-left .img {
-    height: 30rem;
+@media (max-width: 1550px) {
+  .sidebar-left .container .img {
+    height: 300px;
   }
 }
-.sidebar-left .img img {
+.sidebar-left .container .img img {
   max-width: 100%;
   display: block;
   filter: grayscale(100%);
   transition: 800ms;
 }
-.sidebar-left .img img:hover {
+.sidebar-left .container .img img:hover {
   filter: grayscale(0%);
   transition: 700ms;
   transform: scale(1.07);
 }
-.sidebar-left .contact {
+.sidebar-left .container .contact {
   text-align: center;
   margin-top: 10px;
   font-weight: 100;
 }
-.sidebar-left .contact p,
-.sidebar-left .contact a {
+.sidebar-left .container .contact p,
+.sidebar-left .container .contact a {
   font-size: 16px;
   text-decoration: none;
   color: white;
 }
-.sidebar-left .contact p:hover,
-.sidebar-left .contact a:hover {
+.sidebar-left .container .contact p:hover,
+.sidebar-left .container .contact a:hover {
   color: #28e98c;
   font-weight: 400;
 }
-.sidebar-left .contact p {
+.sidebar-left .container .contact p {
   margin-top: 10px;
 }
-.sidebar-left .container-icons {
+.sidebar-left .container .container-icons {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.sidebar-left .container-icons .icons {
+.sidebar-left .container .container-icons .icons {
   display: grid;
   text-align: center;
   grid-template-columns: repeat(4, 1fr);
@@ -168,14 +183,14 @@ body {
   width: 100%;
   padding: 0;
 }
-.sidebar-left .container-icons .icons a {
+.sidebar-left .container .container-icons .icons a {
   color: #565656;
   text-decoration: none;
 }
-.sidebar-left .container-icons .icons li {
+.sidebar-left .container .container-icons .icons li {
   list-style: none;
 }
-.sidebar-left .container-icons .icons ion-icon {
+.sidebar-left .container .container-icons .icons ion-icon {
   padding: 15px;
   border: 2px solid #565656;
   border-radius: 50%;
@@ -183,13 +198,13 @@ body {
   height: 20px;
   transition: 300ms ease-out;
 }
-.sidebar-left .container-icons .icons ion-icon:hover {
+.sidebar-left .container .container-icons .icons ion-icon:hover {
   color: #28e98c;
   border: 1px solid #28e98c;
   transform: scale(1.1);
   transition: 300ms ease-in;
 }
-.sidebar-left .container-icons .button {
+.sidebar-left .container .container-icons .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,64 +216,55 @@ body {
   border: 3px solid #28e98c;
   transition: 800ms;
 }
-.sidebar-left .container-icons .button a {
+.sidebar-left .container .container-icons .button a {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
   text-decoration: none;
 }
-.sidebar-left .container-icons .button p {
+.sidebar-left .container .container-icons .button p {
   color: #1f1f1f;
   margin: 0 5px;
   font-size: 16px;
   cursor: pointer;
 }
-.sidebar-left .container-icons .button ion-icon {
+.sidebar-left .container .container-icons .button ion-icon {
   color: #1f1f1f;
   width: 20px;
   height: 20px;
 }
-.sidebar-left .container-icons .button:hover {
+.sidebar-left .container .container-icons .button:hover {
   border-radius: 40px;
   background-color: transparent;
   transform: scale(1.07);
   transition: 300ms ease-in;
 }
-.sidebar-left .container-icons .button:hover:hover p {
+.sidebar-left .container .container-icons .button:hover:hover p {
   color: #28e98c;
 }
-.sidebar-left .container-icons .button:hover:hover ion-icon {
+.sidebar-left .container .container-icons .button:hover:hover ion-icon {
   color: #28e98c;
 }
 
-@media (max-width: 1555px) {
-  .sidebar-left {
-    max-width: 350px;
-    top: 2rem;
-  }
-  .sidebar-left .container-icons .icons {
-    margin: 20px auto;
-  }
-}
-@media (max-width: 1000px) {
-  .sidebar-left {
+@media (max-width: 920px) {
+  .sidebar-left .container {
     position: relative;
-    display: grid;
-    margin: 30px auto;
   }
 }
 .home {
   grid-area: content;
-  padding: 0 100px;
   height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .home h2 {
   font-size: 6.3rem;
   width: 90%;
-  margin-top: 200px;
   transition: 1000ms;
-  text-align: end;
+  text-align: center;
 }
 .home h2 span {
   font-size: 6.5rem;
@@ -313,39 +319,23 @@ body {
   background-color: #28e98c;
 }
 
-@media (max-width: 2000px) {
-  .home p:first-child {
-    margin-top: 250px;
-  }
-}
-@media (max-width: 1555px) {
-  .home p:first-child {
-    margin-top: 150px;
-  }
-}
-@media (max-width: 1000px) {
+@media (max-width: 920px) {
   .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    padding: 0;
-    height: auto;
+    height: 50vh;
   }
-  .home p:first-child {
-    margin: 50px auto;
+  .home h2 {
+    margin-top: 50px;
     text-align: center;
     width: 90%;
     font-size: 4.5rem;
   }
-  .home p:last-child {
-    margin: 100px auto;
+  .home p {
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
   .home {
-    height: 100vh;
+    height: auto;
   }
 }
 @media (max-height: 600px) {
@@ -355,10 +345,13 @@ body {
 }
 .sidenav-right {
   grid-area: sidenav-right;
+  display: flex;
+  justify-content: center;
 }
 .sidenav-right .nav {
   position: fixed;
-  top: 30%;
+  top: 50%;
+  transform: translate(0, -50%);
   border: 1px solid #999999;
   border-radius: 40px;
   padding: 15px 10px;
@@ -383,19 +376,22 @@ body {
   height: 25px;
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 920px) {
   .sidenav-right {
     display: none;
   }
 }
 .about {
   grid-area: about;
-  padding: 0 100px;
   height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about h2 {
   width: 100%;
-  margin-top: 200px;
   font-size: 4rem;
   text-align: center;
 }
@@ -405,6 +401,7 @@ body {
   color: #28e98c;
   transition: 1000ms;
   display: block;
+  margin: 0 auto;
 }
 .about h2 span:hover {
   transform: scale(1.08);
@@ -454,27 +451,22 @@ body {
 }
 
 @media (max-width: 1555px) {
-  .about h1 {
-    margin-top: 150px;
-  }
   .about p {
     max-width: 70%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 920px) {
   .about {
-    padding: 0 25px;
-    margin: 0 auto;
-    height: auto;
+    height: 50vh;
   }
-  .about h1 {
+  .about h2 {
     width: 100%;
     text-align: center;
   }
   .about span {
     text-align: center;
     width: 80%;
-    margin: 70px auto;
+    margin: 7rem auto;
   }
 }
 @media (max-width: 768px) {
@@ -488,45 +480,27 @@ body {
   }
 }
 .services {
-  height: 100vh;
   grid-area: services;
-  padding: 0 100px;
-  display: grid;
-  align-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
-@media (max-height: 600px) {
-  .services {
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .services {
-    height: 100vh;
-  }
-}
-@media (max-width: 1000px) {
-  .services {
-    height: auto;
-  }
-}
 .skill {
   height: 100vh;
   grid-area: skill;
-  margin: 0 auto;
-  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .skill .container {
   width: 100%;
   display: grid;
-  margin: 0 auto;
-  padding: 0 100px;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 .skill .container .title {
   padding: 30px 0;
-  margin-top: 100px;
 }
 .skill .container .title h2 {
   text-align: center;
@@ -606,7 +580,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 30px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 .skill .container .container-estudando div {
   width: 145px;
@@ -652,39 +627,6 @@ body {
   }
   .skill .container .title {
     margin-top: 0;
-  }
-}
-@media (max-width: 1000px) {
-  .skill {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-  }
-  .skill .container {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .skill .container .container-img {
-    align-items: center;
-    gap: 5px;
-    row-gap: 20px;
-    justify-content: center;
-  }
-  .skill .container .container-estudando {
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-  }
-}
-@media (max-width: 1000px) {
-  .skill {
-    height: auto;
-    padding: 40px 0;
   }
 }
 @media (max-width: 768px) {
@@ -794,7 +736,7 @@ body {
   border-radius: 50px;
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 70px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -853,12 +795,13 @@ body {
   left: 0;
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 920px) {
   .dropdown {
     visibility: visible;
   }
   .hamburger {
     display: block;
+    z-index: 2;
   }
 }
 @media (max-width: 880px) {

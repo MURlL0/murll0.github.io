@@ -1,9 +1,12 @@
 .sidenav-right {
     grid-area: sidenav-right;
+    display: flex;
+    justify-content: center;
 
     .nav {
         position: fixed;
-        top: 30%;
+        top: 50%;
+        transform: translate(0, -50%);
         border: 1px solid $menu;
         border-radius: 40px;
         padding: 15px 10px;
@@ -33,7 +36,7 @@
     }
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 920px) {
     .sidenav-right {
         display: none;
     }
