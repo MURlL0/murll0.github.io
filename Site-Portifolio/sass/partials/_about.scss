@@ -9,7 +9,7 @@
         font-size: 4rem;
         text-align: center;
 
-        p:first-child {
+        span{
             max-width: 100%;
             font-size: 4.5rem;
             color: $color-primary;
@@ -23,7 +23,7 @@
         }
     }
 
-    span {
+    p {
         display: block;
         width: 80%;
         margin: 70px auto;

@@ -1,13 +1,13 @@
 .sidebar-left {
     width: 100%;
-    max-width: 400px;
+    max-width: 40rem;
     position: fixed;
     grid-area: sidebar-left;
     border: 1px solid $sibar-icon;
-    border-radius: 30px;
-    padding: 30px 50px;
+    border-radius: 3rem;
+    padding: 3rem 5rem;
     cursor: default;
-    margin-left: 57px;
+    margin-left: 5.7rem;
     top: 10%;
     font-family: 'Roboto Slab', serif;
 
@@ -39,17 +39,20 @@
     }
 
     .img {
-        margin: 0 auto;
         width: 100%;
         overflow: hidden;
         border-radius: 20px;
-        margin: 30px auto;
+        margin: 3rem auto;
+
+        @media (min-width: 1000px) {
+            height: 30rem;
+        }
 
         img {
-            width: 100%;   
+            max-width: 100%;
+            display: block;
             filter: grayscale(100%);
             transition: 800ms;
-
 
             &:hover {
                 filter: grayscale(0%);
@@ -176,14 +179,11 @@
 @media (max-width: 1555px) {
     .sidebar-left {
         max-width: 350px;
-        margin: 30px;
-        top: 2%;
+        top: 2rem;
 
         .container-icons .icons {
             margin: 20px auto;
         }
-
-        
     }
 }
 @media (max-width: 1000px) {
