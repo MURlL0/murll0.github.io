@@ -7,10 +7,28 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    
 }
 
 body {
     font-family: sans-serif;
-    color: white;
-    background-color: $background;
+    color: white;  
+    background: black;  
+    
+
+    .body-overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        background: black;
+        filter: blur(4px);
+        
+        
+
+       
+    }
 }
