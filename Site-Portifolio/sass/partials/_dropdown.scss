@@ -12,7 +12,7 @@
     flex-direction: column;
     left: -100%;
     transition: 800ms ease-out;
-    z-index: 1;
+    z-index: 2;
 
     span {
         text-align: center;
@@ -103,7 +103,7 @@
         border-radius: 50px;
         position: fixed;
         top: 30px;
-        right: 70px;
+        right: 30px;
         width: 40px;
         height: 40px;
         display: flex;
@@ -175,7 +175,6 @@
 @media (max-width: 920px) {
     .dropdown {
         visibility: visible;
-        
     }
 
     .hamburger {

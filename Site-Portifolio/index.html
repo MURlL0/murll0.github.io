@@ -5,17 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/main.css">
   <title>Murilo-Portfolio</title>
 </head>
 
 <body>
+
   <div class="script">
     <noscript>
       <p>
@@ -86,7 +91,7 @@
       </p>
     </section>
 
-    <!--Menu na diteira fixo-->
+    <!--Menu-->
     <div class="sidenav-right">
       <nav class="nav">
         <ul class="menu">
@@ -168,7 +173,6 @@
       </label>
     </div>
 
-
     <section class="about" id="about">
       <h2>
         Desenvolvedor Front-end em <span>busca de crescimento profissional</span> e novos desafios.
@@ -187,9 +191,16 @@
     </section>
 
     <section class="services" id="services">
-      <h2>EM BREVE</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">EM BREVE</div>
+          <div class="swiper-slide">EM BREVE</div>
+          <div class="swiper-slide">EM BREVE</div>
+          <div class="swiper-slide">EM BREVE</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
-
 
     <section class="skill" id="skill">
 
@@ -253,8 +264,7 @@
   </div>
 
 
-  
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
