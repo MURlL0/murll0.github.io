@@ -286,6 +286,7 @@ body {
   color: #565656;
   text-align: center;
   line-height: 25px;
+  transition: transform 800ms ease-in-out;
 }
 .home p:hover {
   transform: scale(1.2);
@@ -414,6 +415,7 @@ body {
   text-align: center;
   color: #565656;
   line-height: 25px;
+  transition: transform 800ms ease-in-out;
 }
 .about p:hover {
   transform: scale(1.2);

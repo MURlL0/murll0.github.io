@@ -35,6 +35,7 @@
         text-align: center;
         color: $sibar-icon;
         line-height: 25px;
+        transition: transform 800ms ease-in-out;
 
         &:hover {
             transform: scale(1.2);
