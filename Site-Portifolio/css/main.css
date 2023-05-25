@@ -106,7 +106,7 @@ body #body-overlay {
 .sidebar-left .container {
   position: fixed;
   max-width: 40rem;
-  border: 1px solid #565656;
+  border: 1px solid #c3c3c3;
   border-radius: 3rem;
   padding: 30px 50px;
   cursor: default;
@@ -200,7 +200,7 @@ body #body-overlay {
   padding: 0;
 }
 .sidebar-left .container .container-icons .icons a {
-  color: #565656;
+  color: #c3c3c3;
   text-decoration: none;
 }
 .sidebar-left .container .container-icons .icons li {
@@ -208,7 +208,7 @@ body #body-overlay {
 }
 .sidebar-left .container .container-icons .icons ion-icon {
   padding: 15px;
-  border: 2px solid #565656;
+  border: 2px solid #c3c3c3;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -304,7 +304,7 @@ body #body-overlay {
   font-size: 1.8rem;
   margin: 70px auto;
   width: 80%;
-  color: #565656;
+  color: #c3c3c3;
   text-align: center;
   line-height: 25px;
   transition: transform 800ms ease-in-out;
@@ -434,7 +434,7 @@ body #body-overlay {
   margin: 70px auto;
   font-size: 1.8rem;
   text-align: center;
-  color: #565656;
+  color: #c3c3c3;
   line-height: 25px;
   transition: transform 800ms ease-in-out;
 }
@@ -567,7 +567,7 @@ body #body-overlay {
 .skill .container .container-img div {
   width: 145px;
   height: 145px;
-  border: 2px solid #565656;
+  border: 2px solid #c3c3c3;
   padding: 45px;
   border-radius: 50%;
   margin: 0 auto;
@@ -632,7 +632,7 @@ body #body-overlay {
 .skill .container .container-estudando div {
   width: 145px;
   height: 145px;
-  border: 2px solid #565656;
+  border: 2px solid #c3c3c3;
   padding: 45px;
   border-radius: 50%;
   margin: 0 auto;
