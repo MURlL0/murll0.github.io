@@ -24,7 +24,8 @@ body .body-overlay {
      object-fit: cover;
   z-index: -1;
   background: black;
-  filter: blur(4px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .structured {
