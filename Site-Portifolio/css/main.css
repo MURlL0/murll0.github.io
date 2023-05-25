@@ -23,9 +23,8 @@ body #body-overlay {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  background: black;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 @media (max-width: 768px) {
   body {
