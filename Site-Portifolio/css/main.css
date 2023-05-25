@@ -14,7 +14,7 @@ body {
   color: white;
   background: black;
 }
-body .body-overlay {
+body #body-overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -26,6 +26,14 @@ body .body-overlay {
   background: black;
   filter: blur(2px);
   -webkit-filter: blur(2px);
+}
+@media (max-width: 768px) {
+  body {
+    background: #1f1f1f;
+  }
+  body video {
+    display: none;
+  }
 }
 
 .structured {

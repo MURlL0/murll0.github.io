@@ -7,16 +7,14 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    
 }
 
 body {
     font-family: sans-serif;
-    color: white;  
-    background: black;  
-    
+    color: white;
+    background: black;
 
-    .body-overlay {
+    #body-overlay {
         position: fixed;
         left: 0;
         top: 0;
@@ -27,9 +25,13 @@ body {
         background: black;
         filter: blur(2px);
         -webkit-filter: blur(2px);
-        
-        
+    }
 
-       
+    @media (max-width: 768px) {
+      background: $background;
+
+      video{
+        display: none;
+      }
     }
 }
