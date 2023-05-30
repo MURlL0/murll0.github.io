@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    @media (max-width: 768px) {
+        padding: 0 0.5rem;
+        justify-items: center;
+    }
+
+    .icon-psn {
+        padding: 2.6rem 0;
+    }
+
+    .logo-header {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 12rem;
+            }
+        }
+    }
+
+    .disponivel {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1.8rem;
+
+        @media (max-width: 768px) {
+            gap: 0.9rem;
+        }
+
+        .plataforma {
+            display: flex;
+            gap: 0.8rem;
+            span {
+                padding: 5px 8px 4px;
+                border: 1.5px solid white;
+            }
+        }
+        span {
+            font-size: 1.6rem;
+        }
+    }
+}

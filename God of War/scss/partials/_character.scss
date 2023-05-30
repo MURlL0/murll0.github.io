@@ -1,0 +1,61 @@
+.character {
+    background-image: url(../assets/bg-characters.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 17.6rem;
+    padding-bottom: 14.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        align-items: flex-start;
+        justify-content: center;
+        gap: 12.7rem;
+
+        @media (max-width: 1250px) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 1fr);
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+        }
+
+        .left {
+            width: 100%;
+            max-width: 61.2rem;
+            h2 {
+                margin: 2.8rem 0 2.4rem;
+            }
+            p {
+                max-width: 57.8rem;
+            }
+        }
+        .right {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .day {
+                max-width: 21.8rem;
+                span {
+                    display: block;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 140%;
+                    margin-top: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+.mySwiper {
+    padding-left: 16.5rem;
+    width: 100%;
+
+    @media (max-width: 1250px) {
+        padding: 0;
+        width: 100%;
+    }
+}
