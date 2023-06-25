@@ -1,0 +1,91 @@
+.header {
+    width: 100%;
+    padding: 2.4rem 7.2rem 5.6rem;
+    background-color: $background-1;
+
+    @media (max-width: 1068px) {
+        padding: 2.4rem;
+    }
+
+    .navbar {
+        background-color: $color-menu;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6rem 4rem;
+        border-radius: 10rem;
+
+        @media (max-width: 1350px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 1068px) {
+            display: none;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+
+        .nav {
+            @media (max-width: 1350px) {
+                margin: 0 auto;
+            }
+            .menu {
+                display: grid;
+                grid-template-columns: repeat(4, 12rem);
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    color: white;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+
+                li {
+                    padding: 10px 0.9rem;
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            width: 100%;
+            max-width: 306px;
+            display: flex;
+            gap: 1.2rem;
+
+            button {
+                padding: 1rem 1.4rem;
+                border-radius: 10rem;
+                text-align: center;
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                background-color: $color_button;
+                color: white;
+                width: 100%;
+                max-width: 14.5rem;
+                height: 4.4rem;
+
+                &:nth-child(2) {
+                    color: $color_button;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

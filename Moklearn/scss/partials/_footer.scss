@@ -1,0 +1,143 @@
+.footer {
+    background-color: #c5bfed;
+    padding: 2.4rem 2.4rem 0;
+
+    .container-background {
+        width: 100%;
+        padding: 5.6rem 2rem;
+        background-color: #322b5e;
+        border-radius: 8.8rem 8.8rem 0 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .container-list {
+            width: 100%;
+            max-width: 104.4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 21.9rem) 29.1rem;
+            justify-content: center;
+            gap: 3.2rem;
+
+            @media (max-width: 1150px) {
+                grid-template-columns: repeat(auto-fit, 21.9rem);
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                color: #ffffff;
+                margin-bottom: 2.4rem;
+                text-decoration: underline;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+
+                li {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: #ffffff;
+                }
+            }
+
+            .list-3 {
+                @media (max-width: 1150px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                li {
+                    display: flex;
+                    gap: 0.8rem;
+                }
+            }
+
+            .desconto {
+                .input {
+                    position: relative;
+                    margin-bottom: 2.4rem;
+
+                    input {
+                        width: 100%;
+                        height: 4.4rem;
+                        border-radius: 10rem;
+                        padding: 0.4rem 0.8rem 0.4rem 1.6rem;
+                        outline: none;
+                        border: none;
+                    }
+
+                    button {
+                        padding: 1rem 2.4rem;
+                        background-color: #9f95e1;
+                        border-radius: 10rem;
+                        position: absolute;
+                        right: 0.8rem;
+                        bottom: 0.4rem;
+
+                        p {
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            line-height: 1.6rem;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .linguage {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .linha {
+            content: '';
+            width: 100%;
+            max-width: 104.4rem;
+            border: 0.1rem solid #f5f4fc;
+            background-color: white;
+            margin: 3.2rem 0;
+        }
+
+        .footer-description {
+            width: 100%;
+            max-width: 104.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @media (max-width: 725px) {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            ul {
+                display: flex;
+                gap: 1.6rem;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #ffffff;
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.section-6 {
+    padding: 7.2rem;
+    background-color: #e2dff6;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    @media (max-width: 950px) {
+        padding: 0 3.6rem 7.2rem;
+    }
+
+    @media (max-width: 500px) {
+        padding: 0 1.8rem 3.6rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, minmax(43.6rem, 45.6rem));
+        gap: 0.5rem;
+
+        @media (max-width: 1439px) {
+            grid-template-columns: repeat(auto-fit, 43.6rem);
+            justify-items: center;
+            gap: 1rem;
+        }
+
+        & .__2 {
+            border: 0.2rem solid #9f95e1;
+
+            .button-box2 {
+                color: #9f95e1;
+                background-color: white;
+                border: 0.1rem solid #9f95e1;
+            }
+
+            .title-box {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 4.8rem;
+
+                .botao2 {
+                    padding: 0.8rem 1.6rem;
+                    background: #f5f4fc;
+                    border-radius: 10rem;
+                    width: 11.2rem;
+                    height: 4rem;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 2.4rem;
+                    color: #847bc0;
+
+                    @media (max-width: 950px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .box {
+            width: 100%;
+            max-width: 43.6rem;
+            background-color: white;
+            padding: 5.6rem 3.2rem;
+            border-radius: 5.6rem;
+
+            @media (max-width: 450px) {
+                max-width: 340px;
+            }
+
+            .title-box {
+                h3 {
+                    font-weight: 400;
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                    color: #080a0d;
+                }
+            }
+            p {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                color: #484f60;
+                margin: 0.8rem 0 1.2rem;
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 1.2rem;
+
+                h3 {
+                    font-weight: 400;
+                    font-size: 5.6rem;
+                    line-height: 7.6rem;
+                    color: #080a0d;
+                }
+                span {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: #484f60;
+                }
+            }
+
+            .list {
+                ul {
+                    margin: 3.2rem 0;
+
+                    li {
+                        display: flex;
+                        font-weight: 400;
+                        font-size: 2rem;
+                        line-height: 2.8rem;
+                        color: #080a0d;
+                        gap: 0.8rem;
+                        margin-bottom: 1.6rem;
+                    }
+                }
+            }
+
+            button {
+                width: 100%;
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #ffffff;
+                padding: 1.6rem 2.4rem;
+                background-color: #9f95e1;
+                border-radius: 10rem;
+                text-align: start;
+            }
+        }
+    }
+}

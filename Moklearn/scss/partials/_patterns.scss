@@ -1,0 +1,131 @@
+h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    color: #322b5e;
+
+    @media (max-width: 950px) {
+        text-align: center;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #322b5e;
+}
+
+.card-container {
+    background-color: white;
+    width: 100%;
+    max-width: 31.2rem;
+    border-radius: 3.2rem;
+    padding: 1.2rem;
+
+    .img-principal {
+        position: relative;
+
+        .article-1 {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            padding: 1rem 1.6rem;
+            border-radius: 10rem;
+            gap: 0.9rem;
+            margin: 1.2rem;
+
+            p {
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                text-align: center;
+                color: #080a0d;
+            }
+        }
+
+        .article-icons {
+            position: absolute;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            padding: 1rem 1.6rem;
+            border-radius: 10rem;
+            gap: 0.9rem;
+            margin: 1.2rem;
+        }
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: #080a0d;
+        margin-top: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .container-description {
+        .description {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.6rem;
+
+            p {
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #080a0d;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #484f60;
+            }
+
+            li {
+                display: flex;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                color: #a0a7b9;
+                gap: 0.4rem;
+            }
+        }
+    }
+
+    .footer-card {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+
+        .info-perfil {
+            p {
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: #080a0d;
+                margin-bottom: 0.4rem;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: #484f60;
+            }
+        }
+    }
+}

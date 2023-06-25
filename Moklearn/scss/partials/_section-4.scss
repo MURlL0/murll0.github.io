@@ -1,0 +1,102 @@
+.section-4 {
+    background-color: #e2dff6;
+    padding: 16.6rem 7.2rem 6.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 950px) {
+        padding: 8rem 3.6rem 3.3rem;
+    }
+
+    @media (max-width: 500px) {
+        padding: 8rem 1.8rem 1.1rem;
+    }
+
+    .img-superior {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 129.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+
+        .right {
+            width: 100%;
+            max-width: 61.1rem;
+
+            
+
+            .container-box {
+                display: grid;
+                grid-template-columns: repeat(2, 29.7rem);
+                gap: 1.2rem;
+                margin-top: 1rem;
+                align-items: flex-end;
+                justify-content: center;
+
+                @media (max-width: 700px) {
+                    grid-template-columns: repeat(auto-fit, 29.7rem);
+                }
+
+                .left-box {
+                    margin-top: 4rem;
+
+                    .__3 {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .right-box {
+                    margin-bottom: 4rem;
+                }
+
+                .box {
+                    background-color: white;
+                    padding: 1.6rem;
+                    border-radius: 1.6rem;
+                    margin-bottom: 1.6rem;
+
+                    .icon-title {
+                        gap: 1.2rem;
+                        display: flex;
+                        align-items: center;
+
+                        .description {
+                            p {
+                                font-weight: 600;
+                                font-size: 1.6rem;
+                                line-height: 2.4rem;
+                                color: #080a0d;
+                            }
+                            span {
+                                font-weight: 400;
+                                font-size: 1.2rem;
+                                line-height: 1.6rem;
+                                color: #484f60;
+                            }
+                        }
+                    }
+
+                    .content {
+                        p {
+                            margin-top: 1.6rem;
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            color: #322b5e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
