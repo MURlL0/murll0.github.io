@@ -196,7 +196,7 @@ body #body-overlay {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0;
+  gap: 0.5rem;
 }
 .sidebar-left .container .container-icons .icons a {
   color: #c3c3c3;
@@ -773,11 +773,10 @@ body #body-overlay {
   margin-bottom: -5px;
 }
 
-#checkbox {
+.hamburger {
   display: none;
 }
-
-.hamburger {
+.hamburger #checkbox {
   display: none;
 }
 .hamburger .toggle {
@@ -796,17 +795,17 @@ body #body-overlay {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-.hamburger .bars {
+.hamburger .toggle .bars {
   width: 100%;
   height: 4px;
   background-color: #28e98c;
   border-radius: 4px;
 }
-.hamburger #bar2 {
+.hamburger .toggle #bar2 {
   transition-duration: 0.8s;
 }
-.hamburger #bar1,
-.hamburger #bar3 {
+.hamburger .toggle #bar1,
+.hamburger .toggle #bar3 {
   width: 70%;
 }
 .hamburger #checkbox:checked + .toggle .bars {
@@ -832,7 +831,7 @@ body #body-overlay {
   transform: rotate(180deg);
 }
 .hamburger #checkbox:checked + .toggle:hover {
-  transform: rotate(270deg);
+  transform: rotate(180deg);
   transition: transform 700ms;
 }
 

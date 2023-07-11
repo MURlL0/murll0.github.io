@@ -1,4 +1,5 @@
 let dropdown = document.querySelector('.dropdown');
+let toggle = document.querySelector('.toggle');
 
 let open = false;
 
@@ -12,9 +13,17 @@ function openClose() {
     }
 }
 
-let toggle = document.querySelector('.toggle');
-
 toggle.onclick = openClose;
+
+function closeMenu() {
+    dropdown.classList.remove('open');
+}
+
+dropdown.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+        openClose();
+    }
+});
 
 let swiper = new Swiper('.mySwiper', {
     pagination: {
