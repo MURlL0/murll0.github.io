@@ -4,12 +4,16 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 768px) {
+        padding: 0 2rem;
+    }
+
     .container {
         position: fixed;
         max-width: 40rem;
         border: 1px solid $sibar-icon;
         border-radius: 3rem;
-        padding: 30px 50px;
+        padding: 3rem 5rem;
         cursor: default;
         top: 50%;
         transform: translate(0, -50%);

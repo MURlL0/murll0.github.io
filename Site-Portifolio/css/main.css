@@ -102,12 +102,17 @@ body #body-overlay {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .sidebar-left {
+    padding: 0 2rem;
+  }
+}
 .sidebar-left .container {
   position: fixed;
   max-width: 40rem;
   border: 1px solid #c3c3c3;
   border-radius: 3rem;
-  padding: 30px 50px;
+  padding: 3rem 5rem;
   cursor: default;
   top: 50%;
   transform: translate(0, -50%);
@@ -774,6 +779,9 @@ body #body-overlay {
   margin-bottom: -5px;
 }
 
+.icons {
+  display: none;
+}
 .icons .toggle {
   position: fixed;
   top: 30px;
@@ -823,7 +831,7 @@ body #body-overlay {
   .dropdown {
     visibility: visible;
   }
-  .hamburger {
+  .icons {
     display: block;
     z-index: 2;
   }

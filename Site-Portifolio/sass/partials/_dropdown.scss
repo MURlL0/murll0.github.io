@@ -95,7 +95,9 @@
 }
 
 .icons {
+  display: none;
     .toggle {
+      
         position: fixed;
         top: 30px;
         right: 30px;
@@ -144,8 +146,8 @@
         visibility: visible;
     }
 
-    .hamburger {
-        display: block;
+    .icons {
+        display: block; 
         z-index: 2;
     }
 }
