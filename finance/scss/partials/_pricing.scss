@@ -1,0 +1,125 @@
+.pricing {
+    padding: 11.2rem 3rem;
+    background: $background-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+
+    @media (max-width: 600px) {
+        padding: 3rem 4.2rem 15rem;
+        gap: 6rem;
+    }
+
+    .title {
+        max-width: 60.7rem;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        p {
+            max-width: 47rem;
+        }
+    }
+
+    .card-pricing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            flex-direction: column;
+            padding: 5rem 2.5rem;
+            border-radius: 1rem;
+            gap: 3.5rem;
+
+            .title-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3.5rem;
+                text-align: center;
+
+                h3 {
+                    color: $background-primary;
+                }
+
+                h5 {
+                    color: #737373;
+                }
+            }
+
+            .price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                color: $color-primary;
+
+                .price-period {
+                    h3 {
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                    }
+
+                    h5 {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .list ul {
+                @include list;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 1rem;
+
+                    &:nth-child(-n + 3) img {
+                        @include checked-green;
+                    }
+
+                    &:nth-last-child(-n + 2) img {
+                        @include checked-grey;
+                    }
+                }
+            }
+
+            button {
+                @include btn-primary;
+                width: 100%;
+                text-align: center;
+                color: white;
+            }
+        }
+        .__2 {
+            .list {
+                ul {
+                    li {
+                        &:nth-last-child(-n + 2) img {
+                            @include checked-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
