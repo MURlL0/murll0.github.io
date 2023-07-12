@@ -773,66 +773,21 @@ body #body-overlay {
   margin-bottom: -5px;
 }
 
-.hamburger {
-  display: none;
+.icons {
+  width: 100%;
+  display: flex;
 }
-.hamburger #checkbox {
-  display: none;
-}
-.hamburger .toggle {
-  background-color: #1f1f1f;
-  border-radius: 50px;
-  position: fixed;
+.icons .toggle {
+  position: absolute;
   top: 30px;
   right: 30px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition-duration: 0.5s;
   cursor: pointer;
 }
-.hamburger .toggle .bars {
-  width: 100%;
-  height: 4px;
-  background-color: #28e98c;
-  border-radius: 4px;
-}
-.hamburger .toggle #bar2 {
-  transition-duration: 0.8s;
-}
-.hamburger .toggle #bar1,
-.hamburger .toggle #bar3 {
-  width: 70%;
-}
-.hamburger #checkbox:checked + .toggle .bars {
+.icons .toggleClose {
   position: absolute;
-  transition-duration: 0.5s;
-}
-.hamburger #checkbox:checked + .toggle #bar2 {
-  transform: scaleX(0);
-  transition-duration: 0.5s;
-}
-.hamburger #checkbox:checked + .toggle #bar1 {
-  width: 100%;
-  transform: rotate(45deg);
-  transition-duration: 0.5s;
-}
-.hamburger #checkbox:checked + .toggle #bar3 {
-  width: 100%;
-  transform: rotate(-45deg);
-  transition-duration: 0.5s;
-}
-.hamburger #checkbox:checked + .toggle {
-  transition-duration: 700ms;
-  transform: rotate(180deg);
-}
-.hamburger #checkbox:checked + .toggle:hover {
-  transform: rotate(180deg);
-  transition: transform 700ms;
+  top: 30px;
+  right: 0px;
+  cursor: pointer;
 }
 
 .dropdown {

@@ -93,76 +93,20 @@
     }
 }
 
-.hamburger {
-    display: none;
-
-    #checkbox {
-        display: none;
-    }
-    
+.icons {
+  width: 100%;
+  display: flex;
     .toggle {
-        background-color: $background;
-        border-radius: 50px;
-        position: fixed;
+        position: absolute;
         top: 30px;
         right: 30px;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        transition-duration: 0.5s;
         cursor: pointer;
-
-        .bars {
-            width: 100%;
-            height: 4px;
-            background-color: $color-primary;
-            border-radius: 4px;
-        }
-
-        #bar2 {
-            transition-duration: 0.8s;
-        }
-
-        #bar1,
-        #bar3 {
-            width: 70%;
-        }
-    }
-
-    #checkbox:checked + .toggle .bars {
-        position: absolute;
-        transition-duration: 0.5s;
-    }
-
-    #checkbox:checked + .toggle #bar2 {
-        transform: scaleX(0);
-        transition-duration: 0.5s;
-    }
-
-    #checkbox:checked + .toggle #bar1 {
-        width: 100%;
-        transform: rotate(45deg);
-        transition-duration: 0.5s;
-    }
-
-    #checkbox:checked + .toggle #bar3 {
-        width: 100%;
-        transform: rotate(-45deg);
-        transition-duration: 0.5s;
-    }
-
-    #checkbox:checked + .toggle {
-        transition-duration: 700ms;
-        transform: rotate(180deg);
-
-        &:hover {
-            transform: rotate(180deg);
-            transition: transform 700ms;
-        }
+    } 
+    .toggleClose{
+      position: absolute;
+        top: 30px;
+        right: 0px;
+        cursor: pointer;
     }
 }
 
