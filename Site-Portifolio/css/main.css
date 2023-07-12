@@ -691,10 +691,10 @@ body #body-overlay {
 .dropdown {
   position: fixed;
   width: 100%;
-  max-width: 300px;
+  max-width: 30rem;
   height: 100%;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
   background-color: rgba(0, 0, 0, 0.284);
   margin: 0 auto;
   display: flex;
@@ -704,11 +704,12 @@ body #body-overlay {
   left: -100%;
   transition: 800ms ease-out;
   z-index: 2;
+  border-radius: 0 3rem 3rem 0;
 }
 .dropdown span {
   text-align: center;
   font-size: 3rem;
-  margin: 50px auto;
+  margin: 5rem auto;
   color: #28e98c;
   position: relative;
   transition: all 500ms ease-in-out;
@@ -725,7 +726,7 @@ body #body-overlay {
   position: absolute;
   content: "";
   width: 0%;
-  height: 2px;
+  height: 0.2rem;
   bottom: 0;
   background-color: #28e98c;
   transition: all 500ms ease-in-out;
@@ -773,21 +774,41 @@ body #body-overlay {
   margin-bottom: -5px;
 }
 
-.icons {
-  width: 100%;
-  display: flex;
-}
 .icons .toggle {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
   cursor: pointer;
+  opacity: 1;
+  transition: all 500ms linear;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 30%;
+}
+.icons .toggle.open {
+  opacity: 0;
+  transition: all 100ms linear;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 30%;
 }
 .icons .toggleClose {
-  position: absolute;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  position: fixed;
   top: 30px;
-  right: 0px;
+  right: 30px;
+  opacity: 0;
   cursor: pointer;
+  transition: all 100ms linear;
+  border-radius: 30%;
+}
+.icons .toggleClose.open {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  opacity: 1;
+  transition: all 500ms linear;
+  border-radius: 30%;
 }
 
 .dropdown {

@@ -1,9 +1,9 @@
 .dropdown {
     position: fixed;
     width: 100%;
-    max-width: 300px;
+    max-width: 30rem;
     height: 100%;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(1.5rem);
     background-color: rgba(0, 0, 0, 0.284);
     margin: 0 auto;
     display: flex;
@@ -13,11 +13,12 @@
     left: -100%;
     transition: 800ms ease-out;
     z-index: 2;
+    border-radius: 0 3rem 3rem 0;
 
     span {
         text-align: center;
         font-size: 3rem;
-        margin: 50px auto;
+        margin: 5rem auto;
         color: $color-primary;
         position: relative;
         transition: all 500ms ease-in-out;
@@ -36,7 +37,7 @@
             position: absolute;
             content: '';
             width: 0%;
-            height: 2px;
+            height: 0.2rem;
             bottom: 0;
             background-color: $color-primary;
             transition: all 500ms ease-in-out;
@@ -94,19 +95,39 @@
 }
 
 .icons {
-  width: 100%;
-  display: flex;
     .toggle {
-        position: absolute;
+        position: fixed;
         top: 30px;
         right: 30px;
         cursor: pointer;
-    } 
-    .toggleClose{
-      position: absolute;
+        opacity: 1;
+        transition: all 500ms linear;
+        backdrop-filter: blur(15px);
+        border-radius: 30%;
+    }
+
+    .toggle.open{
+      opacity: 0;
+      transition: all 100ms linear;
+      backdrop-filter: blur(15px);
+      border-radius: 30%;
+    }
+
+    .toggleClose {
+      backdrop-filter: blur(15px);
+        position: fixed;
         top: 30px;
-        right: 0px;
+        right: 30px;
+        opacity: 0;
         cursor: pointer;
+        transition: all 100ms linear;
+        border-radius: 30%;
+    }
+    .toggleClose.open{
+      backdrop-filter: blur(15px);
+      opacity: 1;
+      transition: all 500ms linear;
+      border-radius: 30%;
     }
 }
 

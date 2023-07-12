@@ -9,20 +9,22 @@ function openClose() {
         open = false;
         dropdown.classList.remove('open');
         toggleClose.classList.remove('open');
-        toggle.classList.add('open');
+        toggle.classList.remove('open');
     } else if (open === false) {
         open = true;
         dropdown.classList.add('open');
         toggleClose.classList.add('open');
-        toggle.classList.remove('open');
+        toggle.classList.add('open');
     }
 }
 
 toggle.onclick = openClose;
+toggleClose.onclick = openClose;
 
 function closeMenu() {
     dropdown.classList.remove('open');
     toggleClose.classList.remove('open');
+    toggle.classList.remove('open');
 }
 
 dropdown.addEventListener('click', function (event) {
