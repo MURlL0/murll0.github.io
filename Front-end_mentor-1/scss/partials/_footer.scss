@@ -1,0 +1,84 @@
+.footer {
+    background-color: $colorPrimary;
+    padding: 9rem 26.5rem 9rem 8rem;
+    @include flex;
+
+    @media (max-width: 900px) {
+        padding: 6rem 3.5rem 4.5rem;
+    }
+
+    .container {
+        width: 100%;
+        @include flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3.5rem;
+
+        .list_footer {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            @media (max-width: 611px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 5.5rem;
+            }
+
+            ul {
+                @include flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                align-items: flex-start;
+
+                li,
+                a {
+                    color: white;
+                    cursor: pointer;
+
+                    a {
+                        &:active {
+                            color: $button;
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                @media (max-width: 900px) {
+                    margin-bottom: 0.9rem;
+                }
+                li {
+                    @include flex;
+                    gap: 2rem;
+                }
+            }
+
+            .icons {
+                @include flex;
+                flex-direction: row;
+                gap: 1.3rem;
+
+                @media (max-width: 611px) {
+                    width: 100%;
+                }
+
+                ion-icon {
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    border: 0.1rem solid white;
+                    border-radius: 50%;
+                    padding: 0.8rem;
+
+                    &:active {
+                        color: $button;
+                        border: 0.1rem solid $button;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.header {
+    padding: 6.5rem 8rem;
+    @include flex;
+
+    @media (max-width: 600px) {
+        padding: 2.4rem 2.4rem 0;
+
+        img {
+            max-height: 2.5rem;
+        }
+
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    .container {
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+
+        .menu ul {
+            @include flex;
+            gap: 5.5rem;
+
+            @media (max-width: 600px) {
+                gap: 2.5rem;
+            }
+
+            a {
+                &:active {
+                    color: black;
+                }
+            }
+        }
+    }
+}

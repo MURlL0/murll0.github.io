@@ -1,0 +1,90 @@
+.support {
+    background: $backgroundSupport;
+    @include flex;
+    padding: 11rem 8rem 8rem;
+
+    @media (max-width: 900px) {
+        padding: 6rem 1.4rem;
+    }
+
+    .container {
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem;
+            gap: 2.5rem;
+        }
+
+        .left {
+            @include flex;
+            flex-direction: column;
+            align-items: start;
+            width: 51rem;
+            gap: 4.5rem;
+
+            @media (max-width: 900px) {
+                align-items: center;
+                gap: 2.5rem;
+            }
+
+            h2,
+            p {
+                color: white;
+            }
+        }
+
+        .right {
+            width: 100%;
+            max-width: 48rem;
+
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    max-width: 48rem;
+                    height: 4.5rem;
+                    padding: 1.5rem 2.2rem;
+                    border-radius: 0.3rem;
+                    border: 0.1rem solid black;
+                }
+
+                input.red {
+                    border: 0.1rem solid red;
+                    border-radius: 0.5rem;
+                }
+
+                button {
+                    margin-top: 1.5rem;
+                }
+
+                input,
+                button {
+                    @media (max-width: 900px) {
+                        max-width: 35rem;
+                    }
+                }
+
+                #result2 {
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.396px;
+                    margin-top: 0.5rem;
+                    color: white;
+                    display: none;
+                }
+
+                #result2.visible {
+                    display: block;
+                }
+            }
+        }
+    }
+}
