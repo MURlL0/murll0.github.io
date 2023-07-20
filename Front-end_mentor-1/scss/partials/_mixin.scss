@@ -1,0 +1,19 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin link_footer {
+    &:active {
+        color: #6b9bff;
+    }
+}
+
+@mixin link_about {
+    color: $links;
+
+    &:active {
+        color: #74dec8;
+    }
+}
