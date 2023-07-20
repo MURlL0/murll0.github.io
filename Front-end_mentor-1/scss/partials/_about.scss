@@ -1,0 +1,113 @@
+.about {
+    background-color: $background_about;
+    padding: 7rem 8rem 10rem;
+    @include flex;
+
+    @media (max-width: 600px) {
+        padding: 7rem 2.4rem 8rem;
+    }
+
+    .container {
+        @include flex;
+        gap: 8rem;        
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            
+            
+        }
+
+        .left {
+            width: 100%;
+            max-width: 65.5rem;
+            @include flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: flex-start;
+
+            @media (max-width: 600px) {
+                align-items: center;
+            }
+
+            .description {
+                width: 100%;
+                max-width: 52rem;
+                @include flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2.3rem;
+
+                @media (max-width: 600px) {
+                    align-items: center;
+
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .link {
+                    @include flex;
+                    gap: 0.8rem;
+                    position: relative;
+
+                    &:active::before {
+                        background-color: #74dec8;
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        position: absolute;
+                        height: 0.2rem;
+                        background-color: $links;
+                        bottom: -0.8rem;
+                    }
+
+                    a {
+                        @include link_about;
+                    }
+                }
+            }
+
+            .card {
+                @include flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+                width: 100%;
+                max-width: 35.8rem;
+                background-color: white;
+                padding: 2.5rem 4rem 1.5rem 3.4rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.184);
+
+                p {
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                }
+
+                .avatar {
+                    @include flex;
+                    gap: 1rem;
+
+                    img {
+                        width: 3.2rem;
+                        border-radius: 50%;
+                    }
+
+                    .perfil {
+                        h3 {
+                            font-size: 1rem;
+                            letter-spacing: 0.1rem;
+                        }
+
+                        h4 {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
