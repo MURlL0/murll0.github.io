@@ -1,0 +1,327 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  position: relative;
+}
+@media (max-width: 945px) {
+  .login {
+    height: auto;
+  }
+}
+.login::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/bg-intro-desktop.png);
+}
+.login .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  gap: 7.3rem;
+  padding: 6.8rem 2.4rem;
+}
+@media (max-width: 945px) {
+  .login .container {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+}
+.login .container .container-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  max-width: 50rem;
+  color: white;
+  gap: 2.8rem;
+}
+@media (max-width: 945px) {
+  .login .container .container-left {
+    padding: 3rem 0 4.5rem;
+  }
+}
+.login .container .container-left h1 {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+  letter-spacing: 0.48px;
+}
+@media (max-width: 945px) {
+  .login .container .container-left h1 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    letter-spacing: -1.2px;
+    text-align: center;
+  }
+}
+.login .container .container-left p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: -0.064px;
+}
+@media (max-width: 945px) {
+  .login .container .container-left p {
+    text-align: center;
+    line-height: 2.6rem;
+    letter-spacing: 0.096px;
+  }
+}
+.login .container .content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 54rem;
+}
+@media (max-width: 945px) {
+  .login .container .content-right {
+    width: 100%;
+    max-width: 54rem;
+  }
+}
+.login .container .content-right .button-free {
+  width: 100%;
+}
+.login .container .content-right .button-free button {
+  width: 100%;
+  height: 6rem;
+  border-radius: 0.8rem;
+  background-color: hsl(248, 32%, 49%);
+  font-size: 1.5rem;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.225px;
+  border: 2px solid #844a7a;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 945px) {
+  .login .container .content-right .button-free button {
+    padding: 2.5rem 8rem;
+    height: auto;
+    text-align: center;
+    line-height: 2.6rem;
+  }
+}
+.login .container .content-right .button-free button span {
+  font-weight: 400;
+}
+.login .container .content-right .container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 0.8rem;
+  gap: 1.4rem;
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login {
+    padding: 2.4rem;
+  }
+}
+.login .container .content-right .container-login form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.login .container .content-right .container-login form .input-box {
+  width: 100%;
+  position: relative;
+}
+.login .container .content-right .container-login form .input-box #first,
+.login .container .content-right .container-login form .input-box #last,
+.login .container .content-right .container-login form .input-box #notEmail,
+.login .container .content-right .container-login form .input-box #password {
+  display: none;
+  justify-content: end;
+  font-size: 1.1rem;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+.login .container .content-right .container-login form .input-box #erro1,
+.login .container .content-right .container-login form .input-box #erro2,
+.login .container .content-right .container-login form .input-box #erro3,
+.login .container .content-right .container-login form .input-box #erro4 {
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  right: 2.5rem;
+}
+.login .container .content-right .container-login form .input-box #erro1.active,
+.login .container .content-right .container-login form .input-box #erro2.active,
+.login .container .content-right .container-login form .input-box #erro3.active,
+.login .container .content-right .container-login form .input-box #erro4.active {
+  visibility: visible;
+}
+.login .container .content-right .container-login form .input-box #first.active,
+.login .container .content-right .container-login form .input-box #last.active,
+.login .container .content-right .container-login form .input-box #notEmail.active,
+.login .container .content-right .container-login form .input-box #password.active {
+  display: flex;
+}
+.login .container .content-right .container-login form .input-box input {
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 0.5rem;
+  padding-left: 3rem;
+  border: 0.1rem solid hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.21px;
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login form .input-box input {
+    padding-left: 2rem;
+  }
+}
+.login .container .content-right .container-login form .input-box input:focus {
+  border: 0.1rem solid hsl(248, 32%, 49%);
+}
+.login .container .content-right .container-login form .input-box input::-moz-placeholder {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.21px;
+}
+.login .container .content-right .container-login form .input-box input::placeholder {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.21px;
+}
+.login .container .content-right .container-login form .input1.active,
+.login .container .content-right .container-login form .input2.active,
+.login .container .content-right .container-login form .input3.active,
+.login .container .content-right .container-login form .input4.active {
+  border: 0.2rem solid hsl(0, 100%, 74%) !important;
+  z-index: 2;
+}
+.login .container .content-right .container-login form .button {
+  width: 100%;
+}
+.login .container .content-right .container-login form .button button {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  height: 5.6rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  box-shadow: 0px 0.4rem 0.4rem 0px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login form .button button {
+    padding: 2rem;
+  }
+}
+.login .container .content-right .container-login form .button button:active {
+  background-color: #77e2b4;
+}
+@media (max-width: 945px) {
+  .login .container .content-right .container-login .terms {
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
+.login .container .content-right .container-login .terms p {
+  color: hsl(246, 25%, 77%);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.055px;
+  line-height: 2.2 rem;
+}
+.login .container .content-right .container-login .terms p span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
