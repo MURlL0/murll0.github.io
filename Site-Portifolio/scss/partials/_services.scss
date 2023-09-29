@@ -6,28 +6,45 @@
   align-items: center;
   position: relative;
   color: #000;
-  padding: 0 2rem;
+  padding: 0 6rem;
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    padding: 0 1.6rem;
+  }
 
   .title {
-    padding: 2rem 0;
     h2 {
       color: white;
-      font-size: 2rem;
+      font-size: 4rem;
     }
   }
 
   .swiper {
     width: 100%;
+    border-radius: 3rem;
 
     .swiper-slide {
-      text-align: center;
-      font-size: 1.8rem;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border-radius: 2rem;
-      cursor: pointer;
+      cursor: grab;
+      filter: grayscale(100%);
+      opacity: 60%;
+      transition: all 500ms linear;
+      position: relative;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      &:hover {
+        filter: grayscale(0%);
+        opacity: 100%;
+        transition: all 500ms ease-in-out;
+      }
+
+      &:hover a {
+        opacity: 1;
+      }
 
       img {
         width: 100%;
@@ -35,39 +52,25 @@
         max-width: 100%;
       }
 
-      &.__1 {
-        filter: grayscale(100%);
-        opacity: 80%;
-        transition: all 800ms ease-in-out;
-        position: relative;
+      a {
+        color: $background;
+        position: absolute;
+        bottom: 1.5rem;
+        font-size: 1.4rem;
+        left: 1.5rem;
+        text-decoration: none;
+        border-radius: 2rem;
+        padding: 0.7rem 2rem;
+        background-color: white;
+        transition: 500ms;
+        opacity: 0;
+        box-shadow: 0 0 5px 3px white;
 
         &:hover {
-          filter: grayscale(0%);
-          opacity: 100%;
-          transition: all 500ms ease-in-out;
-        }
-
-        &:hover a {
-          opacity: 1;
-        }
-
-        a {
-          position: absolute;
-          bottom: 1.5rem;
-          font-size: 1.4rem;
-          left: 1.5rem;
-          text-decoration: none;
-          border-radius: 2rem;
-          padding: 0.7rem 2rem;
-          background-color: white;
-          transition: 500ms;
-          opacity: 0;
-
-          &:hover {
-            background-color: $background;
-            color: white;
-            transition: 500ms;
-          }
+          background-color: $background;
+          color: white;
+          transition: 500ms linear;
+          box-shadow: 0 0 5px 3px $background;
         }
       }
     }

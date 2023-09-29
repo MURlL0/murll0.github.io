@@ -512,48 +512,48 @@ body #body-overlay {
   align-items: center;
   position: relative;
   color: #000;
-  padding: 0 2rem;
+  padding: 0 6rem;
+  height: 100vh;
 }
-.services .title {
-  padding: 2rem 0;
+@media (max-width: 768px) {
+  .services {
+    padding: 0 1.6rem;
+  }
 }
 .services .title h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .services .swiper {
   width: 100%;
+  border-radius: 3rem;
 }
 .services .swiper .swiper-slide {
-  text-align: center;
-  font-size: 1.8rem;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 2rem;
-  cursor: pointer;
+  cursor: grab;
+  filter: grayscale(100%);
+  opacity: 60%;
+  transition: all 500ms linear;
+  position: relative;
+}
+.services .swiper .swiper-slide:active {
+  cursor: grabbing;
+}
+.services .swiper .swiper-slide:hover {
+  filter: grayscale(0%);
+  opacity: 100%;
+  transition: all 500ms ease-in-out;
+}
+.services .swiper .swiper-slide:hover a {
+  opacity: 1;
 }
 .services .swiper .swiper-slide img {
   width: 100%;
   display: block;
   max-width: 100%;
 }
-.services .swiper .swiper-slide.__1 {
-  filter: grayscale(100%);
-  opacity: 80%;
-  transition: all 800ms ease-in-out;
-  position: relative;
-}
-.services .swiper .swiper-slide.__1:hover {
-  filter: grayscale(0%);
-  opacity: 100%;
-  transition: all 500ms ease-in-out;
-}
-.services .swiper .swiper-slide.__1:hover a {
-  opacity: 1;
-}
-.services .swiper .swiper-slide.__1 a {
+.services .swiper .swiper-slide a {
+  color: #1f1f1f;
   position: absolute;
   bottom: 1.5rem;
   font-size: 1.4rem;
@@ -564,11 +564,13 @@ body #body-overlay {
   background-color: white;
   transition: 500ms;
   opacity: 0;
+  box-shadow: 0 0 5px 3px white;
 }
-.services .swiper .swiper-slide.__1 a:hover {
+.services .swiper .swiper-slide a:hover {
   background-color: #1f1f1f;
   color: white;
-  transition: 500ms;
+  transition: 500ms linear;
+  box-shadow: 0 0 5px 3px #1f1f1f;
 }
 
 .skill {
@@ -619,7 +621,7 @@ body #body-overlay {
 }
 .skill .container .container-img div:hover:nth-child(1):hover img, .skill .container .container-img div:hover:nth-child(2):hover img, .skill .container .container-img div:hover:nth-child(3):hover img, .skill .container .container-img div:hover:nth-child(4):hover img {
   transform: scale(1.4);
-  transition: 800ms ease-in;
+  transition: 500ms ease-in;
 }
 .skill .container .container-img div img {
   width: 100%;
@@ -684,7 +686,7 @@ body #body-overlay {
 }
 .skill .container .container-estudando div:hover:nth-child(1):hover img, .skill .container .container-estudando div:hover:nth-child(2):hover img {
   transform: scale(1.4);
-  transition: 800ms ease-in;
+  transition: 500ms ease-in;
 }
 .skill .container .container-estudando div img {
   width: 100%;

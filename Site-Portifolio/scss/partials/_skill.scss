@@ -1,177 +1,177 @@
 .skill {
-    height: 100vh;
-    grid-area: skill;
+  height: 100vh;
+  grid-area: skill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 
-    .container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+    .title {
+      padding: 30px 0;
 
-        .title {
-            padding: 30px 0;
+      h2 {
+        text-align: center;
+        font-size: 4rem;
 
-            h2 {
-                text-align: center;
-                font-size: 4rem;
-
-                span {
-                    color: $color-primary;
-                }
-            }
+        span {
+          color: $color-primary;
         }
-        .container-img {
-            width: 100%;
-            display: grid;
-            margin: 0 auto;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-            gap: 30px;
-            justify-content: center;
-
-            div {
-                width: 145px;
-                height: 145px;
-                border: 2px solid $sibar-icon;
-                padding: 45px;
-                border-radius: 50%;
-                margin: 0 auto;
-
-                &:hover:nth-child(1),
-                &:hover:nth-child(2),
-                &:hover:nth-child(3),
-                &:hover:nth-child(4) {
-                    filter: grayscale(0);
-                    transition: 500ms ease-in;
-                    border: 2px solid;
-
-                    &:hover img {
-                        transform: scale(1.4);
-                        transition: 800ms ease-in;
-                    }
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    transition: 800ms ease-out;
-                }
-
-                p {
-                    font-size: 1.3rem;
-                    text-align: center;
-                    padding: 20px 0;
-                }
-                &:first-child {
-                    color: #fc490b;
-                    filter: grayscale(100%);
-                    transition: 700ms ease-in;
-                }
-                &:nth-child(2) {
-                    color: #2196f3;
-                    filter: grayscale(100%);
-                    transition: 700ms ease-in;
-                }
-                &:nth-child(3) {
-                    color: #cc6699;
-                    filter: grayscale(100%);
-                    transition: 700ms ease-in;
-                }
-                &:nth-child(4) {
-                    color: #f4511e;
-                    filter: grayscale(100%);
-                    transition: 700ms ease-in;
-                }
-            }
-        }
-        .title2 {
-            padding: 30px 0;
-
-            h2 {
-                text-align: center;
-                font-size: 4rem;
-
-                span {
-                    color: $color-primary;
-                }
-            }
-        }
-        .container-estudando {
-            max-width: 1100px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-
-            div {
-                width: 145px;
-                height: 145px;
-                border: 2px solid $sibar-icon;
-                padding: 45px;
-                border-radius: 50%;
-                margin: 0 auto;
-
-                &:hover:nth-child(1),
-                &:hover:nth-child(2) {
-                    filter: grayscale(0);
-                    transition: 500ms ease-in;
-                    border: 2px solid;
-
-                    &:hover img {
-                        transform: scale(1.4);
-                        transition: 800ms ease-in;
-                    }
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    transition: 800ms ease-out;
-                }
-                p {
-                    font-size: 1.3rem;
-                    text-align: center;
-                    padding: 15px 0;
-                }
-                &:first-child {
-                    color: #f7df1e;
-                    filter: grayscale(100%);
-                    transition: 700ms ease-in;
-                }
-                &:nth-child(2) {
-                    color: #80deea;
-                    filter: grayscale(100%);
-                    transition: 700ms ease-in;
-                }
-            }
-        }
+      }
     }
+    .container-img {
+      width: 100%;
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+      gap: 30px;
+      justify-content: center;
+
+      div {
+        width: 145px;
+        height: 145px;
+        border: 2px solid $sibar-icon;
+        padding: 45px;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        &:hover:nth-child(1),
+        &:hover:nth-child(2),
+        &:hover:nth-child(3),
+        &:hover:nth-child(4) {
+          filter: grayscale(0);
+          transition: 500ms ease-in;
+          border: 2px solid;
+
+          &:hover img {
+            transform: scale(1.4);
+            transition: 500ms ease-in;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: 800ms ease-out;
+        }
+
+        p {
+          font-size: 1.3rem;
+          text-align: center;
+          padding: 20px 0;
+        }
+        &:first-child {
+          color: #fc490b;
+          filter: grayscale(100%);
+          transition: 700ms ease-in;
+        }
+        &:nth-child(2) {
+          color: #2196f3;
+          filter: grayscale(100%);
+          transition: 700ms ease-in;
+        }
+        &:nth-child(3) {
+          color: #cc6699;
+          filter: grayscale(100%);
+          transition: 700ms ease-in;
+        }
+        &:nth-child(4) {
+          color: #f4511e;
+          filter: grayscale(100%);
+          transition: 700ms ease-in;
+        }
+      }
+    }
+    .title2 {
+      padding: 30px 0;
+
+      h2 {
+        text-align: center;
+        font-size: 4rem;
+
+        span {
+          color: $color-primary;
+        }
+      }
+    }
+    .container-estudando {
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        width: 145px;
+        height: 145px;
+        border: 2px solid $sibar-icon;
+        padding: 45px;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        &:hover:nth-child(1),
+        &:hover:nth-child(2) {
+          filter: grayscale(0);
+          transition: 500ms ease-in;
+          border: 2px solid;
+
+          &:hover img {
+            transform: scale(1.4);
+            transition: 500ms ease-in;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: 800ms ease-out;
+        }
+        p {
+          font-size: 1.3rem;
+          text-align: center;
+          padding: 15px 0;
+        }
+        &:first-child {
+          color: #f7df1e;
+          filter: grayscale(100%);
+          transition: 700ms ease-in;
+        }
+        &:nth-child(2) {
+          color: #80deea;
+          filter: grayscale(100%);
+          transition: 700ms ease-in;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1555px) {
-    .skill {
-        .container {
-            gap: 5px;
+  .skill {
+    .container {
+      gap: 5px;
 
-            .title {
-                margin-top: 0;
-            }
-        }
+      .title {
+        margin-top: 0;
+      }
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .skill {
-        height: 100vh;
-    }
+  .skill {
+    height: 100vh;
+  }
 }
 @media (max-height: 600px) {
-    .skill {
-        height: auto;
-    }
+  .skill {
+    height: auto;
+  }
 }
