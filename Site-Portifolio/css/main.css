@@ -515,9 +515,17 @@ body #body-overlay {
   padding: 0 6rem;
   height: 100vh;
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .services {
     padding: 0 1.6rem;
+    height: 80vh;
+  }
+}
+@media (max-width: 920px) {
+  .services {
+    padding: 0 1.6rem;
+    height: auto;
+    gap: 5rem;
   }
 }
 .services .title h2 {
