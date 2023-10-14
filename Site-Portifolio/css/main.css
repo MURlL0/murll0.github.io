@@ -130,7 +130,6 @@ body #body-overlay {
 }
 .sidebar-left .container .title h1 {
   font-size: 40px;
-  font-weight: 400;
 }
 .sidebar-left .container .title h1:hover {
   color: #28e98c;
@@ -149,7 +148,7 @@ body #body-overlay {
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  margin: 30px auto;
+  margin: 30px 0;
 }
 @media (max-width: 1550px) {
   .sidebar-left .container .img {
@@ -168,8 +167,10 @@ body #body-overlay {
   transform: scale(1.07);
 }
 .sidebar-left .container .contact {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
   text-align: center;
-  margin-top: 10px;
   font-weight: 100;
 }
 .sidebar-left .container .contact p,
@@ -183,9 +184,6 @@ body #body-overlay {
   color: #28e98c;
   font-weight: 400;
 }
-.sidebar-left .container .contact p {
-  margin-top: 10px;
-}
 .sidebar-left .container .container-icons {
   width: 100%;
   display: flex;
@@ -194,14 +192,12 @@ body #body-overlay {
   justify-content: center;
 }
 .sidebar-left .container .container-icons .icons {
-  display: grid;
+  display: flex;
   text-align: center;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 30px auto;
+  margin: 3rem;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  gap: 0.5rem;
+  gap: 3rem;
 }
 .sidebar-left .container .container-icons .icons a {
   color: #c3c3c3;
@@ -214,8 +210,8 @@ body #body-overlay {
   padding: 15px;
   border: 2px solid #c3c3c3;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   transition: 300ms ease-out;
 }
 .sidebar-left .container .container-icons .icons ion-icon:hover {
@@ -228,7 +224,6 @@ body #body-overlay {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   background-color: #28e98c;
   border-radius: 40px;
   width: 100%;
@@ -242,10 +237,10 @@ body #body-overlay {
   width: 100%;
   justify-content: center;
   text-decoration: none;
+  gap: 0.5rem;
 }
 .sidebar-left .container .container-icons .button p {
   color: #1f1f1f;
-  margin: 0 5px;
   font-size: 16px;
   cursor: pointer;
 }
@@ -762,6 +757,7 @@ body #body-overlay {
   color: #28e98c;
   position: relative;
   transition: all 500ms ease-in-out;
+  cursor: none;
 }
 .dropdown span:hover {
   transform: scale(1.08);

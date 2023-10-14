@@ -1,170 +1,170 @@
 .dropdown {
-    position: fixed;
-    width: 100%;
-    max-width: 30rem;
-    height: 100%;
-    backdrop-filter: blur(1.5rem);
-    background-color: rgba(0, 0, 0, 0.284);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    left: -100%;
-    transition: 800ms ease-out;
-    z-index: 2;
-    border-radius: 0 3rem 3rem 0;
+  position: fixed;
+  width: 100%;
+  max-width: 30rem;
+  height: 100%;
+  backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.284);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: -100%;
+  transition: 800ms ease-out;
+  z-index: 2;
+  border-radius: 0 3rem 3rem 0;
 
-    span {
-        text-align: center;
-        font-size: 3rem;
-        margin: 5rem auto;
-        color: $color-primary;
-        position: relative;
+  span {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem auto;
+    color: $color-primary;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    cursor: none;
+
+    &:hover {
+      transform: scale(1.08);
+      transition: all 500ms ease-in-out;
+    }
+
+    &:hover::before {
+      width: 100%;
+      transition: all 500ms ease-in-out;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0%;
+      height: 0.2rem;
+      bottom: 0;
+      background-color: $color-primary;
+      transition: all 500ms ease-in-out;
+    }
+  }
+
+  .nav {
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
+
+      li {
         transition: all 500ms ease-in-out;
-
         &:hover {
-            transform: scale(1.08);
-            transition: all 500ms ease-in-out;
+          transform: scale(1.08);
+          transition: all 500ms ease-in-out;
         }
+        a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.693);
+          text-align: center;
+          font-size: 2.5rem;
+          padding: 5px;
+          position: relative;
+          transition: all 500ms ease-in-out;
 
-        &:hover::before {
+          &:hover::before {
             width: 100%;
             transition: all 500ms ease-in-out;
-        }
+          }
 
-        &::before {
+          &::before {
             position: absolute;
-            content: '';
+            content: "";
             width: 0%;
-            height: 0.2rem;
+            height: 1px;
             bottom: 0;
             background-color: $color-primary;
             transition: all 500ms ease-in-out;
+          }
         }
-    }
 
-    .nav {
-        .menu {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            gap: 40px;
-
-            li {
-                transition: all 500ms ease-in-out;
-                &:hover {
-                    transform: scale(1.08);
-                    transition: all 500ms ease-in-out;
-                }
-                a {
-                    text-decoration: none;
-                    color: rgba(255, 255, 255, 0.693);
-                    text-align: center;
-                    font-size: 2.5rem;
-                    padding: 5px;
-                    position: relative;
-                    transition: all 500ms ease-in-out;
-
-                    &:hover::before {
-                        width: 100%;
-                        transition: all 500ms ease-in-out;
-                    }
-
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        width: 0%;
-                        height: 1px;
-                        bottom: 0;
-                        background-color: $color-primary;
-                        transition: all 500ms ease-in-out;
-                    }
-                }
-
-                ion-icon {
-                    color: $color-primary;
-                    width: 30px;
-                    height: 30px;
-                    margin-bottom: -5px;
-                }
-            }
+        ion-icon {
+          color: $color-primary;
+          width: 30px;
+          height: 30px;
+          margin-bottom: -5px;
         }
+      }
     }
+  }
 }
 
 .icons {
   display: none;
-    .toggle {
-      
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        cursor: pointer;
-        opacity: 1;
-        transition: all 500ms linear;
-        backdrop-filter: blur(15px);
-        border-radius: 30%;
-    }
+  .toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 500ms linear;
+    backdrop-filter: blur(15px);
+    border-radius: 30%;
+  }
 
-    .toggle.open{
-      opacity: 0;
-      transition: all 100ms linear;
-      backdrop-filter: blur(15px);
-      border-radius: 30%;
-    }
+  .toggle.open {
+    opacity: 0;
+    transition: all 100ms linear;
+    backdrop-filter: blur(15px);
+    border-radius: 30%;
+  }
 
-    .toggleClose {
-      backdrop-filter: blur(15px);
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        opacity: 0;
-        cursor: pointer;
-        transition: all 100ms linear;
-        border-radius: 30%;
-    }
-    .toggleClose.open{
-      backdrop-filter: blur(15px);
-      opacity: 1;
-      transition: all 500ms linear;
-      border-radius: 30%;
-    }
+  .toggleClose {
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 100ms linear;
+    border-radius: 30%;
+  }
+  .toggleClose.open {
+    backdrop-filter: blur(15px);
+    opacity: 1;
+    transition: all 500ms linear;
+    border-radius: 30%;
+  }
 }
 
 .dropdown {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .dropdown.open {
-    left: 0;
+  left: 0;
 }
 
 @media (max-width: 920px) {
-    .dropdown {
-        visibility: visible;
-    }
+  .dropdown {
+    visibility: visible;
+  }
 
-    .icons {
-        display: block; 
-        z-index: 2;
-    }
+  .icons {
+    display: block;
+    z-index: 2;
+  }
 }
 
 @media (max-width: 880px) {
-    .dropdown {
-        max-width: 250px;
-    }
+  .dropdown {
+    max-width: 250px;
+  }
 }
 @media (max-width: 768px) {
-    .dropdown {
-        max-width: 200px;
-    }
+  .dropdown {
+    max-width: 200px;
+  }
 }
 @media (max-width: 660px) {
-    .dropdown {
-        max-width: 180px;
-        justify-content: start;
-    }
+  .dropdown {
+    max-width: 180px;
+    justify-content: start;
+  }
 }
