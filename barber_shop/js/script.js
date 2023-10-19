@@ -36,8 +36,8 @@ function openMenu() {
     }
 }
 
-toggle.onclick= openMenu
-toggleClose.onclick= openMenu
+toggle.onclick = openMenu;
+toggleClose.onclick = openMenu;
 
 function closeMenu() {
     dropdown.classList.remove('open');
