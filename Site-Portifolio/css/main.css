@@ -559,7 +559,7 @@ body #body-overlay {
 }
 .services .swiper .swiper-slide .lincado {
   width: 100%;
-  opacity: 1;
+  opacity: 0;
   display: flex;
   justify-content: flex-start;
   position: absolute;
