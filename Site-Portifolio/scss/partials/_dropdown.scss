@@ -11,7 +11,7 @@
   justify-content: center;
   flex-direction: column;
   left: -100%;
-  transition: 800ms ease-out;
+  transition: 300ms ease-out;
   z-index: 2;
   border-radius: 0 3rem 3rem 0;
 
@@ -21,27 +21,12 @@
     margin: 5rem auto;
     color: $color-primary;
     position: relative;
-    transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in;
     cursor: none;
 
     &:hover {
-      transform: scale(1.08);
-      transition: all 500ms ease-in-out;
-    }
-
-    &:hover::before {
-      width: 100%;
-      transition: all 500ms ease-in-out;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 0%;
-      height: 0.2rem;
-      bottom: 0;
-      background-color: $color-primary;
-      transition: all 500ms ease-in-out;
+      transform: scale(1.2);
+      transition: all 600ms ease-in-out;
     }
   }
 

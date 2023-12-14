@@ -548,7 +548,7 @@ body #body-overlay {
   opacity: 100%;
   transition: all 500ms ease-in-out;
 }
-.services .swiper .swiper-slide:hover a {
+.services .swiper .swiper-slide:hover .lincado {
   opacity: 1;
 }
 .services .swiper .swiper-slide img {
@@ -557,24 +557,30 @@ body #body-overlay {
   height: 100%;
   max-width: 100%;
 }
-.services .swiper .swiper-slide a {
-  color: #1f1f1f;
+.services .swiper .swiper-slide .lincado {
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-start;
   position: absolute;
   bottom: 1.5rem;
-  font-size: 1.4rem;
   left: 1.5rem;
+  gap: 1.5rem;
+  transition: all 400ms linear;
+}
+.services .swiper .swiper-slide .lincado a {
+  color: #1f1f1f;
+  font-size: 1.4rem;
   text-decoration: none;
   border-radius: 2rem;
   padding: 0.7rem 2rem;
   background-color: white;
-  transition: 500ms;
-  opacity: 0;
   box-shadow: 0 0 5px 3px white;
 }
-.services .swiper .swiper-slide a:hover {
+.services .swiper .swiper-slide .lincado a:hover {
   background-color: #1f1f1f;
   color: white;
-  transition: 500ms linear;
+  transition: all 400ms linear;
   box-shadow: 0 0 5px 3px #1f1f1f;
 }
 
@@ -746,7 +752,7 @@ body #body-overlay {
   justify-content: center;
   flex-direction: column;
   left: -100%;
-  transition: 800ms ease-out;
+  transition: 300ms ease-out;
   z-index: 2;
   border-radius: 0 3rem 3rem 0;
 }
@@ -756,25 +762,12 @@ body #body-overlay {
   margin: 5rem auto;
   color: #28e98c;
   position: relative;
-  transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in;
   cursor: none;
 }
 .dropdown span:hover {
-  transform: scale(1.08);
-  transition: all 500ms ease-in-out;
-}
-.dropdown span:hover::before {
-  width: 100%;
-  transition: all 500ms ease-in-out;
-}
-.dropdown span::before {
-  position: absolute;
-  content: "";
-  width: 0%;
-  height: 0.2rem;
-  bottom: 0;
-  background-color: #28e98c;
-  transition: all 500ms ease-in-out;
+  transform: scale(1.2);
+  transition: all 600ms ease-in-out;
 }
 .dropdown .nav .menu {
   list-style: none;

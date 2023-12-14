@@ -50,7 +50,7 @@
         transition: all 500ms ease-in-out;
       }
 
-      &:hover a {
+      &:hover .lincado {
         opacity: 1;
       }
 
@@ -61,25 +61,32 @@
         max-width: 100%;
       }
 
-      a {
-        color: $background;
+      .lincado {
+        width: 100%;
+        opacity: 1;
+        display: flex;
+        justify-content: flex-start;
         position: absolute;
         bottom: 1.5rem;
-        font-size: 1.4rem;
         left: 1.5rem;
-        text-decoration: none;
-        border-radius: 2rem;
-        padding: 0.7rem 2rem;
-        background-color: white;
-        transition: 500ms;
-        opacity: 0;
-        box-shadow: 0 0 5px 3px white;
+        gap: 1.5rem;
+        transition: all 400ms linear;
 
-        &:hover {
-          background-color: $background;
-          color: white;
-          transition: 500ms linear;
-          box-shadow: 0 0 5px 3px $background;
+        a {
+          color: $background;
+          font-size: 1.4rem;
+          text-decoration: none;
+          border-radius: 2rem;
+          padding: 0.7rem 2rem;
+          background-color: white;
+          box-shadow: 0 0 5px 3px white;
+
+          &:hover {
+            background-color: $background;
+            color: white;
+            transition: all 400ms linear;
+            box-shadow: 0 0 5px 3px $background;
+          }
         }
       }
     }
