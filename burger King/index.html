@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="front">
+    <div class="container">
+      <img src="assets/burger-king.svg" alt="img">
+
+
+      <form name="calculo" onsubmit="return calculo()" class="inputContainer">
+        <div class="inputBox">
+          <label for="real">Valor Real</label>
+          <input id="real" name="real" type="text" onkeydown="btnEnter(event)">
+        </div>
+
+        <div class="inputBox">
+          <label for="estimado">Valor Estimado</label>
+          <input id="estimado" name="estimado" type="text" onkeydown="btnEnter(event)">
+        </div>
+      </form>
+
+      <h2 id="result"></h2>
+    </div>
+
+  </section>
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
