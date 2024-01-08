@@ -33,6 +33,18 @@ const completo = () => {
     }
 };
 
+const btn = document.getElementById('btn');
+
+btn.onclick = completo;
+
+window.onload = () => {
+    const form = document.getElementById('form');
+    form.onsubmit = (event) => {
+        event.preventDefault();
+    };
+    completo;
+};
+
 const btnEnter = (event) => {
     if (event.keyCode === 13) {
         completo();
