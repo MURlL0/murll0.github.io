@@ -28,6 +28,66 @@ input {
   outline: none;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+.home .back {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 40px;
+}
+.home .container {
+  width: 400px;
+  max-width: 400px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.home .container h2 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.home .container h2.negative {
+  color: red;
+}
+.home .container .inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.home .container .inputContainer .inputBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+.home .container .inputContainer .inputBox input {
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(179, 179, 179);
+  padding-left: 1rem;
+}
+.home .container .inputContainer .inputBox input:focus {
+  border: 2px solid rgb(255, 130, 51);
+}
+.home .container .inputContainer .inputBox label {
+  font-size: 1.4rem;
+  transition: top 0.3s;
+  font-weight: 600;
+}
+
 .front {
   display: flex;
   align-items: center;
@@ -38,43 +98,24 @@ input {
 .front .container {
   width: 400px;
   max-width: 400px;
-  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
   justify-content: center;
 }
-.front .container h2 {
-  font-size: 1.4rem;
-}
-.front .container h2.negative {
-  color: red;
-}
-.front .container .inputContainer {
+.front .container .card {
   width: 100%;
+  background-color: rgb(255, 130, 51);
+  padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  border-radius: 16px;
+  background: #ff8233;
 }
-.front .container .inputContainer .inputBox {
-  position: relative;
-}
-.front .container .inputContainer .inputBox input {
-  height: 3.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgb(179, 179, 179);
-  padding-left: 1rem;
-}
-.front .container .inputContainer .inputBox input:focus {
-  border: 2px solid rgb(244, 81, 30);
-}
-.front .container .inputContainer .inputBox label {
-  position: absolute;
-  top: -50%;
-  font-size: 1.4rem;
-  transition: top 0.3s;
-  font-weight: 600;
+.front .container .card a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

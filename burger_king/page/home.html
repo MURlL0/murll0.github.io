@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="shortcut icon" href="../assets/burger-king.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Vendas em 30 Min</title>
+</head>
+
+<body>
+
+  <section class="home">
+
+    <div class="back">
+      <a href="../index.html"><img src="../assets/icons8-voltar-48.png" alt=""></a>
+    </div>
+    <div class="container">
+      <img src="../assets/burger-king.svg" alt="img">
+
+
+      <form name="calculo" onsubmit="return calculo()" class="inputContainer">
+        <div class="inputBox">
+          <label for="real">Valor Real</label>
+          <input id="real" name="real" type="text" onkeydown="btnEnter(event)">
+        </div>
+
+        <div class="inputBox">
+          <label for="estimado">Valor Estimado</label>
+          <input id="estimado" name="estimado" type="text" onkeydown="btnEnter(event)">
+        </div>
+      </form>
+
+      <h2 id="result"></h2>
+    </div>
+
+  </section>
+
+
+
+
+
+  <script src="../js/venda.js"></script>
+</body>
+
+</html>

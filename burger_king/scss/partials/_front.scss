@@ -8,48 +8,26 @@
   .container {
     width: 400px;
     max-width: 400px;
-    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
     justify-content: center;
 
-    h2 {
-      font-size: 1.4rem;
-    }
-    h2.negative {
-      color: red;
-    }
-
-    .inputContainer {
+    .card {
       width: 100%;
+      background-color: rgb(255, 130, 51);
+      padding: 2rem;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
+      border-radius: 16px;
+      background: #ff8233;
 
-      .inputBox {
-        position: relative;
-        input {
-          height: 3.5rem;
-          border-radius: 0.5rem;
-          border: 1px solid rgb(179, 179, 179);
-          padding-left: 1rem;
-
-          &:focus {
-            border: 2px solid rgb(244, 81, 30);
-          }
-        }
-
-        label {
-          position: absolute;
-          top: -50%;
-          font-size: 1.4rem;
-          transition: top 0.3s;
-          font-weight: 600;
-        }
+      a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+        color: black;
       }
     }
   }

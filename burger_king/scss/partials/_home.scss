@@ -1,0 +1,70 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  position: relative;
+
+  .back{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 40px;
+    
+  }
+
+  .container {
+    width: 400px;
+    max-width: 400px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    h2.negative {
+      color: red;
+    }
+
+    .inputContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      .inputBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        
+        input {
+          height: 3.5rem;
+          border-radius: 0.5rem;
+          border: 1px solid rgb(179, 179, 179);
+          padding-left: 1rem;
+
+          &:focus {
+            border: 2px solid rgb(255, 130, 51);
+          }
+        }
+
+        label {
+          
+          
+          font-size: 1.4rem;
+          transition: top 0.3s;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

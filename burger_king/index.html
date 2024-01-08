@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="assets/burger-king.svg" type="image/x-icon">
-  <title>Vendas em 30 Min</title>
+  <title>Calculadora BK</title>
 </head>
 
 <body>
@@ -14,30 +14,17 @@
   <section class="front">
     <div class="container">
       <img src="assets/burger-king.svg" alt="img">
-
-
-      <form name="calculo" onsubmit="return calculo()" class="inputContainer">
-        <div class="inputBox">
-          <label for="real">Valor Real</label>
-          <input id="real" name="real" type="text" onkeydown="btnEnter(event)">
-        </div>
-
-        <div class="inputBox">
-          <label for="estimado">Valor Estimado</label>
-          <input id="estimado" name="estimado" type="text" onkeydown="btnEnter(event)">
-        </div>
-      </form>
-
-      <h2 id="result"></h2>
+      <div class="card venda">
+        <a href="page/home.html">Venda de 30min em 30min</a>
+      </div>
+      <div class="card completo">
+        <a href="page/com_im.html">Completo/Incompleto</a>
+      </div>
     </div>
 
   </section>
 
 
-
-
-
-  <script src="main.js"></script>
 </body>
 
 </html>

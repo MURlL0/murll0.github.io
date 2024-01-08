@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="shortcut icon" href="../assets/burger-king.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Completo-Incompleto</title>
+</head>
+
+<body>
+
+  <section class="home">
+
+    <div class="back">
+      <a href="../index.html"><img src="../assets/icons8-voltar-48.png" alt=""></a>
+    </div>
+    <div class="container">
+      <img src="../assets/burger-king.svg" alt="img">
+
+
+      <form name="completo" onsubmit="return completo()" class="inputContainer">
+        <div class="inputBox">
+          <label for="comIn">Completo-Incompleto</label>
+          <input id="comIn" name="comIn" type="text" onkeydown="btnEnter(event)">
+        </div>
+
+        <div class="inputBox">
+          <label for="venda">Venda</label>
+          <input id="venda" name="venda" type="text" onkeydown="btnEnter(event)">
+        </div>
+      </form>
+
+      <h2 id="result2"></h2>
+    </div>
+
+  </section>
+
+  <script src="../js/com_in.js"></script>
+</body>
