@@ -12,14 +12,14 @@ const calculo = () => {
     const form = document.calculo;
 
     if (form.real.value == '') {
-        document.getElementById('result').innerHTML = `Digite o valor Real`;
+        document.getElementById('result').innerHTML = `Digite a venda Real`;
         result.classList.remove('negative');
         return false;
     } else if (isNaN(real)) {
         document.getElementById('result').innerHTML = `Somente Número`;
         return false;
     } else if (form.estimado.value == '') {
-        document.getElementById('result').innerHTML = `Digite o valor Estimado`;
+        document.getElementById('result').innerHTML = `Digite a venda Estimada`;
         result.classList.remove('negative');
         return false;
     } else if (isNaN(estimado)) {
@@ -36,9 +36,7 @@ const calculo = () => {
     }
 };
 
-const btn = document.getElementById('btn');
-
-btn.onclick = calculo;
+document.getElementById('btn').addEventListener('click', calculo);
 
 window.onload = () => {
     const form = document.getElementById('form');

@@ -10,9 +10,7 @@ const completo = () => {
     const form = document.completo;
 
     if (form.comIn.value == '') {
-        document.getElementById(
-            'result2'
-        ).innerHTML = `Digite o Completo ou Incompleto`;
+        document.getElementById('result2').innerHTML = `Digite o Completo`;
         result2.classList.remove('negative');
     } else if (isNaN(comIn)) {
         document.getElementById('result2').innerHTML = `Somente Número`;
@@ -22,9 +20,9 @@ const completo = () => {
     } else if (isNaN(venda)) {
         document.getElementById('result2').innerHTML = `Somente Número`;
     } else {
-        document.getElementById('result2').innerHTML = `${resultado.toFixed(
-            2
-        )}%`;
+        document.getElementById(
+            'result2'
+        ).innerHTML = `Completo: ${resultado.toFixed(2)}%`;
     }
     if (resultado < 0) {
         result2.classList.add('negative');
@@ -33,17 +31,12 @@ const completo = () => {
     }
 };
 
-const btn = document.getElementById('btn');
+document.getElementById('btn').addEventListener('click', completo);
 
-btn.onclick = completo;
-
-window.onload = () => {
-    const form = document.getElementById('form');
-    form.onsubmit = (event) => {
-        event.preventDefault();
-    };
-    completo;
-};
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    completo();
+});
 
 const btnEnter = (event) => {
     if (event.keyCode === 13) {

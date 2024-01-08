@@ -23,14 +23,15 @@
 
       <form id="form" name="calculo" onsubmit="return calculo(); event.preventDefault()" class="inputContainer">
         <div class="inputBox">
-          <label for="real">Valor Real</label>
-          <input id="real" name="real" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnEnter(event)">
+          <label for="real">Venda Real</label>
+          <input id="real" name="real" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal"
+            onkeydown="btnEnter(event)">
         </div>
 
         <div class="inputBox">
-          <label for="estimado">Valor Estimado</label>
-          <input id="estimado" name="estimado" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" pattern="[0-9]*" inputmode="numeric"
-            onkeydown="btnEnter(event)">
+          <label for="estimado">Venda Estimada</label>
+          <input id="estimado" name="estimado" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal"
+            pattern="[0-9]*" inputmode="numeric" onkeydown="btnEnter(event)">
         </div>
 
         <button id="btn">Calcular</button>

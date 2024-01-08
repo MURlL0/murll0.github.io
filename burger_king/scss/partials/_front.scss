@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 1rem;
+  padding: 4rem;
 
   .container {
     width: 400px;
@@ -23,6 +23,40 @@
       background: #ff8233;
 
       a {
+        /* Adicione ao seu arquivo CSS */
+        .container {
+          text-align: center;
+          padding: 20px;
+        }
+
+        .inputContainer {
+          margin-bottom: 20px;
+        }
+
+        .inputBox {
+          margin-bottom: 10px;
+        }
+
+        button {
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #45a049;
+        }
+
+        h2 {
+          font-size: 18px;
+          color: #333;
+        }
+
+        /* Adapte as cores conforme a identidade visual do seu projeto */
+
         display: block;
         text-align: center;
         width: 100%;

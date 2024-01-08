@@ -17,6 +17,10 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+
+  &:active {
+    transform: scale(1.05);
+  }
 }
 
 img {

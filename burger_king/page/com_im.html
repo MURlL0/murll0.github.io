@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="shortcut icon" href="../assets/burger-king.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Completo-Incompleto</title>
+  <title>Completo e Incompleto</title>
 </head>
 
 <body>
@@ -17,28 +17,50 @@
     <div class="back">
       <a href="../index.html"><img src="../assets/icons8-voltar-48.png" alt=""></a>
     </div>
+    <img src="../assets/burger-king.svg" alt="img">
     <div class="container">
-      <img src="../assets/burger-king.svg" alt="img">
 
 
       <form name="completo" id="form" onsubmit="return completo()" class="inputContainer">
         <div class="inputBox">
-          <label for="comIn">Completo-Incompleto</label>
-          <input id="comIn" name="comIn" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnEnter(event)">
+          <label for="comIn">Completo</label>
+          <input id="comIn" name="comIn" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal"
+            onkeydown="btnEnter(event)">
         </div>
 
         <div class="inputBox">
           <label for="venda">Venda</label>
-          <input id="venda" name="venda" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnEnter(event)">
+          <input id="venda" name="venda" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal"
+            onkeydown="btnEnter(event)">
         </div>
 
         <button id="btn">Calcular</button>
+
+        <h2 id="result2"></h2>
       </form>
 
-      <h2 id="result2"></h2>
+
+      <form name="incompleto" id="formIn" onsubmit="return incompleto()" class="inputContainer">
+        <div class="inputBox">
+          <label for="In">Incompleto</label>
+          <input id="In" name="In" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnIn(event)">
+        </div>
+
+        <div class="inputBox">
+          <label for="venda2">Venda</label>
+          <input id="venda2" name="venda2" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal"
+            onkeydown="btnIn(event)">
+        </div>
+
+        <button id="btnIn">Calcular</button>
+
+        <h2 id="resultIn"></h2>
+      </form>
+
     </div>
 
   </section>
 
-  <script src="../js/com_in.js"></script>
+  <script src="../js/completo.js"></script>
+  <script src="../js/incompleto.js"></script>
 </body>
