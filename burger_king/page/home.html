@@ -24,12 +24,12 @@
       <form name="calculo" onsubmit="return calculo()" class="inputContainer">
         <div class="inputBox">
           <label for="real">Valor Real</label>
-          <input id="real" name="real" type="tel" pattern="[0-9]*" inputmode="numeric" onkeydown="btnEnter(event)">
+          <input id="real" name="real" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnEnter(event)">
         </div>
 
         <div class="inputBox">
           <label for="estimado">Valor Estimado</label>
-          <input id="estimado" name="estimado" type="tel" pattern="[0-9]*" inputmode="numeric"
+          <input id="estimado" name="estimado" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" pattern="[0-9]*" inputmode="numeric"
             onkeydown="btnEnter(event)">
         </div>
       </form>
