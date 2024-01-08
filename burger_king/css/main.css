@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
+  touch-action: pan-y;
 }
 
 button {
@@ -38,8 +39,8 @@ input {
 }
 .home .back {
   position: absolute;
-  left: 5%;
-  top: 5%;
+  left: 10%;
+  top: 20%;
   width: 40px;
 }
 .home .container {
