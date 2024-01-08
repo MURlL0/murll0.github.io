@@ -23,7 +23,7 @@ button:active {
 }
 
 img {
-  width: 10rem;
+  width: 9rem;
   display: block;
   max-width: 100%;
 }
@@ -127,6 +127,9 @@ input {
   align-items: center;
   justify-content: center;
 }
+.front .container img {
+  width: 15rem;
+}
 .front .container .card {
   width: 100%;
   background-color: rgb(255, 130, 51);
@@ -136,7 +139,6 @@ input {
   background: #ff8233;
 }
 .front .container .card a {
-  /* Adicione ao seu arquivo CSS */
   /* Adapte as cores conforme a identidade visual do seu projeto */
   display: block;
   text-align: center;
