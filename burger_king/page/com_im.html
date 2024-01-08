@@ -24,12 +24,12 @@
       <form name="completo" id="form" onsubmit="return completo()" class="inputContainer">
         <div class="inputBox">
           <label for="comIn">Completo-Incompleto</label>
-          <input id="comIn" name="comIn" type="tel" pattern="[0-9]*" inputmode="numeric" onkeydown="btnEnter(event)">
+          <input id="comIn" name="comIn" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnEnter(event)">
         </div>
 
         <div class="inputBox">
           <label for="venda">Venda</label>
-          <input id="venda" name="venda" type="tel" pattern="[0-9]*" inputmode="numeric" onkeydown="btnEnter(event)">
+          <input id="venda" name="venda" type="text" pattern="[0-9]*[.,]?[0-9]*" inputmode="decimal" onkeydown="btnEnter(event)">
         </div>
 
         <button id="btn">Calcular</button>
