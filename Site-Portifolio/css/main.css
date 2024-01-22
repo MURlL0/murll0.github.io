@@ -123,6 +123,43 @@ body #body-overlay {
     max-width: 34rem;
   }
 }
+.sidebar-left .container .icone {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: -2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #999999;
+  background-color: black;
+  animation: rodar 4s linear infinite;
+}
+@keyframes rodar {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+}
+@media (max-width: 768px) {
+  .sidebar-left .container .icone {
+    background-color: #1f1f1f;
+  }
+}
+.sidebar-left .container #dark {
+  visibility: visible;
+}
+.sidebar-left .container #sun {
+  visibility: hidden;
+}
+.sidebar-left .container #dark.close {
+  visibility: hidden;
+}
+.sidebar-left .container #sun.close {
+  visibility: visible;
+}
 .sidebar-left .container .title {
   display: flex;
   justify-content: space-between;

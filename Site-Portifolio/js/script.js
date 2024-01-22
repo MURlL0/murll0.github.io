@@ -39,3 +39,19 @@ let swiper = new Swiper('.mySwiper', {
         dynamicBullets: true,
     },
 });
+
+const dark = document.getElementById('dark');
+const sun = document.getElementById('sun');
+
+const darkClose = () => {
+    dark.classList.add('close');
+    sun.classList.add('close');
+};
+
+const sunClose = () => {
+    dark.classList.remove('close');
+    sun.classList.remove('close');
+};
+
+dark.onclick = darkClose;
+sun.onclick = sunClose;
