@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700;800&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="shortcut icon" href="../src/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header id="header" class="header">
+
+    <div class="containerHeader">
+      <div class="logo">
+        <img src="../src/img/logo2.png" alt="logo">
+      </div>
+
+      <div class="dataHeader">
+        <input id="dataConfig" class="data" type="date">
+      </div>
+
+      <div id="profile" class="profile">
+
+      </div>
+    </div>
+  </header>
+
+  <div class="menuAdd" id="menuAdd">
+
+    <div class="titleMenu">
+      <h3>Adicionar lançamento</h3>
+      <img src="../src/img/icons8-excluir (1).svg" alt="close" onclick="closeMenu()">
+    </div>
+
+    <div class="inputContainer">
+
+      <form id="form-register-finance">
+        <div class="inputBox title">
+          <label for="title">Título</label>
+          <input id="title" name="title" type="text" placeholder="Ex: Compra supermercado">
+        </div>
+
+        <div class="inputBox value">
+          <label for="value">Valor</label>
+          <input id="value" name="value" type="number" step="any" placeholder="R$ 48.00">
+        </div>
+
+        <div class="inputBox date">
+          <label for="date">Data</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="inputBox shopping">
+          <label for="category">Categoria</label>
+          <select name="category" id="category"></select>
+        </div>
+
+        <button>Adicionar</button>
+      </form>
+
+
+    </div>
+
+
+  </div>
+
+  <section class="home">
+
+
+    <div class="containerCard">
+
+      <div id="card1" class="card _1"> </div>
+
+      <div id="card2" class="card _2"> </div>
+
+      <div id="card3" class="card _3"> </div>
+
+      <div id="card4" class="card _4"> </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="containerBox">
+
+        <div class="titleContainer">
+          <h2>Últimos lançamentos</h2>
+
+          <div class="buttonAdd" onclick="openMenu()">
+            <button>Adicionar</button>
+          </div>
+        </div>
+
+        <div id="listFinances" class="listAdd">
+
+          <div id="onTitle" class="list title">
+
+
+          </div>
+
+          <div id="onCategory" class="list category">
+
+
+          </div>
+
+          <div id="onData" class="list date">
+
+
+          </div>
+
+          <div id="onValue" class="list value">
+
+
+          </div>
+
+          <div id="onDelete" class="list action">
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="back" class="background">
+
+    </div>
+
+  </section>
+
+
+  <script src="../js/home.js"></script>
+
+</body>
+
+</html>
