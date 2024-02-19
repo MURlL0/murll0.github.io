@@ -1,0 +1,43 @@
+.menuAdd {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -150%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 48rem;
+  background-color: white;
+  padding: 2.4rem;
+  gap: 3.4rem;
+  transition: all 400ms linear;
+  z-index: 1;
+
+  .titleMenu {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 2.8rem;
+      cursor: pointer;
+    }
+  }
+
+  .inputContainer {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      select {
+        font-size: 1.6rem;
+        color: $colorText;
+        font-weight: 500;
+        text-align: start;
+      }
+    }
+  }
+  &.active {
+    top: 0;
+    transition: all 400ms linear;
+  }
+}

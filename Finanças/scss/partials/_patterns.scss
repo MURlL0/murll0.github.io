@@ -1,0 +1,138 @@
+h1 {
+  color: $colorTitle;
+  font-size: 4rem;
+  font-weight: 800;
+
+  @media (max-width: 650px) {
+    font-size: 3.5rem
+  }
+
+}
+
+h2 {
+  color: $colorTitle;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  @media (max-width: 650px) {
+    font-size: 2rem
+  }
+}
+
+h3 {
+  color: $colorTitle;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  @media (max-width: 650px) {
+    font-size: 1.6rem
+  }
+
+
+}
+
+h4 {
+  color: $colorText;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+p,
+li {
+  color: $colorText;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+a {
+  color: $colorTitle;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.inputBox {
+  width: 100%;
+  @include flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  label {
+    color: $colorTitle;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    color: $colorTitle;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 0.2rem solid $colorBorderInput;
+
+    &::placeholder {
+      color: $colorText;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}
+
+button {
+  width: 100%;
+  padding: 2rem 1.2rem;
+  background-color: $colorPrimary;
+  border-radius: 1.2rem;
+  color: #f4f4f4;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.buttonAdd {
+  button {
+    max-width: 9.1rem;
+    background-color: #f4f4f4;
+    padding: 0.8rem 1.2rem;
+    border: 0.2rem solid $colorPrimary;
+    border-radius: 0.8rem;
+    color: $colorTitle;
+    font-size: 1.4rem;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    
+  }
+}
+
+.card {
+  @include flex;
+  flex-direction: column;
+  width: 28rem;
+  border-radius: 2.4rem;
+  padding: 2.4rem;
+  background-color: white;
+  gap: 1.3rem;
+  text-align: center;
+  
+}
+
+select {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid $colorBorderInput;
+  font-size: 1.4rem;
+  color: $colorTitle;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+#result {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: $colorPrimary;
+  margin: 0 auto;
+}

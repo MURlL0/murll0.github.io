@@ -1,0 +1,518 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans";
+  background-color: #f4f4f9;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+h1 {
+  color: #010400;
+  font-size: 4rem;
+  font-weight: 800;
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  color: #010400;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  color: #010400;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+@media (max-width: 650px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+
+h4 {
+  color: #7c7c7c;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+p,
+li {
+  color: #7c7c7c;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+a {
+  color: #010400;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.inputBox label {
+  color: #010400;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.inputBox input {
+  width: 100%;
+  color: #010400;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #06bee1;
+}
+.inputBox input::-moz-placeholder {
+  color: #7c7c7c;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.inputBox input::placeholder {
+  color: #7c7c7c;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+button {
+  width: 100%;
+  padding: 2rem 1.2rem;
+  background-color: #4f10b4;
+  border-radius: 1.2rem;
+  color: #f4f4f4;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.buttonAdd button {
+  max-width: 9.1rem;
+  background-color: #f4f4f4;
+  padding: 0.8rem 1.2rem;
+  border: 0.2rem solid #4f10b4;
+  border-radius: 0.8rem;
+  color: #010400;
+  font-size: 1.4rem;
+  font-family: "Noto Sans";
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 28rem;
+  border-radius: 2.4rem;
+  padding: 2.4rem;
+  background-color: white;
+  gap: 1.3rem;
+  text-align: center;
+}
+
+select {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #06bee1;
+  font-size: 1.4rem;
+  color: #010400;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+#result {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #4f10b4;
+  margin: 0 auto;
+}
+
+.login {
+  height: 100vh;
+  background-color: #4f10b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .login {
+    padding: 2rem;
+  }
+}
+.login .container {
+  max-width: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.6rem 2.4rem;
+  background-color: #f4f4f9;
+  border-radius: 2.4rem;
+  gap: 4rem;
+}
+.login .container .logo {
+  max-width: 8.8rem;
+}
+.login .container .loginContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+@media (max-width: 502px) {
+  .login .container .loginContainer {
+    align-items: center;
+  }
+  .login .container .loginContainer p {
+    text-align: center;
+  }
+}
+.login .container .loginContainer .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4rem;
+}
+.login .container .loginContainer .form .inputBox._email {
+  margin-top: -2.4rem;
+}
+.login .container .registerLogon {
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 2.4rem 11.2rem;
+}
+@media (max-width: 852px) {
+  .header {
+    padding: 2.4rem 4.4rem;
+  }
+}
+@media (max-width: 410px) {
+  .header {
+    padding: 2.4rem 2.2rem;
+  }
+}
+.header .containerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+.header .containerHeader .logo {
+  width: 24rem;
+}
+@media (max-width: 650px) {
+  .header .containerHeader .logo {
+    width: auto;
+  }
+}
+.header .containerHeader .dataHeader {
+  border: 0.2rem solid #4f10b4;
+  padding: 1.4rem 3.5rem;
+  border-radius: 0.8rem;
+  margin: 0 1rem;
+}
+@media (max-width: 650px) {
+  .header .containerHeader .dataHeader {
+    padding: 1rem 0.8rem;
+  }
+}
+.header .containerHeader .dataHeader .data {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.header .containerHeader .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .containerHeader .profile h3 {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #e4fde1;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+  transition: 500ms border;
+}
+@media (max-width: 650px) {
+  .header .containerHeader .profile h3 {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
+.header .containerHeader .profile h3:hover {
+  border: 1px solid black;
+  cursor: none;
+  transition: 500ms border;
+}
+.header .containerHeader .profile a {
+  color: #010400;
+  font-weight: 600;
+}
+.header .containerHeader .profile .email {
+  margin-right: 3.2rem;
+}
+@media (max-width: 650px) {
+  .header .containerHeader .profile .email {
+    display: none;
+    margin-right: 0;
+  }
+}
+
+.home {
+  background-color: #f4f4f9;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.6rem;
+  position: relative;
+}
+.home .background.escuro {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(1, 4, 0, 0.2);
+}
+.home .containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 11.2rem;
+  gap: 3.2rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  flex-wrap: wrap;
+}
+@media (max-width: 820px) {
+  .home .containerCard {
+    padding: 0 2.4rem;
+  }
+}
+.home .card._4 h1 {
+  color: #4f10b4;
+}
+.home .container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 11.2rem;
+}
+@media (max-width: 820px) {
+  .home .container {
+    padding: 0 2.4rem;
+  }
+  .home .container h4 {
+    font-size: 1.5rem;
+  }
+  .home .container li {
+    font-size: 1.3rem;
+  }
+}
+.home .container .containerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+  background-color: white;
+  border-radius: 2.4rem;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+.home .container .containerBox .titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .container .containerBox .listAdd {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 10px 0;
+}
+.home .container .containerBox .listAdd h4 {
+  margin-bottom: 1.7rem;
+}
+.home .container .containerBox .listAdd ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home .container .containerBox .listAdd ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.register {
+  height: 100vh;
+  background-color: #4f10b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .register {
+    padding: 2rem;
+  }
+}
+.register .container {
+  max-width: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.6rem 2.4rem;
+  background-color: #f4f4f9;
+  border-radius: 2.4rem;
+  gap: 4rem;
+}
+.register .container .logo {
+  max-width: 8.8rem;
+}
+.register .container .loginContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+@media (max-width: 390px) {
+  .register .container .loginContainer {
+    align-items: center;
+  }
+  .register .container .loginContainer p {
+    text-align: center;
+  }
+}
+.register .container .loginContainer .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4rem;
+}
+.register .container .loginContainer .form .inputBox._email {
+  margin-top: -2.4rem;
+}
+.register .container .registerLogon {
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.menuAdd {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -150%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 48rem;
+  background-color: white;
+  padding: 2.4rem;
+  gap: 3.4rem;
+  transition: all 400ms linear;
+  z-index: 1;
+}
+.menuAdd .titleMenu {
+  display: flex;
+  justify-content: space-between;
+}
+.menuAdd .titleMenu img {
+  width: 2.8rem;
+  cursor: pointer;
+}
+.menuAdd .inputContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.menuAdd .inputContainer form select {
+  font-size: 1.6rem;
+  color: #7c7c7c;
+  font-weight: 500;
+  text-align: start;
+}
+.menuAdd.active {
+  top: 0;
+  transition: all 400ms linear;
+}/*# sourceMappingURL=main.css.map */
