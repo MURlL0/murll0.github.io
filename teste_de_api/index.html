@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  #icon {
+    opacity: 0;
+    
+  }
+
+  #icon.open {
+    opacity: 1;
+    transition: all 2000ms linear;
+  }
+</style>
+
+<body>
+
+  <input id="buscar" type="text" onkeydown="btnEnter(event)">
+  <button id="btnBuscar" onclick="buscarBtn()">buscar</button>
+
+  <h3 id="cidade"></h3>
+
+  <h1 id="temp"></h1>
+  <h4 id="temp_max"></h4>
+  <h4 id="temp_min"></h4>
+  <img id="icon" src="https://openweathermap.org/img/wn/04n.png" alt="icon">
+  <h2 id="clima"></h2>
+
+  <h3 id="umidade"></h3>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
