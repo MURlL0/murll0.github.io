@@ -23,31 +23,6 @@
       max-width: 34rem;
     }
 
-    .icone {
-      width: 2rem;
-      height: 2rem;
-      position: absolute;
-      left: -2rem;
-      padding: 1rem;
-      border-radius: 50%;
-      cursor: pointer;
-      color: $menu;
-      background-color: black;
-      animation: rodar 4s linear infinite;
-      @keyframes rodar {
-        0%,
-        100% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(50deg);
-        }
-      }
-
-      @media (max-width: 768px) {
-        background-color: $background;
-      }
-    }
     #dark {
       visibility: visible;
     }
