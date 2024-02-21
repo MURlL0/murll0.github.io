@@ -72,7 +72,7 @@ const validarRegister = async () => {
     localStorage.setItem('@WalletApp:userEmail', result.email);
     localStorage.setItem('@WalletApp:userName', result.name);
     localStorage.setItem('@WalletApp:userId', result.id);
-    window.open('../../avançado/index.html', '_self');
+    window.open('../../finances_app/index.html', '_self');
 };
 
 window.onload = () => {
