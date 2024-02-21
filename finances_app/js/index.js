@@ -47,5 +47,5 @@ const naTela = async (data, email) => {
     localStorage.setItem('@WalletApp:userEmail', data.email);
     localStorage.setItem('@WalletApp:userName', data.name);
     localStorage.setItem('@WalletApp:userId', data.id);
-    window.open('../avançado/pages/home.html', '_self');
+    window.open('../avançado/pages/index.html', '_self');
 };
