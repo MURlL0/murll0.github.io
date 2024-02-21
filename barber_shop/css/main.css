@@ -492,13 +492,16 @@ body {
   border-radius: 15px;
 }
 .gallery .container-fotos img {
+  display: block;
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1.2/1;
 }
 @media (max-width: 1028px) {
   .gallery .container-fotos img {
-    aspect-ratio: initial;
+    aspect-ratio: 2/1;
   }
 }
 
