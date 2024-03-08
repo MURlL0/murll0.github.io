@@ -211,7 +211,7 @@ a {
 .login .container .content-right .container-login form .input-box #notEmail,
 .login .container .content-right .container-login form .input-box #password {
   display: none;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: 1.1rem;
   color: hsl(0, 100%, 74%);
   font-style: italic;

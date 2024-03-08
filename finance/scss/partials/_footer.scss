@@ -1,109 +1,109 @@
 .footer {
-    @include flex;
-    flex-direction: column;
+  @include flex;
+  flex-direction: column;
 
-    .header_footer {
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 4rem 19.5rem;
+  .header_footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 19.5rem;
 
-        @media (max-width: 900px) {
-            flex-wrap: wrap;
-            padding: 4rem 6.1rem;
-            justify-content: center;
-            gap: 5rem;
-            text-align: center;
-        }
-
-        .title {
-            color: $background-primary;
-            @include flex;
-            align-items: start;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .btn {
-            button {
-                @include btn-primary;
-                color: white;
-            }
-        }
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      padding: 4rem 6.1rem;
+      justify-content: center;
+      gap: 5rem;
+      text-align: center;
     }
 
-    .list_footer {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background-color: $background-primary;
-        padding: 5rem 19.5rem;
+    .title {
+      color: $background-primary;
+      @include flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .btn {
+      button {
+        @include btn-primary;
         color: white;
-        gap: 3rem;
+      }
+    }
+  }
 
-        @media (max-width: 900px) {
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            padding: 5rem 8.8rem;
-        }
+  .list_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-primary;
+    padding: 5rem 19.5rem;
+    color: white;
+    gap: 3rem;
 
-        .list {
-            display: flex;
-            justify-content: start;
-            flex-direction: column;
-            gap: 1rem;
-            li {
-                display: flex;
-                align-items: start;
-                justify-content: flex-start;
-
-                h5 {
-                    margin-bottom: 1rem;
-                }
-
-                a {
-                    color: white;
-                }
-            }
-
-            &.__5 {
-                li {
-                    gap: 1rem;
-                }
-            }
-        }
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 5rem 8.8rem;
     }
 
-    .redes_footer {
-        width: 100%;
+    .list {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+      li {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2.5rem 19.5rem;
-        gap: 3rem;
+        align-items: start;
+        justify-content: flex-start;
 
-        @media (max-width: 700px) {
-            flex-wrap: wrap;
-            padding: 2.5rem 0 5.5rem;
-            justify-content: center;
-            text-align: center;
-            gap: 5rem;
-            max-width: 23rem;
-
-            h6 {
-                color: #252b42 !important;
-            }
+        h5 {
+          margin-bottom: 1rem;
         }
 
-        h6 {
-            color: #737373;
+        a {
+          color: white;
         }
+      }
 
-        .icons {
-            @include flex;
-            gap: 2rem;
+      &.__5 {
+        li {
+          gap: 1rem;
         }
+      }
     }
+  }
+
+  .redes_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 19.5rem;
+    gap: 3rem;
+
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+      padding: 2.5rem 0 5.5rem;
+      justify-content: center;
+      text-align: center;
+      gap: 5rem;
+      max-width: 23rem;
+
+      h6 {
+        color: #252b42 !important;
+      }
+    }
+
+    h6 {
+      color: #737373;
+    }
+
+    .icons {
+      @include flex;
+      gap: 2rem;
+    }
+  }
 }
