@@ -21,7 +21,7 @@
     .title {
       color: $background-primary;
       @include flex;
-      align-items: start;
+      align-items: flex-start;
       flex-direction: column;
       gap: 1rem;
     }
@@ -56,7 +56,7 @@
       gap: 1rem;
       li {
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         justify-content: flex-start;
 
         h5 {
