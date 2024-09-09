@@ -17,6 +17,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  width: 100%;
+  max-width: 12.1rem;
+  height: 3.5rem;
+  background-color: rgb(255, 130, 51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 700;
 }
 button:active {
   transform: scale(1.05);
@@ -32,6 +42,13 @@ input {
   outline: none;
 }
 
+.back {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 3.5rem;
+}
+
 .home {
   display: flex;
   align-items: center;
@@ -40,12 +57,6 @@ input {
   padding: 1rem;
   flex-direction: column;
   position: relative;
-}
-.home .back {
-  position: absolute;
-  left: 10%;
-  top: 10%;
-  width: 3.5rem;
 }
 .home .container {
   width: 400px;
@@ -87,28 +98,14 @@ input {
   border-radius: 0.5rem;
   border: 1px solid rgb(179, 179, 179);
   padding-left: 1rem;
-  transition: border 500ms ease-out;
 }
 .home .container .inputContainer .inputBox input:focus {
   border: 2px solid rgb(255, 130, 51);
-  transition: border 500ms ease-in;
 }
 .home .container .inputContainer .inputBox label {
   font-size: 1.4rem;
   transition: top 0.3s;
   font-weight: 600;
-}
-.home .container .inputContainer button {
-  width: 100%;
-  max-width: 12.1rem;
-  height: 3.5rem;
-  background-color: rgb(255, 130, 51);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-  color: white;
-  font-weight: 700;
 }
 
 .front {
@@ -170,4 +167,35 @@ input {
 .front .container .card a h2 {
   font-size: 18px;
   color: #333;
+}
+
+.tabelaBatata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+}
+.tabelaBatata .title h2 {
+  font-size: 2.6rem;
+}
+.tabelaBatata .lista {
+  max-width: 50rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.tabelaBatata .lista table {
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 0.1rem solid black;
+}
+.tabelaBatata .lista table th, .tabelaBatata .lista table td {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 0.1rem solid black;
 }/*# sourceMappingURL=main.css.map */
