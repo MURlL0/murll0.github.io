@@ -1,9 +1,16 @@
+.back2{
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  
+}
+
 .tabelaBatata {
   @include flex;
   flex-direction: column;
   gap: 2rem;
-  height: 100vh;
   padding: 1rem;
+  
 
   .title {
     h2 {
@@ -13,6 +20,8 @@
       }
     }
   }
+
+
 
   .lista {
     padding: 2rem;

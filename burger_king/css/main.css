@@ -42,7 +42,7 @@ input {
   outline: none;
 }
 
-.back {
+.back, .back2 {
   position: absolute;
   left: 10%;
   top: 10%;
@@ -169,13 +169,18 @@ input {
   color: #333;
 }
 
+.back2 {
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
 .tabelaBatata {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  height: 100vh;
   padding: 1rem;
 }
 .tabelaBatata .title h2 {
