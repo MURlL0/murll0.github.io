@@ -56,7 +56,7 @@ function calculateTotal() {
       document.getElementById("finalUnit").textContent = 'g';
   } else {
       const finalWeightKg = totalWeightGrams / 1000;
-      document.getElementById("finalResult").textContent = finalWeightKg.toFixed(2);
+      document.getElementById("finalResult").textContent = finalWeightKg.toFixed(3);
       document.getElementById("finalUnit").textContent = 'kg';
   }
 }
