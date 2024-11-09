@@ -1,0 +1,15 @@
+/* Rodapé */
+footer {
+  background-color: $cor-principal;
+  color: $cor-branco;
+  text-align: center;
+  padding: 1rem;
+
+  .redes-sociais {
+    a {
+      color: $cor-branco;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+/* Seções de texto */
+.sobre,
+.servicos,
+.contato {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contato {
+  form {
+    input,
+    textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+    }
+
+    button {
+      padding: 0.8rem 1.5rem;
+      background-color: $cor-secundaria;
+      color: $cor-branco;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

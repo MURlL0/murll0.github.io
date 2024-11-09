@@ -1,0 +1,29 @@
+/* Cabeçalho */
+header {
+  background-color: $cor-principal;
+  color: $cor-branco;
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: $cor-branco;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  input[type="text"] {
+    padding: 0.5rem;
+  }
+}

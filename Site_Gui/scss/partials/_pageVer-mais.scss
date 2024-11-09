@@ -1,0 +1,97 @@
+/* Variáveis */
+$cor-fundo-card: #fff;
+$cor-botao-carrossel: rgba(0, 0, 0, 0.5);
+$cor-botao-texto: #fff;
+
+/* Estilos para a página "Ver Mais" */
+.detalhes-veiculo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: $cor-fundo-card;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  object-fit: contain;
+
+  .carrossel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex: 1;
+
+    .carrossel-container {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carrossel-item {
+      min-width: 100%;
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+    }
+
+    .carrossel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $cor-botao-carrossel;
+      color: $cor-botao-texto;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      font-size: 2rem;
+      border-radius: 50%;
+
+      &.prev {
+        left: 10px;
+      }
+
+      &.next {
+        right: 10px;
+      }
+    }
+  }
+
+  .informacoes-veiculo {
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .contato-btn {
+      padding: 0.8rem 1.5rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: darken(#007bff, 10%);
+      }
+    }
+  }
+}

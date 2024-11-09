@@ -1,0 +1,87 @@
+/* Estoque */
+.estoque {
+  padding: 2rem;
+  background-color: $cor-cinza;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .filtros {
+    select {
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  }
+  /* Lista de veículos */
+  .veiculos-lista {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  /* Estilo dos cards de veículo */
+  .veiculo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: $cor-fundo-card;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px $cor-sombra-card;
+    text-align: center;
+    position: relative;
+
+    /* Carrossel de imagens dentro do card */
+    .carrossel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+
+      .carrossel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .carrossel-item {
+        min-width: 100%;
+        
+
+        img {
+          width: 100%;
+          display: block;
+          height: 200px;
+          object-fit: fill;
+          
+        
+        }
+      }
+
+      /* Botões de navegação */
+      .carrossel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $cor-botao-carrossel;
+        color: $cor-botao-texto;
+        border: none;
+        padding: 0.3rem;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &.prev {
+          left: 5px;
+        }
+
+        &.next {
+          right: 5px;
+        }
+      }
+    }
+  }
+}

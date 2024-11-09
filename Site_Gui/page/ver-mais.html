@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Veículo - Concessionária XYZ</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Concessionária XYZ</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#estoque">Estoque</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de Detalhes do Veículo -->
+  <section class="detalhes-veiculo">
+    <!-- Carrossel de Imagens do Veículo -->
+    <div class="carrossel">
+      <div class="carrossel-container">
+        <!-- As imagens serão carregadas dinamicamente pelo JavaScript -->
+      </div>
+      <!-- Botões de Navegação -->
+      <button class="carrossel-btn prev" onclick="slidePrev()">&#10094;</button>
+      <button class="carrossel-btn next" onclick="slideNext()">&#10095;</button>
+    </div>
+
+    <!-- Informações do Veículo -->
+    <div class="informacoes-veiculo">
+      <h1></h1>
+      <p class="descricao"></p>
+      <ul>
+        <li><strong>Marca:</strong> <span class="marca"></span></li>
+        <li><strong>Modelo:</strong> <span class="modelo"></span></li>
+        <li><strong>Quilometragem:</strong> <span class="quilometragem"></span></li>
+        <li><strong>Cor:</strong> <span class="cor"></span></li>
+        <li><strong>Transmissão:</strong> <span class="transmissao"></span></li>
+      </ul>
+      <p><strong>Preço:</strong> <span class="preco"></span></p>
+      <button class="contato-btn">Fale com um Consultor</button>
+    </div>
+  </section>
+
+  <!-- JavaScript para o Carrossel -->
+  <script src="../js/ver-mais.js"></script>
+
+</body>
+
+</html>
