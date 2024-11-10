@@ -13,7 +13,7 @@ $cor-botao-texto: #fff;
   margin: auto;
   background-color: $cor-fundo-card;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0.8rem;
   object-fit: contain;
 
   .carrossel {
@@ -46,7 +46,6 @@ $cor-botao-texto: #fff;
       padding: 0.5rem;
       cursor: pointer;
       font-size: 2rem;
-      border-radius: 50%;
 
       &.prev {
         left: 10px;
@@ -81,13 +80,13 @@ $cor-botao-texto: #fff;
     }
 
     .contato-btn {
-      padding: 0.8rem 1.5rem;
+      width: 15rem;
+      padding: 1rem;
       background-color: #007bff;
       color: #fff;
       border: none;
-      cursor: pointer;
-      border-radius: 4px;
-      font-size: 1rem;
+      border-radius: 0.4rem;
+      font-size: 1.2rem;
 
       &:hover {
         background-color: darken(#007bff, 10%);

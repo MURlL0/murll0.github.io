@@ -17,69 +17,95 @@
   /* Lista de veículos */
   .veiculos-lista {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-  }
 
-  /* Estilo dos cards de veículo */
-  .veiculo-card {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: $cor-fundo-card;
-    padding: 1rem;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 8px $cor-sombra-card;
-    text-align: center;
-    position: relative;
-
-    /* Carrossel de imagens dentro do card */
-    .carrossel {
+    /* Estilo dos cards de veículo */
+    .veiculo-card {
+      width: 100%;
+      max-width: 40rem;
+      height: 100%;
+      max-height: 35rem;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      background-color: $cor-fundo-card;
+      padding: 1rem;
+      box-shadow: 0 0.4rem 0.8rem $cor-sombra-card;
+      text-align: center;
       position: relative;
-      max-width: 100%;
-      overflow: hidden;
 
-      .carrossel-container {
-        display: flex;
-        transition: transform 0.5s ease;
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
       }
 
-      .carrossel-item {
-        min-width: 100%;
-        
-
-        img {
-          width: 100%;
-          display: block;
-          height: 200px;
-          object-fit: fill;
-          
-        
-        }
+      p {
+        font-size: 1.2rem;
+        font-weight: 600;
       }
 
-      /* Botões de navegação */
-      .carrossel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: $cor-botao-carrossel;
-        color: $cor-botao-texto;
+      .btnVerMais {
+        width: 10rem;
+        padding: 1rem;
+        background-color: #007bff;
+        color: #fff;
         border: none;
-        padding: 0.3rem;
-        cursor: pointer;
-        font-size: 1rem;
+        border-radius: 0.4rem;
+        font-size: 1.2rem;
 
-        &.prev {
-          left: 5px;
+        &:hover {
+          background-color: darken(#007bff, 10%);
+        }
+      }
+
+      /* Carrossel de imagens dentro do card */
+      .carrossel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+
+        .carrossel-container {
+          display: flex;
+          transition: transform 0.5s ease;
         }
 
-        &.next {
-          right: 5px;
+        .carrossel-item {
+          min-width: 100%;
+
+          img {
+            width: 100%;
+            display: block;
+            object-fit: fill;
+          }
+        }
+
+        /* Botões de navegação */
+        .carrossel-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: $cor-botao-carrossel;
+          color: $cor-botao-texto;
+          border: none;
+          padding: 0.3rem;
+          cursor: pointer;
+          font-size: 1.5rem;
+
+          &.prev {
+            left: 0.5rem;
+          }
+
+          &.next {
+            right: 0.5rem;
+          }
         }
       }
     }

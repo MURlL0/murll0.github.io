@@ -1,8 +1,15 @@
 /* Reset básico */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,4 +22,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+  border: none;
 }

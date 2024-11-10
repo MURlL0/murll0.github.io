@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concessionária de Veículos</title>
+  <title>Kita Car</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -13,7 +13,7 @@
   <!-- Cabeçalho -->
   <header>
     <div class="container">
-      <h1 class="logo">Concessionária Guilherme</h1>
+      <h1 class="logo">Kita Car</h1>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -60,7 +60,7 @@
         </div>
         <h3>Corola</h3>
         <p>R$ 150.000</p>
-        <button onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
       </div>
 
       <!-- Outro Card de Veículo com Carrossel -->
@@ -85,9 +85,103 @@
         </div>
         <h3>Fox</h3>
         <p>R$ 45.000</p>
-        <button onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
       </div>
       <!-- Adicione mais cards conforme necessário -->
+
+      <!-- Card de Veículo com Carrossel -->
+      <div class="veiculo-card">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item">
+              <img src="assets/img/Corola Pesquisa (1).jpeg" alt="Carro 1 - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Corola Pesquisa.jpeg" alt="Carro 1 - Foto 2">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Corolla Prata Interior.jpeg" alt="Carro 1 - Foto 3">
+            </div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Corola</h3>
+        <p>R$ 150.000</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
+      </div>
+
+      <!-- Outro Card de Veículo com Carrossel -->
+      <div class="veiculo-card">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho.jpeg" alt="Carro 2 - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho Interior (1).jpeg" alt="Carro 2 - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho Interior.jpeg" alt="Carro 2 - Foto 2">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho (1).jpeg" alt="Carro 2 - Foto 3">
+            </div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Fox</h3>
+        <p>R$ 45.000</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
+      </div>
+
+      <!-- Card de Veículo com Carrossel -->
+      <div class="veiculo-card">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item">
+              <img src="assets/img/Corola Pesquisa (1).jpeg" alt="Carro 1 - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Corola Pesquisa.jpeg" alt="Carro 1 - Foto 2">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Corolla Prata Interior.jpeg" alt="Carro 1 - Foto 3">
+            </div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Corola</h3>
+        <p>R$ 150.000</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
+      </div>
+
+      <!-- Outro Card de Veículo com Carrossel -->
+      <div class="veiculo-card">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho.jpeg" alt="Carro 2 - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho Interior (1).jpeg" alt="Carro 2 - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho Interior.jpeg" alt="Carro 2 - Foto 2">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Fox Vermelho (1).jpeg" alt="Carro 2 - Foto 3">
+            </div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Fox</h3>
+        <p>R$ 45.000</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
+      </div>
     </div>
   </section>
 
@@ -95,7 +189,7 @@
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2024 Concessionária Guilherme - Todos os direitos reservados.</p>
+    <p>&copy; 2024 Kita Car - Todos os direitos reservados.</p>
     <div class="redes-sociais">
       <a href="#">Facebook</a>
       <a href="#">Instagram</a>
