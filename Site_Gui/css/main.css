@@ -67,21 +67,13 @@ header input[type=text] {
 
 /* Banner */
 .banner {
-  color: #fff;
-  text-align: center;
-  padding: 5rem 1rem;
+  width: 100%;
 }
-.banner h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: black;
-}
-.banner button {
-  padding: 0.8rem 1.5rem;
-  background-color: #e63946;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.banner .banner-content img {
+  width: 100%;
+  max-height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Seções de texto */
