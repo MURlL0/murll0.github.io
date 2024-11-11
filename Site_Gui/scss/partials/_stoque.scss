@@ -39,6 +39,14 @@
       text-align: center;
       position: relative;
 
+      @media(max-width: 854px){
+        max-width: 30rem;
+      }
+
+      @media(max-width: 500px){
+        max-width: 17rem;
+      }
+
       h3 {
         font-size: 1.8rem;
         font-weight: 700;

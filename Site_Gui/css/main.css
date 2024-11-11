@@ -60,6 +60,12 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
 }
 header input[type=text] {
   padding: 0.5rem;
@@ -136,6 +142,16 @@ header input[type=text] {
   text-align: center;
   position: relative;
   /* Carrossel de imagens dentro do card */
+}
+@media (max-width: 854px) {
+  .estoque .veiculos-lista .veiculo-card {
+    max-width: 30rem;
+  }
+}
+@media (max-width: 500px) {
+  .estoque .veiculos-lista .veiculo-card {
+    max-width: 17rem;
+  }
 }
 .estoque .veiculos-lista .veiculo-card h3 {
   font-size: 1.8rem;
