@@ -29,11 +29,40 @@
   <!-- Banner Principal -->
   <section class="banner" id="home">
     <div class="banner-content">
-      <img src="assets/img/Banner.svg" alt="banner">
+      <img src="assets/img/Banner/Banner.svg" alt="banner">
 
     </div>
   </section>
 
+  <section class="filtros">
+    <h2>Filtrar Veículos</h2>
+
+    <!-- Filtro de Marca -->
+    <select id="filtro-marca">
+      <option value="">Marcas</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Ford">Ford</option>
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="Honda">Honda</option>
+      <option value="Fiat">Fiat</option>
+      <option value="Hyundai">Hyundai</option>
+      <!-- Adicione outras marcas conforme necessário -->
+    </select>
+
+    <!-- Filtro de Ano (gerado dinamicamente) -->
+    <select id="filtro-ano">
+      <option value="">Ano</option>
+    </select>
+
+    <!-- Filtro de Preço -->
+    <select id="filtro-preco">
+      <option value="">Faixa de Preço</option>
+      <option value="baixo">Até R$50.000</option>
+      <option value="medio">R$50.000 - R$100.000</option>
+      <option value="alto">Acima de R$100.000</option>
+    </select>
+  </section>
 
 
   <!-- Lista de Veículos -->
@@ -42,7 +71,8 @@
 
     <div class="veiculos-lista">
       <!-- Card de Veículo com Carrossel -->
-      <div class="veiculo-card">
+
+      <div class="veiculo-card" data-marca="Toyota" data-ano="2021" data-preco="alto">
         <div class="carrossel">
           <div class="carrossel-container">
             <div class="carrossel-item">
@@ -56,15 +86,15 @@
             </div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
         </div>
-        <h3>Corola</h3>
+        <h3>Corolla <span class="ano">(2021)</span></h3>
         <p>R$ 150.000</p>
         <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
       </div>
 
       <!-- Outro Card de Veículo com Carrossel -->
-      <div class="veiculo-card">
+      <div class="veiculo-card" data-marca="Toyota" data-ano="2021" data-preco="alto">
         <div class="carrossel">
           <div class="carrossel-container">
             <div class="carrossel-item">
@@ -90,7 +120,7 @@
       <!-- Adicione mais cards conforme necessário -->
 
       <!-- Card de Veículo com Carrossel -->
-      <div class="veiculo-card">
+      <div class="veiculo-card data-marca=" Toyota" data-ano="2021" data-preco="alto">
         <div class="carrossel">
           <div class="carrossel-container">
             <div class="carrossel-item">
@@ -112,7 +142,7 @@
       </div>
 
       <!-- Outro Card de Veículo com Carrossel -->
-      <div class="veiculo-card">
+      <div class="veiculo-card data-marca=" Toyota" data-ano="2021" data-preco="alto">
         <div class="carrossel">
           <div class="carrossel-container">
             <div class="carrossel-item">
@@ -137,7 +167,7 @@
       </div>
 
       <!-- Card de Veículo com Carrossel -->
-      <div class="veiculo-card">
+      <div class="veiculo-card data-marca=" Toyota" data-ano="2021" data-preco="alto">
         <div class="carrossel">
           <div class="carrossel-container">
             <div class="carrossel-item">
@@ -159,7 +189,7 @@
       </div>
 
       <!-- Outro Card de Veículo com Carrossel -->
-      <div class="veiculo-card">
+      <div class="veiculo-card data-marca=" Volkswagen" data-ano="2019" data-preco="alto">
         <div class="carrossel">
           <div class="carrossel-container">
             <div class="carrossel-item">
@@ -178,7 +208,7 @@
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
         </div>
-        <h3>Fox</h3>
+        <h3>Fox <span class="ano">(2019)</span></h3>
         <p>R$ 45.000</p>
         <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
       </div>
@@ -198,6 +228,7 @@
   </footer>
 
   <script src="js/index.js"></script>
+  <script src="js/filter.js"></script>
 
 </body>
 
