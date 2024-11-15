@@ -1,45 +1,46 @@
 /* Cabeçalho */
 header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $cor-principal;
+    color: $cor-branco;
 
-  .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $cor-principal;
-  color: $cor-branco;
+    .logo {
+      font-size: 1.5rem;
+    }
 
-  .logo {
-    font-size: 1.5rem;
-  }
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
 
-  nav {
-    ul {
-      display: flex;
-      list-style: none;
+        li {
+          margin: 0 1rem;
 
-      li {
-        margin: 0 1rem;
+          a {
+            color: $cor-branco;
+            text-decoration: none;
+            font-size: 1.4rem;
 
-        a {
-          color: $cor-branco;
-          text-decoration: none;
-          font-size: 1.4rem;
-
-          @media(max-width: 500px){
-            font-size: 1.2rem;
+            @media (max-width: 500px) {
+              font-size: 1.2rem;
+            }
           }
         }
       }
     }
-  }
 
-  input[type="text"] {
-    padding: 0.5rem;
-    
-    @media(max-width: 500px){
-      padding: 0.3rem;
-      font-size: 1rem;
+    input[type="text"] {
+      padding: 1rem;
+      border: 0.1rem solid $cor-borda-filtro;
+      border-radius: 0.8rem;
+
+      @media (max-width: 500px) {
+        padding: 0.3rem;
+        font-size: 1rem;
+      }
     }
   }
-}
 }

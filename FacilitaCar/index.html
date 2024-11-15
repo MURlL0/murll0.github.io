@@ -15,6 +15,39 @@
     <div class="container">
       <h1 class="logo">Facilita Car</h1>
 
+      <section class="filtros-container">
+
+        <div class="filtros">
+          <h2>Filtrar Veículos</h2>
+
+          <!-- Filtro de Marca -->
+          <select id="filtro-marca">
+            <option value="">Marcas</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Honda">Honda</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Hyundai">Hyundai</option>
+            <!-- Adicione outras marcas conforme necessário -->
+          </select>
+
+          <!-- Filtro de Ano (gerado dinamicamente) -->
+          <select id="filtro-ano">
+            <option value="">Ano</option>
+          </select>
+
+          <!-- Filtro de Preço -->
+          <select id="filtro-preco">
+            <option value="">Preço</option>
+            <option value="baixo">Até R$50.000</option>
+            <option value="medio">R$50.000 - R$100.000</option>
+            <option value="alto">Acima de R$100.000</option>
+          </select>
+        </div>
+      </section>
+
       <!-- Campo de busca -->
       <input id="busca-veiculo" type="text" placeholder="Buscar veículos...">
     </div>
@@ -28,34 +61,37 @@
     </div>
   </section>
 
-  <section class="filtros">
-    <h2>Filtrar Veículos</h2>
+  <section class="filtros-container-Banner">
 
-    <!-- Filtro de Marca -->
-    <select id="filtro-marca">
-      <option value="">Marcas</option>
-      <option value="Toyota">Toyota</option>
-      <option value="Volkswagen">Volkswagen</option>
-      <option value="Ford">Ford</option>
-      <option value="Chevrolet">Chevrolet</option>
-      <option value="Honda">Honda</option>
-      <option value="Fiat">Fiat</option>
-      <option value="Hyundai">Hyundai</option>
-      <!-- Adicione outras marcas conforme necessário -->
-    </select>
+    <div class="filtros">
+      <h2>Filtrar Veículos</h2>
 
-    <!-- Filtro de Ano (gerado dinamicamente) -->
-    <select id="filtro-ano">
-      <option value="">Ano</option>
-    </select>
+      <!-- Filtro de Marca -->
+      <select id="filtro-marca">
+        <option value="">Marcas</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Honda">Honda</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Hyundai">Hyundai</option>
+        <!-- Adicione outras marcas conforme necessário -->
+      </select>
 
-    <!-- Filtro de Preço -->
-    <select id="filtro-preco">
-      <option value="">Faixa de Preço</option>
-      <option value="baixo">Até R$50.000</option>
-      <option value="medio">R$50.000 - R$100.000</option>
-      <option value="alto">Acima de R$100.000</option>
-    </select>
+      <!-- Filtro de Ano (gerado dinamicamente) -->
+      <select id="filtro-ano">
+        <option value="">Ano</option>
+      </select>
+
+      <!-- Filtro de Preço -->
+      <select id="filtro-preco">
+        <option value="">Preço</option>
+        <option value="baixo">Até R$50.000</option>
+        <option value="medio">R$50.000 - R$100.000</option>
+        <option value="alto">Acima de R$100.000</option>
+      </select>
+    </div>
   </section>
 
 
