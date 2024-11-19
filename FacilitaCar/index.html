@@ -30,6 +30,45 @@
             <option value="Honda">Honda</option>
             <option value="Fiat">Fiat</option>
             <option value="Hyundai">Hyundai</option>
+            <option value="Citroën">Citroën</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Renault">Renault</option>
+            <!-- Adicione outras marcas conforme necessário -->
+          </select>
+
+          <!-- Filtro de Ano (gerado dinamicamente) -->
+          <select id="filtro-ano">
+            <option value="">Ano</option>
+          </select>
+
+          <!-- Filtro de Preço -->
+          <select id="filtro-preco">
+            <option value="">Preço</option>
+            <option value="baixo">Até R$50.000</option>
+            <option value="medio">R$50.000 - R$100.000</option>
+            <option value="alto">Acima de R$100.000</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="filtros-container-Banner">
+
+        <div class="filtros">
+          <h2>Filtrar Veículos</h2>
+
+          <!-- Filtro de Marca -->
+          <select id="filtro-marca">
+            <option value="">Marcas</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Honda">Honda</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Citroën">Citroën</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Renault">Renault</option>
             <!-- Adicione outras marcas conforme necessário -->
           </select>
 
@@ -61,38 +100,7 @@
     </div>
   </section>
 
-  <section class="filtros-container-Banner">
 
-    <div class="filtros">
-      <h2>Filtrar Veículos</h2>
-
-      <!-- Filtro de Marca -->
-      <select id="filtro-marca">
-        <option value="">Marcas</option>
-        <option value="Toyota">Toyota</option>
-        <option value="Volkswagen">Volkswagen</option>
-        <option value="Ford">Ford</option>
-        <option value="Chevrolet">Chevrolet</option>
-        <option value="Honda">Honda</option>
-        <option value="Fiat">Fiat</option>
-        <option value="Hyundai">Hyundai</option>
-        <!-- Adicione outras marcas conforme necessário -->
-      </select>
-
-      <!-- Filtro de Ano (gerado dinamicamente) -->
-      <select id="filtro-ano">
-        <option value="">Ano</option>
-      </select>
-
-      <!-- Filtro de Preço -->
-      <select id="filtro-preco">
-        <option value="">Preço</option>
-        <option value="baixo">Até R$50.000</option>
-        <option value="medio">R$50.000 - R$100.000</option>
-        <option value="alto">Acima de R$100.000</option>
-      </select>
-    </div>
-  </section>
 
 
   <!-- Lista de Veículos -->
@@ -101,146 +109,125 @@
 
     <div class="veiculos-lista">
 
-      <!-- Card de Veículo com Carrossel -->
-      <div class="veiculo-card" data-marca="Toyota" data-ano="2021" data-preco="alto">
+      <!-- Nissan Versa -->
+      <div class="veiculo-card" data-marca="Nissan" data-modelo="Versa" data-ano="2018" data-cor="Prata"
+        data-preco="medio">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Corola Pesquisa (1).jpeg" alt="Carro 1 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Corola Pesquisa.jpeg" alt="Carro 1 - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Corolla Prata Interior.jpeg" alt="Carro 1 - Foto 3">
-            </div>
+            <div class="carrossel-item"><img src="assets/img/versa1.jpeg" alt="Nissan Versa - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/versa2.jpeg" alt="Nissan Versa - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/versa3.jpeg" alt="Nissan Versa - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
         </div>
-        <h3>Corolla <span class="ano">- 2021</span></h3>
-        <p>R$ 150.000</p>
+        <h3>Nissan Versa <span class="ano">(2019)</span></h3>
+        <p>R$ 44.816,00</p>
         <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
       </div>
 
-      <!-- Outro Card de Veículo com Carrossel -->
-      <div class="veiculo-card" data-marca="Toyota" data-ano="2021" data-preco="alto">
+      <!-- Voyage -->
+      <div class="veiculo-card" data-marca="Volkswagen" data-modelo="Voyage" data-ano="2015" data-cor="Prata"
+        data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho.jpeg" alt="Carro 2 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho Interior (1).jpeg" alt="Carro 2 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho Interior.jpeg" alt="Carro 2 - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho (1).jpeg" alt="Carro 2 - Foto 3">
-            </div>
+            <div class="carrossel-item"><img src="assets/img/voyage1.jpeg" alt="Volkswagen Voyage - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/voyage2.jpeg" alt="Volkswagen Voyage - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/voyage3.jpeg" alt="Volkswagen Voyage - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
         </div>
-        <h3>Fox</h3>
-        <p>R$ 45.000</p>
+        <h3>Volkswagen Voyage <span class="ano">(2015)</span></h3>
+        <p>R$ 40.317,00</p>
         <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
       </div>
 
-      <!-- Card de Veículo com Carrossel -->
-      <div class="veiculo-card data-marca=" Toyota" data-ano="2021" data-preco="alto">
+      <!-- Ford Ka Sedan -->
+      <div class="veiculo-card" data-marca="Ford" data-modelo="Ka Sedan" data-ano="2019" data-cor="Cinza"
+        data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Corola Pesquisa (1).jpeg" alt="Carro 1 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Corola Pesquisa.jpeg" alt="Carro 1 - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Corolla Prata Interior.jpeg" alt="Carro 1 - Foto 3">
-            </div>
+            <div class="carrossel-item"><img src="assets/img/ka1.jpeg" alt="Ford Ka Sedan - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/ka2.jpeg" alt="Ford Ka Sedan - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/ka3.jpeg" alt="Ford Ka Sedan - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
         </div>
-        <h3>Corola</h3>
-        <p>R$ 150.000</p>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
+        <h3>Ford Ka Sedan <span class="ano">(2019)</span></h3>
+        <p>R$ 47.460,00</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=3'">Ver mais</button>
       </div>
 
-      <!-- Outro Card de Veículo com Carrossel -->
-      <div class="veiculo-card data-marca=" Toyota" data-ano="2021" data-preco="alto">
+      <!-- Fiat Mobi -->
+      <div class="veiculo-card" data-marca="Fiat" data-modelo="Mobi" data-ano="2018" data-cor="Vermelho"
+        data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho.jpeg" alt="Carro 2 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho Interior (1).jpeg" alt="Carro 2 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho Interior.jpeg" alt="Carro 2 - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho (1).jpeg" alt="Carro 2 - Foto 3">
-            </div>
+            <div class="carrossel-item"><img src="assets/img/mobi1.jpeg" alt="Fiat Mobi - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/mobi2.jpeg" alt="Fiat Mobi - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/mobi3.jpeg" alt="Fiat Mobi - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
         </div>
-        <h3>Fox</h3>
-        <p>R$ 45.000</p>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
+        <h3>Fiat Mobi <span class="ano">(2018)</span></h3>
+        <p>R$ 33.580,00</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=4'">Ver mais</button>
       </div>
 
-      <!-- Card de Veículo com Carrossel -->
-      <div class="veiculo-card data-marca=" Toyota" data-ano="2021" data-preco="alto">
+      <!-- Fiat Palio -->
+      <div class="veiculo-card" data-marca="Fiat" data-modelo="Palio" data-ano="2015" data-cor="Vermelho"
+        data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Corola Pesquisa (1).jpeg" alt="Carro 1 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Corola Pesquisa.jpeg" alt="Carro 1 - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Corolla Prata Interior.jpeg" alt="Carro 1 - Foto 3">
-            </div>
+            <div class="carrossel-item"><img src="assets/img/palio1.jpeg" alt="Fiat Palio - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/palio2.jpeg" alt="Fiat Palio - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/palio3.jpeg" alt="Fiat Palio - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
         </div>
-        <h3>Corola</h3>
-        <p>R$ 150.000</p>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=1'">Ver mais</button>
+        <h3>Fiat Palio <span class="ano">(2015)</span></h3>
+        <p>R$ 28.149,00</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=5'">Ver mais</button>
       </div>
 
-      <!-- Outro Card de Veículo com Carrossel -->
-      <div class="veiculo-card data-marca=" Volkswagen" data-ano="2019" data-preco="alto">
+      <!-- Citroen C3 -->
+      <div class="veiculo-card" data-marca="Citroën" data-modelo="C3" data-ano="2016" data-cor="Preto"
+        data-preco="medio">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho.jpeg" alt="Carro 2 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho Interior (1).jpeg" alt="Carro 2 - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho Interior.jpeg" alt="Carro 2 - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Fox Vermelho (1).jpeg" alt="Carro 2 - Foto 3">
-            </div>
+            <div class="carrossel-item"><img src="assets/img/c3_1.jpeg" alt="Citroën C3 - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/c3_2.jpeg" alt="Citroën C3 - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/c3_3.jpeg" alt="Citroën C3 - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
         </div>
-        <h3>Fox <span class="ano">(2019)</span></h3>
-        <p>R$ 45.000</p>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=2'">Ver mais</button>
+        <h3>Citroën C3 <span class="ano">(2016)</span></h3>
+        <p>R$ 49.859,00</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=6'">Ver mais</button>
       </div>
+
+      <!-- Fiat Siena -->
+      <div class="veiculo-card" data-marca="Fiat" data-modelo="Siena" data-ano="2016" data-cor="Cinza"
+        data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/siena1.jpeg" alt="Fiat Siena - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/siena2.jpeg" alt="Fiat Siena - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/siena3.jpeg" alt="Fiat Siena - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
+        </div>
+        <h3>Fiat Siena <span class="ano">(2014)</span></h3>
+        <p>R$ 29.019,00</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=7'">Ver mais</button>
+      </div>
+
     </div>
   </section>
 

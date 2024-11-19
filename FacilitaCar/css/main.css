@@ -371,6 +371,7 @@ footer .redes-sociais a {
 }
 .detalhes-veiculo .informacoes-veiculo p {
   margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 .detalhes-veiculo .informacoes-veiculo ul {
   list-style: none;
@@ -379,6 +380,7 @@ footer .redes-sociais a {
 }
 .detalhes-veiculo .informacoes-veiculo ul li {
   margin-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
 .detalhes-veiculo .informacoes-veiculo .contato-btn {
   width: 15rem;
