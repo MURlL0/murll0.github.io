@@ -99,6 +99,10 @@
               @media (max-width: 854px) {
                 object-fit: contain;
               }
+              @media (max-width: 500px) {
+                height: 11rem;
+                object-fit: cover;
+              }
             }
           }
         }

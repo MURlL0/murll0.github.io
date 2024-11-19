@@ -217,6 +217,13 @@ header .container input[type=text] {
        object-fit: contain;
   }
 }
+@media (max-width: 500px) {
+  .estoque .veiculos-lista .veiculo-card .carrossel .carrossel-container .carrossel-item img {
+    height: 11rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .estoque .veiculos-lista .veiculo-card .carrossel .carrossel-btn {
   position: absolute;
   top: 50%;
