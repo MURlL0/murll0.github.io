@@ -145,8 +145,7 @@ header .container input[type=text] {
 .estoque .veiculos-lista .veiculo-card {
   width: 100%;
   max-width: 40rem;
-  height: 100%;
-  max-height: 35rem;
+  height: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,14 +201,21 @@ header .container input[type=text] {
   display: flex;
   transition: transform 0.5s ease;
 }
-.estoque .veiculos-lista .veiculo-card .carrossel .carrossel-item {
+.estoque .veiculos-lista .veiculo-card .carrossel .carrossel-container .carrossel-item {
   min-width: 100%;
 }
-.estoque .veiculos-lista .veiculo-card .carrossel .carrossel-item img {
+.estoque .veiculos-lista .veiculo-card .carrossel .carrossel-container .carrossel-item img {
   width: 100%;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
-  -o-object-fit: fill;
-     object-fit: fill;
+}
+@media (max-width: 854px) {
+  .estoque .veiculos-lista .veiculo-card .carrossel .carrossel-container .carrossel-item img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 .estoque .veiculos-lista .veiculo-card .carrossel .carrossel-btn {
   position: absolute;

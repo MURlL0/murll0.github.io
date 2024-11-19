@@ -18,43 +18,7 @@
       <section class="filtros-container">
 
         <div class="filtros">
-          <h2>Filtrar Veículos</h2>
 
-          <!-- Filtro de Marca -->
-          <select id="filtro-marca">
-            <option value="">Marcas</option>
-            <option value="Toyota">Toyota</option>
-            <option value="Volkswagen">Volkswagen</option>
-            <option value="Ford">Ford</option>
-            <option value="Chevrolet">Chevrolet</option>
-            <option value="Honda">Honda</option>
-            <option value="Fiat">Fiat</option>
-            <option value="Hyundai">Hyundai</option>
-            <option value="Citroën">Citroën</option>
-            <option value="Nissan">Nissan</option>
-            <option value="Renault">Renault</option>
-            <!-- Adicione outras marcas conforme necessário -->
-          </select>
-
-          <!-- Filtro de Ano (gerado dinamicamente) -->
-          <select id="filtro-ano">
-            <option value="">Ano</option>
-          </select>
-
-          <!-- Filtro de Preço -->
-          <select id="filtro-preco">
-            <option value="">Preço</option>
-            <option value="baixo">Até R$50.000</option>
-            <option value="medio">R$50.000 - R$100.000</option>
-            <option value="alto">Acima de R$100.000</option>
-          </select>
-        </div>
-      </section>
-
-      <section class="filtros-container-Banner">
-
-        <div class="filtros">
-          <h2>Filtrar Veículos</h2>
 
           <!-- Filtro de Marca -->
           <select id="filtro-marca">
@@ -96,16 +60,46 @@
   <section class="banner" id="home">
     <div class="banner-content">
       <img src="assets/img/Banner/Banner.svg" alt="banner">
-
     </div>
   </section>
 
+  <section class="filtros-container-Banner">
 
+    <div class="filtros">
 
+      <!-- Filtro de Marca -->
+      <select id="filtro-marca">
+        <option value="">Marcas</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Honda">Honda</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Citroën">Citroën</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Renault">Renault</option>
+        <!-- Adicione outras marcas conforme necessário -->
+      </select>
+
+      <!-- Filtro de Ano (gerado dinamicamente) -->
+      <select id="filtro-ano">
+        <option value="">Ano</option>
+      </select>
+
+      <!-- Filtro de Preço -->
+      <select id="filtro-preco">
+        <option value="">Preço</option>
+        <option value="baixo">Até R$50.000</option>
+        <option value="medio">R$50.000 - R$100.000</option>
+        <option value="alto">Acima de R$100.000</option>
+      </select>
+    </div>
+  </section>
 
   <!-- Lista de Veículos -->
   <section id="estoque" class="estoque">
-    <h2>Nossos Carros</h2>
 
     <div class="veiculos-lista">
 
@@ -114,9 +108,12 @@
         data-preco="medio">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/versa1.jpeg" alt="Nissan Versa - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/versa2.jpeg" alt="Nissan Versa - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/versa3.jpeg" alt="Nissan Versa - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Nissan/Versa/Versa 2018 Prata.jpg"
+                alt="Nissan Versa - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Nissan/Versa/Nissan Versa SV 2018.jpg"
+                alt="Nissan Versa - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Nissan/Versa/Nissan Versa SV 2018 (1).jpg"
+                alt="Nissan Versa - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
@@ -131,9 +128,12 @@
         data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/voyage1.jpeg" alt="Volkswagen Voyage - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/voyage2.jpeg" alt="Volkswagen Voyage - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/voyage3.jpeg" alt="Volkswagen Voyage - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Volkswagen/Voyage/Volkswagen Voyage 2015.jpg"
+                alt="Volkswagen Voyage - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Volkswagen/Voyage/Volkswagen Voyage 2015 (1).jpg"
+                alt="Volkswagen Voyage - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Volkswagen/Voyage/Volkswagen Voyage 2015 (2).jpg"
+                alt="Volkswagen Voyage - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
@@ -148,9 +148,12 @@
         data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/ka1.jpeg" alt="Ford Ka Sedan - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/ka2.jpeg" alt="Ford Ka Sedan - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/ka3.jpeg" alt="Ford Ka Sedan - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/Ka Sedan/Ford Ka Sedan 2019.jpg"
+                alt="Ford Ka Sedan - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/Ka Sedan/Ford Ka 2019.jpg"
+                alt="Ford Ka Sedan - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/Ka Sedan/Ford Ka 2019 (1).jpg"
+                alt="Ford Ka Sedan - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
@@ -165,9 +168,12 @@
         data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/mobi1.jpeg" alt="Fiat Mobi - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/mobi2.jpeg" alt="Fiat Mobi - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/mobi3.jpeg" alt="Fiat Mobi - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Mobi/Fiat Mobi Drive 2018.jpg"
+                alt="Fiat Mobi - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Mobi/Fiat Mobi 2018.jpg"
+                alt="Fiat Mobi - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Mobi/Fiat Mobi 2018 (1).jpg"
+                alt="Fiat Mobi - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
@@ -182,9 +188,12 @@
         data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/palio1.jpeg" alt="Fiat Palio - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/palio2.jpeg" alt="Fiat Palio - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/palio3.jpeg" alt="Fiat Palio - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Palio/Fiat Palio 2015.jpg"
+                alt="Fiat Palio - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Palio/Fiat Palio 2015 (1).jpg"
+                alt="Fiat Palio - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Palio/Fiat Palio 1.0 2015.jpg"
+                alt="Fiat Palio - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
@@ -199,9 +208,12 @@
         data-preco="medio">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/c3_1.jpeg" alt="Citroën C3 - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/c3_2.jpeg" alt="Citroën C3 - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/c3_3.jpeg" alt="Citroën C3 - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Citroen/C3/Citroen C3 2016.jpg"
+                alt="Citroën C3 - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Citroen/C3/Citroen C3 2016 (1).jpg"
+                alt="Citroën C3 - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Citroen/C3/Citroen C3 2016 (2).jpg"
+                alt="Citroën C3 - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
@@ -216,9 +228,12 @@
         data-preco="baixo">
         <div class="carrossel">
           <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/siena1.jpeg" alt="Fiat Siena - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/siena2.jpeg" alt="Fiat Siena - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/siena3.jpeg" alt="Fiat Siena - Foto 3"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Siena/Fiat Grand Siena 2016.jpg"
+                alt="Fiat Siena - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Siena/Fiat Grand Siena 2016 (1).jpg"
+                alt="Fiat Siena - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Fiat/Siena/Fiat Grand Siena 2016 (2).jpg"
+                alt="Fiat Siena - Foto 3"></div>
           </div>
           <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
           <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
