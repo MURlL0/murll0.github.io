@@ -135,6 +135,29 @@ const carros = {
     cor: 'Vermelho',
     transmissao: 'Manual',
   },
+  8: {
+    nome: 'Arrizo 5',
+    preco: 'R$ 66.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40 (1).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40.jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40 (2).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (2).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (1).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41.jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.42.jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.42 (1).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.42 (2).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (2).jpeg',
+      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.39.jpeg',
+    ],
+    descricao: 'Design moderno e excelente custo-benefício.',
+    marca: 'Chery',
+    modelo: 'Arrizo 5',
+    ano: '2019',
+    cor: 'Branca',
+    transmissao: 'Automático',
+  },
 };
 
 // Função para extrair o ID do carro da URL

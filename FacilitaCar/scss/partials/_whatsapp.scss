@@ -1,0 +1,25 @@
+.whatsapp-container {
+  position: fixed; // Fixo na tela, visível mesmo ao rolar
+  bottom: 20px; // Distância do rodapé
+  right: 20px; // Distância da lateral direita
+  z-index: 1000; // Mantém o botão acima de outros elementos
+
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; // Tamanho do botão
+    height: 60px; // Tamanho do botão
+    background-color: #25d366; // Cor verde do WhatsApp
+    border-radius: 50%; // Forma circular
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para destacar
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); // Efeito de zoom ao passar o mouse
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); // Sombra mais intensa
+    }
+  }
+}
