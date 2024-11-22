@@ -33,7 +33,8 @@
             <option value="Citroën">Citroën</option>
             <option value="Nissan">Nissan</option>
             <option value="Renault">Renault</option>
-            <option value="Renault">Chery</option>
+            <option value="Chery">Chery</option>
+            <option value="Peugeot">Peugeot</option>
             <!-- Adicione outras marcas conforme necessário -->
           </select>
 
@@ -52,15 +53,30 @@
         </div>
       </section>
 
+
       <!-- Campo de busca -->
       <input id="busca-veiculo" type="text" placeholder="Buscar veículos...">
     </div>
   </header>
 
+
   <!-- Banner Principal -->
-  <section class="banner" id="home">
-    <div class="banner-content">
-      <img src="assets/img/Banner/Banner.svg" alt="banner">
+  <section class="banner-rotativo">
+    <div class="slides-container">
+      <div class="slide active">
+        <img src="assets/img/Banner/1.svg" alt="Banner 1">
+      </div>
+      <div class="slide">
+        <img src="assets/img/Banner/2.svg" alt="Banner 2">
+      </div>
+      <div class="slide">
+        <img src="assets/img/Banner/3.svg" alt="Banner 3">
+      </div>
+    </div>
+    <div class="banner-controls">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
     </div>
   </section>
 
@@ -81,7 +97,8 @@
         <option value="Citroën">Citroën</option>
         <option value="Nissan">Nissan</option>
         <option value="Renault">Renault</option>
-        <option value="Renault">Chery</option>
+        <option value="Chery">Chery</option>
+        <option value="Peugeot">Peugeot</option>
         <!-- Adicione outras marcas conforme necessário -->
       </select>
 
@@ -99,6 +116,7 @@
       </select>
     </div>
   </section>
+
 
   <!-- Lista de Veículos -->
   <section id="estoque" class="estoque">
@@ -285,6 +303,165 @@
         <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=8'">Ver mais</button>
       </div>
 
+      <!-- Chevrolet Classic -->
+      <div class="veiculo-card" data-marca="Chevrolet" data-modelo="Classic" data-ano="2015" data-cor="Branca"
+        data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Chevrolet/Classic/Chevrolet Classic 2015.jpg"
+                alt="Chevrolet Classic - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Chevrolet/Classic/Chevrolet Classic 2015 (1).jpg"
+                alt="Chevrolet Classic - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Chevrolet/Classic/Chevrolet Classic 2015 (2).jpg"
+                alt="Chevrolet Classic - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Chevrolet Classic <span class="ano">(2015)</span></h3>
+        <p>R$ 29.090,00</p>
+        <p>50% de entrada: R$ 14.545,00</p>
+        <p>24x sem juros: R$ 605,21</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=9'">Ver mais</button>
+      </div>
+
+      <!-- Chevrolet Cobalt -->
+      <div class="veiculo-card" data-marca="Chevrolet" data-modelo="Cobalt" data-ano="2014" data-cor="Preta"
+        data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Chevrolet/Cobalt/Chevrolet Cobalt LTZ 2014.jpg"
+                alt="Chevrolet Cobalt - Foto 1"></div>
+            <div class="carrossel-item"><img
+                src="assets/img/Veiculos/Chevrolet/Cobalt/Chevrolet Cobalt LTZ 2014 (1).jpg"
+                alt="Chevrolet Cobalt - Foto 2"></div>
+            <div class="carrossel-item"><img
+                src="assets/img/Veiculos/Chevrolet/Cobalt/Chevrolet Cobalt LTZ 2014 (2).jpg"
+                alt="Chevrolet Cobalt - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Chevrolet Cobalt <span class="ano">(2014)</span></h3>
+        <p>R$ 37.553,00</p>
+        <p>50% de entrada: R$ 18.776,50</p>
+        <p>24x sem juros: R$ 782,35</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=10'">Ver mais</button>
+      </div>
+
+      <!-- Peugeot 208 -->
+      <div class="veiculo-card" data-marca="Peugeot" data-modelo="208" data-ano="2014" data-cor="Vermelha"
+        data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Peugeot/208/999413100136142.jpg"
+                alt="Peugeot 208 - Foto 1">
+            </div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Peugeot/208/Peugeot 208 Allure 2014.jpg"
+                alt="Peugeot 208 - Foto 2">
+            </div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Peugeot/208/Peugeot 208 Allure 2014 (1).jpg"
+                alt="Peugeot 208 - Foto 3">
+            </div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Peugeot 208 <span class="ano">(2014)</span></h3>
+        <p>R$ 37.031,00</p>
+        <p>50% de entrada: R$ 18.515,50</p>
+        <p>24x sem juros: R$ 771,48</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=11'">Ver mais</button>
+      </div>
+
+      <!-- Renault Logan -->
+      <div class="veiculo-card" data-marca="Renault" data-modelo="Logan" data-ano="2015" data-cor="Cinza"
+        data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Renault/12.Logan/Renault Logan 2015.jpg"
+                alt="Renault Logan - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Renault/12.Logan/Renault Logan 2015 (1).jpg"
+                alt="Renault Logan - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Renault/12.Logan/Renault Logan 2015 (2).jpg"
+                alt="Renault Logan - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Renault Logan <span class="ano">(2015)</span></h3>
+        <p>R$ 37.036,00</p>
+        <p>50% de entrada: R$ 18.518,00</p>
+        <p>24x sem juros: R$ 771,58</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=12'">Ver mais</button>
+      </div>
+
+      <!-- Renault Logan -->
+      <div class="veiculo-card" data-marca="Renault" data-modelo="Logan" data-ano="2016" data-cor="Prata"
+        data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Renault/13.Logan/Renault Logan 2016.jpg"
+                alt="Renault Logan - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Renault/13.Logan/Renault Logan 2016 (1).jpg"
+                alt="Renault Logan - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Renault/13.Logan/Renault Logan 2016 (2).jpg"
+                alt="Renault Logan - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Renault Logan <span class="ano">(2016)</span></h3>
+        <p>R$ 37.357,00</p>
+        <p>50% de entrada: R$ 18.678,50</p>
+        <p>24x sem juros: R$ 778,27</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=13'">Ver mais</button>
+      </div>
+
+      <!-- Ford Ka Sedan -->
+      <div class="veiculo-card" data-marca="Ford" data-modelo="Ka Sedan" data-ano="2019" data-cor="Cinza"
+        data-preco="medio">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/14.Ka Sedan/Ford Ka 1.0 SE 2019.jpg"
+                alt="Ford Ka Sedan - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/14.Ka Sedan/Ford Ka 1.0 SE 2019 (1).jpg"
+                alt="Ford Ka Sedan - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/14.Ka Sedan/Ford Ka 1.0 SE 2019 (2).jpg"
+                alt="Ford Ka Sedan - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Ford Ka Sedan <span class="ano">(2019)</span></h3>
+        <p>R$ 48.558,00</p>
+        <p>50% de entrada: R$ 24.279,00</p>
+        <p>24x sem juros: R$ 1.011,62</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=14'">Ver mais</button>
+      </div>
+
+      <!-- Ford Fusion Titanium -->
+      <div class="veiculo-card" data-marca="Ford" data-modelo="Fusion Titanium" data-ano="2016" data-cor="Branca"
+        data-preco="alto">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/15.Fusion/Ford Fusion Titanium 2016.jpg"
+                alt="Ford Fusion Titanium - Foto 1"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/15.Fusion/Ford Fusion Titanium 2016 (1).jpg"
+                alt="Ford Fusion Titanium - Foto 2"></div>
+            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/15.Fusion/Ford Fusion Titanium 2016 (2).jpg"
+                alt="Ford Fusion Titanium - Foto 3"></div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Ford Fusion Titanium <span class="ano">(2016)</span></h3>
+        <p>R$ 86.062,00</p>
+        <p>50% de entrada: R$ 43.031,00</p>
+        <p>24x sem juros: R$ 1.792,96</p>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=15'">Ver mais</button>
+      </div>
+
     </div>
   </section>
 
@@ -313,7 +490,6 @@
   </div>
 
 
-
   <!-- Rodapé -->
   <footer>
     <p>&copy; 2024 Facilita Car - Todos os direitos reservados.</p>
@@ -326,6 +502,7 @@
 
   <script src="js/index.js"></script>
   <script src="js/filter.js"></script>
+  <script src="js/banner.js"></script>
 
 </body>
 
