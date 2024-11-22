@@ -43,11 +43,19 @@
       h3 {
         font-size: 1.8rem;
         margin: 0.5rem 0;
+
+        @media (max-width: 500px) {
+          font-size: 1.6rem;
+        }
       }
 
       p {
         font-size: 1.5rem;
         margin: 0.5rem 0;
+
+        @media (max-width: 500px) {
+          font-size: 1.3rem;
+        }
       }
 
       .btnVerMais {
