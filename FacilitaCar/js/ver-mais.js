@@ -193,9 +193,9 @@ const carros = {
     nome: 'Peugeot 208',
     preco: 'R$ 37.031,00',
     imagens: [
-      '../assets/img/Veiculos/Peugeot/208/999413100136142.jpg',
-      '../assets/img/Veiculos/Peugeot/208/Peugeot 208 Allure 2014.jpg',
-      '../assets/img/Veiculos/Peugeot/208/Peugeot 208 Allure 2014 (1).jpg',
+      '../assets/img/Veiculos/Peugeot/11.208/999413100136142.jpg',
+      '../assets/img/Veiculos/Peugeot/11.208/Peugeot 208 Allure 2014.jpg',
+      '../assets/img/Veiculos/Peugeot/11.208/Peugeot 208 Allure 2014 (1).jpg',
     ],
     descricao: 'Compacto, ágil e com um design moderno, ideal para a cidade.',
     marca: 'Peugeot',
