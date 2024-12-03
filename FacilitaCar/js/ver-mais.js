@@ -120,21 +120,6 @@ const carros = {
     cor: 'Preto',
     transmissao: 'Automático',
   },
-  7: {
-    nome: 'Fiat Siena',
-    preco: 'R$ 29.019,00',
-    imagens: [
-      '../assets/img/Veiculos/Fiat/Siena/Fiat Grand Siena 2016.jpg',
-      '../assets/img/Veiculos/Fiat/Siena/Fiat Grand Siena 2016 (1).jpg',
-      '../assets/img/Veiculos/Fiat/Siena/Fiat Grand Siena 2016 (2).jpg',
-    ],
-    descricao: 'Confiável e com excelente custo-benefício para a família.',
-    marca: 'Fiat',
-    modelo: 'Siena',
-    ano: '2014',
-    cor: 'Vermelho',
-    transmissao: 'Manual',
-  },
   8: {
     nome: 'Arrizo 5',
     preco: 'R$ 66.000,00',
@@ -159,21 +144,6 @@ const carros = {
     transmissao: 'Automático',
   },
 
-  9: {
-    nome: 'Chevrolet Classic',
-    preco: 'R$ 29.090,00',
-    imagens: [
-      '../assets/img/Veiculos/Chevrolet/Classic/Chevrolet Classic 2015.jpg',
-      '../assets/img/Veiculos/Chevrolet/Classic/Chevrolet Classic 2015 (1).jpg',
-      '../assets/img/Veiculos/Chevrolet/Classic/Chevrolet Classic 2015 (2).jpg',
-    ],
-    descricao: 'Compacto, econômico e ideal para o dia a dia.',
-    marca: 'Chevrolet',
-    modelo: 'Classic',
-    ano: '2015',
-    cor: 'Branca',
-    transmissao: 'Manual',
-  },
   10: {
     nome: 'Chevrolet Cobalt',
     preco: 'R$ 37.553,00',
@@ -189,6 +159,7 @@ const carros = {
     cor: 'Preta',
     transmissao: 'Manual',
   },
+
   11: {
     nome: 'Peugeot 208',
     preco: 'R$ 37.031,00',
