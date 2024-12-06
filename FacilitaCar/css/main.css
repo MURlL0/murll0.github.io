@@ -199,24 +199,34 @@ header .container input[type=text] {
 @media (max-width: 500px) {
   .estoque .veiculos-lista .veiculo-card {
     max-width: 17rem;
+    min-height: 32rem;
   }
 }
 .estoque .veiculos-lista .veiculo-card h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0.5rem 0;
 }
 @media (max-width: 500px) {
   .estoque .veiculos-lista .veiculo-card h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
-.estoque .veiculos-lista .veiculo-card p {
+.estoque .veiculos-lista .veiculo-card h4 {
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 @media (max-width: 500px) {
-  .estoque .veiculos-lista .veiculo-card p {
+  .estoque .veiculos-lista .veiculo-card h4 {
     font-size: 1.3rem;
+  }
+}
+.estoque .veiculos-lista .veiculo-card p {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 500px) {
+  .estoque .veiculos-lista .veiculo-card p {
+    font-size: 1.1rem;
   }
 }
 .estoque .veiculos-lista .veiculo-card .btnVerMais {
@@ -422,7 +432,6 @@ footer .redes-sociais a {
 .detalhes-veiculo .carrossel .carrossel-item img {
   width: 100%;
   display: block;
-  border-radius: 8px;
 }
 .detalhes-veiculo .carrossel .carrossel-btn {
   position: absolute;
