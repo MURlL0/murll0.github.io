@@ -4,9 +4,17 @@ footer {
   color: $cor-branco;
   text-align: center;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  p {
+    font-size: 1.4rem;
+  }
 
   .redes-sociais {
     a {
+      font-size: 1.2rem;
       color: $cor-branco;
       margin: 0 0.5rem;
       text-decoration: none;

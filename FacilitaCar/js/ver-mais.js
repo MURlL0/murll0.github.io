@@ -294,6 +294,21 @@ const carros = {
     cor: 'Preta',
     transmissao: 'Manual',
   },
+  19: {
+    nome: 'Fiat Uno',
+    preco: 'R$ 48.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.14 2.jpeg',
+      '../assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.14 (1) 2.jpeg',
+      '../assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.13.jpeg',
+    ],
+    descricao: 'Econômico, compacto e perfeito para o dia a dia.',
+    marca: 'Fiat',
+    modelo: 'Uno',
+    ano: '2021',
+    cor: 'Prata',
+    transmissao: 'Manual',
+  },
 };
 
 // Função para extrair o ID do carro da URL

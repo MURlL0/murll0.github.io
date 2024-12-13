@@ -32,14 +32,51 @@ header {
       }
     }
 
-    input[type="text"] {
-      padding: 1rem;
-      border: 0.1rem solid $cor-borda-filtro;
-      border-radius: 0.8rem;
+    .campo-busca {
+      position: relative;
+      display: inline-block;
 
-      @media (max-width: 500px) {
-        padding: 0.3rem;
-        font-size: 1rem;
+      input {
+        width: 100%;
+        padding: 0.5rem 1rem 0.5rem 0.5rem; // Espaço para o ícone
+        border: 0.1rem solid #ccc;
+        border-radius: 0.5rem;
+        font-size: 1.4rem;
+
+        @media (max-width: 500px) {
+          padding: 0.3rem;
+          font-size: 1rem;
+        }
+      }
+
+      .btn-busca {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #555;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+
+          @media (max-width: 500px) {
+            width: 1rem;
+            height: 1rem;
+          }
+        }
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #40a9ff;
+      }
+
+      .btn-busca:hover {
+        color: #40a9ff;
       }
     }
   }

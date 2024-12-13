@@ -65,9 +65,17 @@
       </section>
 
 
-      <!-- Campo de busca -->
-      <input id="busca-veiculo" type="text" placeholder="Buscar veículos...">
-    </div>
+      <!-- Campo de busca com ícone -->
+      <div class="campo-busca">
+        <input id="busca-veiculo" type="text" placeholder="Buscar veículos...">
+        <button class="btn-busca">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
   </header>
 
 
@@ -619,6 +627,37 @@
         <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=18'">Ver mais</button>
       </div>
 
+      <!-- Fiat Uno (ID 19) -->
+      <div class="veiculo-card" data-marca="Fiat" data-modelo="Uno" data-ano="2021" data-cor="Prata" data-preco="baixo">
+        <div class="carrossel">
+          <div class="carrossel-container">
+            <div class="carrossel-item">
+              <img src="assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.14 2.jpeg"
+                alt="Fiat Uno - Foto 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.14 (1) 2.jpeg"
+                alt="Fiat Uno - Foto 2">
+            </div>
+            <div class="carrossel-item">
+              <img src="assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.13.jpeg"
+                alt="Fiat Uno - Foto 3">
+            </div>
+          </div>
+          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
+          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
+        </div>
+        <h3>Fiat Uno <span class="ano">(2021)</span></h3>
+        <h4>R$ 48.000,00</h4>
+        <div class="50Porcento">e
+          <p>50% de entrada: R$ 24.000,00 24x sem juros: R$ 1.000,00</p>
+        </div>
+        <div class="40Porcento">
+          <p>40% de entrada: R$ 19.200,00 24x (2% juros): R$ 1.522,69</p>
+        </div>
+        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=19'">Ver mais</button>
+      </div>
+
     </div>
   </section>
 
@@ -651,9 +690,8 @@
   <footer>
     <p>&copy; 2024 Facilita Car - Todos os direitos reservados.</p>
     <div class="redes-sociais">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
+      <a href="https://www.facebook.com/profile.php?id=61569098137176">Facebook</a>
+      <a href="https://www.instagram.com/facilita__car/">Instagram</a>
     </div>
   </footer>
 
