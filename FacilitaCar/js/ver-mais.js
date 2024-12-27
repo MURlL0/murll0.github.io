@@ -30,7 +30,6 @@ showSlide(currentSlide);
 
 // Dados de exemplo para os carros
 const carros = {
-
   3: {
     nome: 'Ford Ka Sedan',
     preco: 'R$ 47.460,00',
@@ -45,30 +44,6 @@ const carros = {
     ano: '2019',
     cor: 'Cinza',
     transmissao: 'Manual',
-  },
-
-  8: {
-    nome: 'Arrizo 5',
-    preco: 'R$ 66.000,00',
-    imagens: [
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40 (1).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40.jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40 (2).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (2).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (1).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41.jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.42.jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.42 (1).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.42 (2).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (2).jpeg',
-      '../assets/img/Veiculos/Chery/Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.39.jpeg',
-    ],
-    descricao: 'Design moderno e excelente custo-benefício.',
-    marca: 'Chery',
-    modelo: 'Arrizo 5',
-    ano: '2019',
-    cor: 'Branca',
-    transmissao: 'Automático',
   },
 
   17: {
@@ -113,6 +88,112 @@ const carros = {
     transmissao: 'Manual',
   },
 
+  20: {
+    nome: 'Renault Clio',
+    preco: 'R$ 16.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Renault/20.Clio/Renault_Clio_2008_1.jpg',
+      '../assets/img/Veiculos/Renault/20.Clio/Renault_Clio_2008_2.jpg',
+      '../assets/img/Veiculos/Renault/20.Clio/Renault_Clio_2008_3.jpg',
+    ],
+    descricao: 'Compacto, econômico e confiável, ideal para o dia a dia.',
+    marca: 'Renault',
+    modelo: 'Clio',
+    ano: '2008',
+    cor: 'Prata',
+    transmissao: 'Manual',
+  },
+  21: {
+    nome: 'Ford Fiesta Sedan',
+    preco: 'R$ 32.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Ford/21.Fiesta Sedan/Ford_Fiesta_Sedan_2012_1.jpg',
+      '../assets/img/Veiculos/Ford/21.Fiesta Sedan/Ford_Fiesta_Sedan_2012_2.jpg',
+      '../assets/img/Veiculos/Ford/21.Fiesta Sedan/Ford_Fiesta_Sedan_2012_3.jpg',
+    ],
+    descricao: 'Elegante, espaçoso e confortável, perfeito para viagens.',
+    marca: 'Ford',
+    modelo: 'Fiesta Sedan',
+    ano: '2012',
+    cor: 'Prata',
+    transmissao: 'Manual',
+  },
+  22: {
+    nome: 'Peugeot 308',
+    preco: 'R$ 84.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Peugeot/22.308/Peugeot_308_2022_1.jpg',
+      '../assets/img/Veiculos/Peugeot/22.308/Peugeot_308_2022_2.jpg',
+      '../assets/img/Veiculos/Peugeot/22.308/Peugeot_308_2022_3.jpg',
+    ],
+    descricao: 'Modernidade, desempenho e estilo em um único veículo.',
+    marca: 'Peugeot',
+    modelo: '308',
+    ano: '2022',
+    cor: 'Cinza',
+    transmissao: 'Automático',
+  },
+  23: {
+    nome: 'Space Fox',
+    preco: 'R$ 42.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Volkswagen/23.Space Fox/Space_Fox_2014_1.jpg',
+      '../assets/img/Veiculos/Volkswagen/23.Space Fox/Space_Fox_2014_2.jpg',
+      '../assets/img/Veiculos/Volkswagen/23.Space Fox/Space_Fox_2014_3.jpg',
+    ],
+    descricao: 'Espaçoso, confiável e perfeito para a família.',
+    marca: 'Volkswagen',
+    modelo: 'Space Fox',
+    ano: '2014',
+    cor: 'Branco',
+    transmissao: 'Manual',
+  },
+  24: {
+    nome: 'Start 160',
+    preco: 'R$ 16.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Honda/24.Start 160/Start_160_2023_1.jpg',
+      '../assets/img/Veiculos/Honda/24.Start 160/Start_160_2023_2.jpg',
+      '../assets/img/Veiculos/Honda/24.Start 160/Start_160_2023_3.jpg',
+    ],
+    descricao: 'Econômica, robusta e ideal para o dia a dia.',
+    marca: 'Honda',
+    modelo: 'Start 160',
+    ano: '2023',
+    cor: 'Branco',
+    transmissao: 'Manual',
+  },
+  25: {
+    nome: 'Ford Ka',
+    preco: 'R$ 36.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Ford/25.Ka/Ford_Ka_2014_1.jpg',
+      '../assets/img/Veiculos/Ford/25.Ka/Ford_Ka_2014_2.jpg',
+      '../assets/img/Veiculos/Ford/25.Ka/Ford_Ka_2014_3.jpg',
+    ],
+    descricao: 'Compacto, econômico e confiável para todas as ocasiões.',
+    marca: 'Ford',
+    modelo: 'Ka',
+    ano: '2014',
+    cor: 'Branco',
+    transmissao: 'Manual',
+  },
+  26: {
+    nome: 'Shineray SHI 175',
+    preco: 'R$ 16.000,00',
+    imagens: [
+      '../assets/img/Veiculos/Shineray/26.SHI 175/Shineray_SHI_175_2024_1.jpg',
+      '../assets/img/Veiculos/Shineray/26.SHI 175/Shineray_SHI_175_2024_2.jpg',
+      '../assets/img/Veiculos/Shineray/26.SHI 175/Shineray_SHI_175_2024_3.jpg',
+    ],
+    descricao:
+      'Ágil, moderna e com excelente custo-benefício para o dia a dia.',
+    marca: 'Shineray',
+    modelo: 'SHI 175',
+    ano: '2024',
+    cor: 'Vermelha',
+    transmissao: 'Manual',
+  },
 };
 
 // Função para extrair o ID do carro da URL

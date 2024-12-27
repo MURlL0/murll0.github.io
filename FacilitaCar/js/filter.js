@@ -15,7 +15,6 @@ function gerarAnos() {
     }
   });
 }
-gerarAnos();
 
 function aplicarFiltro(filtroPrefix) {
   const marca = document.getElementById(`filtro-marca-${filtroPrefix}`).value;
@@ -26,11 +25,24 @@ function aplicarFiltro(filtroPrefix) {
   veiculos.forEach((veiculo) => {
     const veiculoMarca = veiculo.getAttribute('data-marca');
     const veiculoAno = veiculo.getAttribute('data-ano');
-    const veiculoPreco = veiculo.getAttribute('data-preco');
+    const veiculoPreco = parseFloat(
+      veiculo
+        .getAttribute('data-preco')
+        .replace(/[^\d,]/g, '')
+        .replace(',', '.'),
+    );
 
     const correspondeMarca = marca === '' || veiculoMarca === marca;
     const correspondeAno = ano === '' || veiculoAno === ano;
-    const correspondePreco = preco === '' || veiculoPreco === preco;
+    let correspondePreco = true;
+
+    if (preco === 'baixo') {
+      correspondePreco = veiculoPreco <= 50000;
+    } else if (preco === 'medio') {
+      correspondePreco = veiculoPreco > 50000 && veiculoPreco <= 100000;
+    } else if (preco === 'alto') {
+      correspondePreco = veiculoPreco > 100000;
+    }
 
     if (correspondeMarca && correspondeAno && correspondePreco) {
       veiculo.style.display = 'block';
@@ -40,7 +52,7 @@ function aplicarFiltro(filtroPrefix) {
   });
 }
 
-// Adiciona eventos para ambos os conjuntos de filtros
+// Adiciona eventos para filtros no cabeçalho e no banner
 ['header', 'banner'].forEach((prefix) => {
   document
     .getElementById(`filtro-marca-${prefix}`)
@@ -52,3 +64,6 @@ function aplicarFiltro(filtroPrefix) {
     .getElementById(`filtro-preco-${prefix}`)
     .addEventListener('change', () => aplicarFiltro(prefix));
 });
+
+// Gera os anos dinamicamente assim que o script for carregado
+gerarAnos();
