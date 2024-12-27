@@ -22,7 +22,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -161,137 +161,9 @@
 
   <!-- Lista de Veículos -->
   <section id="estoque" class="estoque">
-
     <div class="veiculos-lista">
-
-      <!-- Ford Ka Sedan (ID 3) -->
-      <div class="veiculo-card" data-marca="Ford" data-modelo="Ka Sedan" data-ano="2019" data-cor="Cinza"
-        data-preco="baixo">
-        <div class="carrossel">
-          <div class="carrossel-container">
-            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/3.Ka Sedan/Ford Ka Sedan 2019.jpg"
-                alt="Ford Ka Sedan - Foto 1"></div>
-            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/3.Ka Sedan/Ford Ka 2019.jpg"
-                alt="Ford Ka Sedan - Foto 2"></div>
-            <div class="carrossel-item"><img src="assets/img/Veiculos/Ford/3.Ka Sedan/Ford Ka 2019 (1).jpg"
-                alt="Ford Ka Sedan - Foto 3"></div>
-          </div>
-          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10094;</button>
-        </div>
-        <h3>Ford Ka Sedan <span class="ano">(2019)</span></h3>
-        <h4>R$ 47.460,00</h4>
-
-        <div class="50Porcento">
-          <p>50% de entrada: R$ 23.730,00 24x sem juros: R$ 988,75</p>
-        </div>
-
-        <div class="40Porcento">
-          <p>40% de entrada: R$ 18.984,00 24x (2% juros): R$ 1.505,96</p>
-        </div>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=3'">Ver mais</button>
-      </div>
-
-      <!-- Arrizo 5 (ID 8) -->
-      <div class="veiculo-card" data-marca="Chery" data-modelo="Arrizo 5" data-ano="2019" data-cor="Branca"
-        data-preco="medio">
-        <div class="carrossel">
-          <div class="carrossel-container">
-            <div class="carrossel-item"><img
-                src="assets/img/Veiculos/Chery/8.Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40 (1).jpeg"
-                alt="Arrizo 5 - Foto 1"></div>
-            <div class="carrossel-item"><img
-                src="assets/img/Veiculos/Chery/8.Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.40.jpeg"
-                alt="Arrizo 5 - Foto 2"></div>
-            <div class="carrossel-item"><img
-                src="assets/img/Veiculos/Chery/8.Arrizo 5/WhatsApp Image 2024-11-20 at 15.37.41 (2).jpeg"
-                alt="Arrizo 5 - Foto 3"></div>
-          </div>
-          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
-        </div>
-        <h3>Arrizo 5 <span class="ano">(2019)</span></h3>
-        <h4>R$ 66.000,00</h4>
-
-        <div class="50Porcento">
-          <p>50% de entrada: R$ 33.000,00 24x sem juros: R$ 1.375,00</p>
-        </div>
-
-        <div class="40Porcento">
-          <p>40% de entrada: R$ 26.400,00 24x (2% juros): R$ 2.093,70</p>
-        </div>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=8'">Ver mais</button>
-      </div>
-
-      <!-- Volkswagen Polo (ID 17) -->
-      <div class="veiculo-card" data-marca="Volkswagen" data-modelo="Polo" data-ano="2024" data-cor="Cinza"
-        data-preco="medio">
-        <div class="carrossel">
-          <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Veiculos/Volkswagen/17.Polo/1WhatsApp Image 2024-11-28 at 11.07.28 (2).jpeg"
-                alt="Volkswagen Polo - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Veiculos/Volkswagen/17.Polo/WhatsApp Image 2024-11-28 at 11.07.31 (1).jpeg"
-                alt="Volkswagen Polo - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Veiculos/Volkswagen/17.Polo/WhatsApp Image 2024-11-28 at 11.07.27.jpeg"
-                alt="Volkswagen Polo - Foto 3">
-            </div>
-          </div>
-          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
-        </div>
-        <h3>Volkswagen Polo <span class="ano">(2024)</span></h3>
-        <h4>R$ 84.000,00</h4>
-
-        <div class="50Porcento">
-          <p>50% de entrada: R$ 42.000,00 24x sem juros: R$ 1.750,00</p>
-        </div>
-
-        <div class="40Porcento">
-          <p>40% de entrada: R$ 33.600,00 24x (2% juros): R$ 2.664,70</p>
-        </div>
-
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=17'">Ver mais</button>
-      </div>
-
-      <!-- Fiat Uno (ID 19) -->
-      <div class="veiculo-card" data-marca="Fiat" data-modelo="Uno" data-ano="2021" data-cor="Prata" data-preco="baixo">
-        <div class="carrossel">
-          <div class="carrossel-container">
-            <div class="carrossel-item">
-              <img src="assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.14 2.jpeg"
-                alt="Fiat Uno - Foto 1">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.14 (1) 2.jpeg"
-                alt="Fiat Uno - Foto 2">
-            </div>
-            <div class="carrossel-item">
-              <img src="assets/img/Veiculos/Fiat/19.Uno/WhatsApp Image 2024-12-12 at 15.30.13.jpeg"
-                alt="Fiat Uno - Foto 3">
-            </div>
-          </div>
-          <button class="carrossel-btn prev" onclick="slidePrev(this)">&#10094;</button>
-          <button class="carrossel-btn next" onclick="slideNext(this)">&#10095;</button>
-        </div>
-        <h3>Fiat Uno <span class="ano">(2021)</span></h3>
-        <h4>R$ 48.000,00</h4>
-        <div class="50Porcento">e
-          <p>50% de entrada: R$ 24.000,00 24x sem juros: R$ 1.000,00</p>
-        </div>
-        <div class="40Porcento">
-          <p>40% de entrada: R$ 19.200,00 24x (2% juros): R$ 1.522,69</p>
-        </div>
-        <button class="btnVerMais" onclick="location.href='page/ver-mais.html?id=19'">Ver mais</button>
-      </div>
-
     </div>
   </section>
-
 
   <div class="whatsapp-container">
     <a href="https://wa.me/5511932140311?text=Olá%2C%20gostaria%20de%20consultar%20informações%20sobre%20um%20carro%20do%20site%20Facilita%20Car!"
