@@ -85,7 +85,7 @@ const carros = {
     modelo: 'Uno',
     ano: '2021',
     cor: 'Prata',
-    transmissao: 'Manual',
+    transmissao: 'Manual', 
   },
 
   20: {
