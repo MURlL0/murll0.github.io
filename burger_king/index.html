@@ -1,41 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="shortcut icon" href="assets/burger-king.svg" type="image/x-icon">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D9YFL503J"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8D9YFL503J');
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'bk-red': '#d62300',
+            'bk-orange': '#ff8233',
+          }
+        }
+      }
+    }
   </script>
+  <style type="text/tailwind">
+    @layer utilities {
+      .bg-gradient-bk {
+        background: linear-gradient(135deg, #d62300 0%, #ff8233 100%);
+      }
+    }
+  </style>
   <title>Calculadora BK</title>
 </head>
 
-<body>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+  <!-- Conteúdo Principal -->
+  <main class="min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-4 py-8 w-full">
+      <div class="text-center mb-12">
+        <div class="flex items-center justify-center mb-6">
+          <img src="assets/burger-king.svg" alt="BK Logo" class="h-16 w-16">
+          <h1 class="ml-4 text-4xl font-bold text-bk-red">Calculadora BK</h1>
+        </div>
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+          <i class="fas fa-moon text-gray-600 dark:text-gray-400 text-2xl"></i>
+        </button>
+      </div>
 
-  <section class="front">
-    <div class="container">
-      <img src="assets/burger-king.svg" alt="img">
-      <div class="card venda">
-        <a href="page/home.html">Venda de 30min em 30min</a>
-      </div>
-      <div class="card completo">
-        <a href="page/com_im.html">Completo/Incompleto</a>
-      </div>
-      <div class="card batata">
-        <a href="page/batata.html">Batata</a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card Vendas -->
+        <a href="page/home.html"
+          class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="flex flex-col items-center text-center">
+            <i class="fas fa-clock text-6xl text-bk-red mb-6"></i>
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Venda de 30min em 30min</h2>
+          </div>
+        </a>
+
+        <!-- Card Completo/Incompleto -->
+        <a href="page/com_im.html"
+          class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="flex flex-col items-center text-center">
+            <i class="fas fa-check-circle text-6xl text-bk-red mb-6"></i>
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Completo/Incompleto</h2>
+          </div>
+        </a>
+
+        <!-- Card Batatas -->
+        <a href="page/batata.html"
+          class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="flex flex-col items-center text-center">
+            <i class="fas fa-utensils text-6xl text-bk-red mb-6"></i>
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Batatas</h2>
+          </div>
+        </a>
       </div>
     </div>
+  </main>
 
-  </section>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
 
+    // Verifica tema salvo
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.classList.toggle('dark', savedTheme === 'dark');
+    updateIcon(savedTheme);
 
+    themeToggle.addEventListener('click', () => {
+      const isDark = html.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      updateIcon(isDark ? 'dark' : 'light');
+    });
+
+    function updateIcon(theme) {
+      const icon = themeToggle.querySelector('i');
+      icon.className = theme === 'light' ? 'fas fa-moon text-gray-600 text-2xl' : 'fas fa-sun text-gray-400 text-2xl';
+    }
+  </script>
 </body>
 
 </html>
